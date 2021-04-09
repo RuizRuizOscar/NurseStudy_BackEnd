@@ -32,7 +32,6 @@ DEBUG = bool(getenv('DJANGO_DEBUG').lower() == 'true') #True
 
 ALLOWED_HOSTS = []
 
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -84,12 +83,12 @@ WSGI_APPLICATION = 'NurseStudy.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'nursestudydb',
-        'USER': 'adminns',
-        'PASSWORD': 'studynurse',
-        'HOST': 'localhost',
-        'PORT': '5432',
+        'ENGINE': getenv('ENGINE'),
+        'NAME': getenv('NAME'),
+        'USER': getenv('USER1'),
+        'PASSWORD': getenv('PASSWORD1'),
+        'HOST': getenv('HOST'),
+        'PORT': getenv('PORT'),
     }
 }
 
