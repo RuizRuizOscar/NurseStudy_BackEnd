@@ -20,7 +20,7 @@ class TimeStamped(models.Model):    #TODO
         abstract = True
 
 
-class User(models.Model):   # ,TimeStamped #TODO #FIXME 
+class User(models.Model):   # TimeStamped #TODO #FIXME 
     """User"""
 
     first_name = models.CharField(max_length=255)
@@ -48,9 +48,6 @@ class Answer(models.Model):
     updated_by = models.CharField(max_length=255)
     created_date = models.DateTimeField(auto_now_add=True)
     updated_date = models.DateTimeField(auto_now_add=True) ### Checar ###   #TODO #FIXME 
-
-    # Relations
-        # na
 
     def __str__(self):
         return f"{self.right_answer} {self.wrong_answers}"
