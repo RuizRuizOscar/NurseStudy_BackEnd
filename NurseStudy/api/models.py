@@ -1,9 +1,11 @@
 from django.db import models
+from django.contrib.postgres.fields import ArrayField
+from django.core.validators import MaxValueValidator, MinValueValidator
 from django.utils import timezone
 
 
 # Create your models here.
-class TimeStamped(models.Model):
+class TimeStamped(models.Model):    #TODO
     created_date = models.DateTimeField(editable=False)
     updated_date = models.DateTimeField(editable=False)
 
@@ -26,7 +28,7 @@ class User(models.Model):   # ,TimeStamped #TODO #FIXME
     email = models.EmailField(unique=True)
     user_name = models.CharField(max_length=20, unique=True)
     ### hash_pwd varchar,   #TODO #FIXME 
-    admin = models.BooleanField()
+    user_type = models.CharField(max_length=20)
     created_date = models.DateTimeField(auto_now_add=True)
     updated_date = models.DateTimeField(auto_now_add=True) ### Checar ###   #TODO #FIXME 
 
@@ -34,41 +36,36 @@ class User(models.Model):   # ,TimeStamped #TODO #FIXME
         return f"{self.first_name} {self.last_name} {self.user_name}"
 
 
-
-class Template(models.Model):
-    """ Templates de Preguntas """
-    template = models.CharField(max_length=20, unique=True)
-
-    def __str__(self):
-        return f"{self.template}"
-    
-
 class Answer(models.Model):
     """ Answers """
-    answer = models.CharField(max_length=255)
-    # template_id = models.CharField(max_length=20)
-    # question_id = models.CharField(max_length=255)
+    right_answer = models.CharField(max_length=255)
+    wrong_answers = ArrayField(
+            models.CharField(max_length=255, blank=True, default=""),
+            size=10,
+        )    #TODO ARRAY
+    
     created_by = models.CharField(max_length=255)
     updated_by = models.CharField(max_length=255)
     created_date = models.DateTimeField(auto_now_add=True)
     updated_date = models.DateTimeField(auto_now_add=True) ### Checar ###   #TODO #FIXME 
 
     # Relations
-    question = models.ForeignKey(Question, on_delete=models.PROTECT, related_name="answers")
-    template = models.ForeignKey(Template, on_delete=models.PROTECT, related_name="answers")
+        # na
 
     def __str__(self):
-        return f"{self.answer} {self.template_id} {self.question_id}"
+        return f"{self.right_answer} {self.wrong_answers}"
+
 
 class DataAcquisitionMethod(models.Model):
-    """ Método de Obtención de Datos (MOD) """
+    """ Data Acquisition Methods (DAM) """
     method = models.CharField(max_length=255)
     
     def __str__(self):
-        return f"{self.metodo}"
-    
+        return f"{self.method}"
+
+
 class Methodology(models.Model):
-    """ Tema de Valoración """
+    """ Assessment Methodologies """
     methodology = models.CharField(max_length=255)
 
     # Relations
@@ -77,27 +74,28 @@ class Methodology(models.Model):
     def __str__(self):
         return f"{self.methodology}"
 
+
 class Question(models.Model):
     """ Questions """
     question = models.CharField(max_length=255)
-    difficulty = models.CharField(max_length=255)
-    # right_answer_id = models.CharField(max_length=20) #TODO
+    difficulty = models.IntegerField(validators=[MinValueValidator(1), MaxValueValidator(3)])   # 1 Facil, 2 Medio, 3 Dificil
+    question_type = models.IntegerField(validators=[MinValueValidator(1), MaxValueValidator(2)])    # 1 VF, 2 doble opcion 
     created_by = models.CharField(max_length=255)
     updated_by = models.CharField(max_length=255)
     created_date = models.DateTimeField(auto_now_add=True)
     updated_date = models.DateTimeField(auto_now_add=True)
 
     # Relations
-    template = models.ForeignKey(Template, on_delete=models.PROTECT, related_name="questions")
     methodology = models.ForeignKey(Methodology, on_delete=models.PROTECT, related_name="questions")
-    right_answer = models.ForeignKey(Answer, on_delete=models.PROTECT, related_name="question") #TODO
+    answer = models.OneToOneField(Answer, on_delete=models.PROTECT, related_name="question")
 
     def __str__(self):
-        return f"{self.question} {self.difficulty}"
+        return f"{self.question} {self.difficulty} {self.question_type}"
+
 
 class Grades(models.Model):
     """ Grades """
-    input_answer = models.IntegerField(max_length=20)
+    input_answer = models.IntegerField(validators=[MinValueValidator(0)])
     result = models.BooleanField()
     created_by = models.CharField(max_length=255)
     created_date = models.DateTimeField(auto_now_add=True)
@@ -107,7 +105,19 @@ class Grades(models.Model):
     question = models.ForeignKey(Question, on_delete=models.PROTECT, related_name="grades")
 
     def __str__(self):
-        return f"{self.user_id} {self.question_id} {self.result}"
+        return f"{self.input_answer} {self.result}"
+
+
+class Progress(models.Model):
+    """ User Progress """
+    methodology_progress = models.IntegerField(validators=[MinValueValidator(0)],)
+
+    # Relations
+    user = models.ForeignKey(User, on_delete=models.PROTECT, related_name="progresses")
+    methodology = models.ForeignKey(Methodology, on_delete=models.PROTECT, related_name="progresses")
+
+    def __str__(self):
+        return f"{self.methodology_progress}"
 
 
 #serves_hot_dogs = models.BooleanField(default=False)

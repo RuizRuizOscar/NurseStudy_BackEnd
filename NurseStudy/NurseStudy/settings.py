@@ -84,7 +84,7 @@ WSGI_APPLICATION = 'NurseStudy.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': getenv('ENGINE'),
-        'NAME': getenv('NAME'),
+        'NAME': getenv('NAME1'),
         'USER': getenv('USER1'),
         'PASSWORD': getenv('PASSWORD1'),
         'HOST': getenv('HOST'),
