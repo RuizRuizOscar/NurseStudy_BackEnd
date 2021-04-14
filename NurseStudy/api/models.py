@@ -42,28 +42,11 @@ class Template(models.Model):
     def __str__(self):
         return f"{self.template}"
     
-class Question(models.Model):
-    """ Questions """
-    question = models.CharField(max_length=255)
-    difficulty = models.CharField(max_length=255)
-    right_answer_id = models.CharField(max_length=20)
-    # template_id = models.CharField(max_length=20)
-    metodoObtencionDatos_id = models.CharField(max_length=20)
-    created_by = models.CharField(max_length=255)
-    updated_by = models.CharField(max_length=255)
-    created_date = models.DateTimeField(auto_now_add=True)
-    updated_date = models.DateTimeField(auto_now_add=True)
-
-    # Relations
-    template = models.ForeignKey(Template, on_delete=models.PROTECT, related_name="questions")
-
-    def __str__(self):
-        return f"{self.question} {self.difficulty}" 
 
 class Answer(models.Model):
     """ Answers """
     answer = models.CharField(max_length=255)
-    template_id = models.CharField(max_length=20)
+    # template_id = models.CharField(max_length=20)
     # question_id = models.CharField(max_length=255)
     created_by = models.CharField(max_length=255)
     updated_by = models.CharField(max_length=255)
@@ -72,15 +55,49 @@ class Answer(models.Model):
 
     # Relations
     question = models.ForeignKey(Question, on_delete=models.PROTECT, related_name="answers")
+    template = models.ForeignKey(Template, on_delete=models.PROTECT, related_name="answers")
 
     def __str__(self):
         return f"{self.answer} {self.template_id} {self.question_id}"
 
+class DataAcquisitionMethod(models.Model):
+    """ Método de Obtención de Datos (MOD) """
+    method = models.CharField(max_length=255)
+    
+    def __str__(self):
+        return f"{self.metodo}"
+    
+class Methodology(models.Model):
+    """ Tema de Valoración """
+    methodology = models.CharField(max_length=255)
+
+    # Relations
+    data_acquisition_method = models.ForeignKey(DataAcquisitionMethod, on_delete=models.PROTECT, related_name="methodologies")
+
+    def __str__(self):
+        return f"{self.methodology}"
+
+class Question(models.Model):
+    """ Questions """
+    question = models.CharField(max_length=255)
+    difficulty = models.CharField(max_length=255)
+    # right_answer_id = models.CharField(max_length=20) #TODO
+    created_by = models.CharField(max_length=255)
+    updated_by = models.CharField(max_length=255)
+    created_date = models.DateTimeField(auto_now_add=True)
+    updated_date = models.DateTimeField(auto_now_add=True)
+
+    # Relations
+    template = models.ForeignKey(Template, on_delete=models.PROTECT, related_name="questions")
+    methodology = models.ForeignKey(Methodology, on_delete=models.PROTECT, related_name="questions")
+    right_answer = models.ForeignKey(Answer, on_delete=models.PROTECT, related_name="question") #TODO
+
+    def __str__(self):
+        return f"{self.question} {self.difficulty}"
+
 class Grades(models.Model):
     """ Grades """
-    # user_id = models.CharField(max_length=20)
-    # question_id = models.CharField(max_length=20)
-    input_answer = models.CharField(max_length=20)
+    input_answer = models.IntegerField(max_length=20)
     result = models.BooleanField()
     created_by = models.CharField(max_length=255)
     created_date = models.DateTimeField(auto_now_add=True)
@@ -92,27 +109,9 @@ class Grades(models.Model):
     def __str__(self):
         return f"{self.user_id} {self.question_id} {self.result}"
 
-class TemaValoracion(models.Model):
-    """ Tema de Valoración """
-    TemaValoracion = models.CharField(max_length=255)
-    metodoObtencionDatos_id = models.CharField(max_length=20)
 
-    def __str__(self):
-        return f"{self.TemaValoracion}"
-
-class MetodoObtencionDatos(models.Model):
-    """ Método de Obtención de Datos (MOD) """
-    metodo = models.CharField(max_length=255)
-    
-    # Relations
-    question = models.ForeignKey(Question, on_delete=models.PROTECT, related_name="mods")
-    tema_valoracion = models.ForeignKey(TemaValoracion, on_delete=models.PROTECT, related_name="mods")
-    
-    def __str__(self):
-        return f"{self.metodo}"
-    
-
-    
+#serves_hot_dogs = models.BooleanField(default=False)
+# https://docs.djangoproject.com/en/3.1/topics/db/examples/one_to_one/     
 
     
 
