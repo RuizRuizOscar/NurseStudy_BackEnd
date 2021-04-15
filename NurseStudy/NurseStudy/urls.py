@@ -15,6 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import include, path
+from django.views.generic.base import TemplateView
 
 #from api.views import AnswersList, AnswersDetail
 
@@ -22,7 +23,6 @@ from django.urls import include, path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    # API
     path("api/", include(("api.urls", "api"))),
-    # path("answers/", AnswersList.as_view(), name="answers_list"),
-    # path("answers/<int:pk>/", AnswersDetail.as_view(), name="answers_detail"),
 ]
