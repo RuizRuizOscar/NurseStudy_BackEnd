@@ -3,7 +3,6 @@ from django.contrib.postgres.fields import ArrayField
 from django.core.validators import MaxValueValidator, MinValueValidator
 from django.utils import timezone
 
-
 # Create your models here.
 class TimeStamped(models.Model):    #TODO
     created_date = models.DateTimeField(editable=False)
@@ -18,7 +17,6 @@ class TimeStamped(models.Model):    #TODO
 
     class Meta:
         abstract = True
-
 
 class User(models.Model):   # TimeStamped #TODO #FIXME 
     """User"""
@@ -35,8 +33,7 @@ class User(models.Model):   # TimeStamped #TODO #FIXME
     def __str__(self):
         return f"{self.first_name} {self.last_name} {self.username}"
 
-
-class Answer(models.Model):
+class Answer(TimeStamped):
     """ Answers """
     right_answer = models.CharField(max_length=255)
     wrong_answers = ArrayField(
@@ -46,12 +43,11 @@ class Answer(models.Model):
     
     created_by = models.CharField(max_length=255)
     updated_by = models.CharField(max_length=255)
-    created_date = models.DateTimeField(auto_now_add=True)
-    updated_date = models.DateTimeField(auto_now_add=True) ### Checar ###   #TODO #FIXME 
+    # created_date = models.DateTimeField(auto_now_add=True)
+    # updated_date = models.DateTimeField(auto_now_add=True) ### Checar ###   #TODO #FIXME 
 
     def __str__(self):
         return f"{self.right_answer} {self.wrong_answers}"
-
 
 class DataAcquisitionMethod(models.Model):
     """ Data Acquisition Methods (DAM) """
@@ -59,7 +55,6 @@ class DataAcquisitionMethod(models.Model):
     
     def __str__(self):
         return f"{self.method}"
-
 
 class Methodology(models.Model):
     """ Assessment Methodologies """
@@ -71,16 +66,15 @@ class Methodology(models.Model):
     def __str__(self):
         return f"{self.methodology}"
 
-
-class Question(models.Model):
+class Question(TimeStamped):
     """ Questions """
     question = models.CharField(max_length=255)
     difficulty = models.IntegerField(validators=[MinValueValidator(1), MaxValueValidator(3)])   # 1 Facil, 2 Medio, 3 Dificil
     question_type = models.IntegerField(validators=[MinValueValidator(1), MaxValueValidator(2)])    # 1 VF, 2 doble opcion 
     created_by = models.CharField(max_length=255)
     updated_by = models.CharField(max_length=255)
-    created_date = models.DateTimeField(auto_now_add=True)
-    updated_date = models.DateTimeField(auto_now_add=True)
+    # created_date = models.DateTimeField(auto_now_add=True)
+    # updated_date = models.DateTimeField(auto_now_add=True)
 
     # Relations
     methodology = models.ForeignKey(Methodology, on_delete=models.PROTECT, related_name="questions")
@@ -88,7 +82,6 @@ class Question(models.Model):
 
     def __str__(self):
         return f"{self.question} {self.difficulty} {self.question_type}"
-
 
 class Grades(models.Model):
     """ Grades """
@@ -104,7 +97,6 @@ class Grades(models.Model):
     def __str__(self):
         return f"{self.input_answer} {self.result}"
 
-
 class Progress(models.Model):
     """ User Progress """
     methodology_progress = models.IntegerField(validators=[MinValueValidator(0)],)
@@ -116,9 +108,5 @@ class Progress(models.Model):
     def __str__(self):
         return f"{self.methodology_progress}"
 
-
 #serves_hot_dogs = models.BooleanField(default=False)
 # https://docs.djangoproject.com/en/3.1/topics/db/examples/one_to_one/     
-
-    
-

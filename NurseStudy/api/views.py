@@ -159,6 +159,7 @@ class ListUsersAPIView(generics.ListAPIView):
 class CreateUsersAPIView(generics.CreateAPIView):
     queryset = User.objects.all()
     serializer_class = UsersSerializer
+    permission_classes = []
 
 class RetrieveUsersAPIView(generics.RetrieveAPIView):
     queryset = User.objects.all()

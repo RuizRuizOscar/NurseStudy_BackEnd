@@ -39,7 +39,14 @@ class GradesListSerializer(serializers.ModelSerializer):
 class GradesSerializer(serializers.ModelSerializer):
     class Meta:
         model = Grades
-        fields = "__all__"
+        fields = [
+            "input_answer",
+            "result",
+            "created_by",
+            "created_date",
+            # "user_id",
+            # "question_id",
+        ]
 
 # --------------------------------------------------------
 
