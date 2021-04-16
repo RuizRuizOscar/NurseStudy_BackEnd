@@ -1,5 +1,6 @@
 from rest_framework import serializers
-from .models import Answer, DataAcquisitionMethod, Grades, Methodology, Progress, Question, User
+from .models import Answer, DataAcquisitionMethod, Grades, Methodology, Progress, Question #, User
+from django.contrib.auth.models import User
 
 #Serializers define the API representation
 
@@ -90,6 +91,18 @@ class UsersListSerializer(serializers.ModelSerializer):
 class UsersSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        fields = "__all__"
+        fields = [
+            "username",
+            "first_name",
+            "last_name",
+            "email",
+            "password",
+        ]
+        extra_kwargs = {"password": {"write_only": True}}
+
+    def create(self, validate_data):
+        print(validate_data)
+        user = User.objects.create_user(**validate_data)
+        return user
 
 # --------------------------------------------------------

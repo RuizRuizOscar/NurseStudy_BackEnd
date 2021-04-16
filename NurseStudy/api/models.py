@@ -26,14 +26,14 @@ class User(models.Model):   # TimeStamped #TODO #FIXME
     first_name = models.CharField(max_length=255)
     last_name = models.CharField(max_length=255)
     email = models.EmailField(unique=True)
-    user_name = models.CharField(max_length=20, unique=True)
-    ### hash_pwd varchar,   #TODO #FIXME 
+    username = models.CharField(max_length=20, unique=True)
+    #password varchar,   #TODO #FIXME 
     user_type = models.CharField(max_length=20)
     created_date = models.DateTimeField(auto_now_add=True)
     updated_date = models.DateTimeField(auto_now_add=True) ### Checar ###   #TODO #FIXME 
 
     def __str__(self):
-        return f"{self.first_name} {self.last_name} {self.user_name}"
+        return f"{self.first_name} {self.last_name} {self.username}"
 
 
 class Answer(models.Model):

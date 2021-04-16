@@ -1,4 +1,5 @@
 from django.urls import path, include
+from rest_framework.authtoken import views
 
 from .views import ListAnswersAPIView, RetrieveAnswersAPIView, DestroyAnswersAPIView, UpdateAnswersAPIView, CreateAnswersAPIView
 from .views import ListDamsAPIView, RetrieveDamsAPIView, DestroyDamsAPIView, UpdateDamsAPIView, CreateDamsAPIView
@@ -57,4 +58,5 @@ urlpatterns = [
     path("users/<int:pk>/", RetrieveUsersAPIView.as_view(), name="retrieve-users"),
     path("users/<int:pk>/update/", UpdateUsersAPIView.as_view(), name="update-users"),
     path("users/<int:pk>/destroy/", DestroyUsersAPIView.as_view(), name="destroy-users"),
+    path("users/login/", views.obtain_auth_token, name="login-users"),
 ]

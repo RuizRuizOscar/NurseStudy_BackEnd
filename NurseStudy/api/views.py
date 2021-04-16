@@ -1,7 +1,8 @@
 from django.shortcuts import render
 from rest_framework import generics
 from rest_framework import viewsets
-from .models import Answer, DataAcquisitionMethod, Grades, Methodology, Progress, Question, User
+from .models import Answer, DataAcquisitionMethod, Grades, Methodology, Progress, Question #, User
+from django.contrib.auth.models import User
 
 from .serializers import AnswersListSerializer, AnswersSerializer
 from .serializers import DamsListSerializer, DamsSerializer
