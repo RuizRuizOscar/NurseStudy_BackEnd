@@ -59,4 +59,7 @@ urlpatterns = [
     path("users/<int:pk>/update/", UpdateUsersAPIView.as_view(), name="update-users"),
     path("users/<int:pk>/destroy/", DestroyUsersAPIView.as_view(), name="destroy-users"),
     path("users/login/", views.obtain_auth_token, name="login-users"),
+
+    # URLs Token Auth
+    path('api-token-auth/', views.obtain_auth_token)
 ]

@@ -81,11 +81,11 @@ class Question(TimeStamped):
     answer = models.OneToOneField(Answer, on_delete=models.PROTECT, related_name="question")
 
     def __str__(self):
-        return f"{self.question} {self.difficulty} {self.question_type}"
+        return f"{self.question} {self.difficulty} {self.question_type} {self.answer} {self.methodology}"
 
 class Grades(models.Model):
     """ Grades """
-    input_answer = models.IntegerField(validators=[MinValueValidator(0)])
+    input_answer = models.CharField(max_length=255)
     result = models.BooleanField()
     created_by = models.CharField(max_length=255)
     created_date = models.DateTimeField(auto_now_add=True)
