@@ -45,6 +45,9 @@ INSTALLED_APPS = [
     'api',
     ### My apps ###
     'rest_framework',
+    "crispy_forms",
+    "rest_framework.authtoken",
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
@@ -55,7 +58,15 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    "corsheaders.middleware.CorsMiddleware",
 ]
+
+REST_FRAMEWORK = {
+    "DEFAULT_AUTHENTICATION_CLASSES": (
+        "rest_framework.authentication.TokenAuthentication",
+    ),
+    "DEFAULT_PERMISSION_CLASSES": ("rest_framework.permissions.IsAuthenticated",),
+}
 
 ROOT_URLCONF = 'NurseStudy.urls'
 
@@ -84,7 +95,7 @@ WSGI_APPLICATION = 'NurseStudy.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': getenv('ENGINE'),
-        'NAME': getenv('NAME'),
+        'NAME': getenv('NAME1'),
         'USER': getenv('USER1'),
         'PASSWORD': getenv('PASSWORD1'),
         'HOST': getenv('HOST'),
