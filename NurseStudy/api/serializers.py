@@ -13,7 +13,7 @@ class AnswersListSerializer(serializers.ModelSerializer):
 class AnswersSerializer(serializers.ModelSerializer):
     class Meta:
         model = Answer
-        fields = "__all__"
+        fields = ["right_answer", "wrong_answers"]
 
 # --------------------------------------------------------
 
@@ -26,8 +26,7 @@ class DamsListSerializer(serializers.ModelSerializer):
 class DamsSerializer(serializers.ModelSerializer):
     class Meta:
         model = DataAcquisitionMethod
-        fields = "__all__"
-
+        fields = ["method"]
 # --------------------------------------------------------
 
 # Grades
@@ -39,14 +38,7 @@ class GradesListSerializer(serializers.ModelSerializer):
 class GradesSerializer(serializers.ModelSerializer):
     class Meta:
         model = Grades
-        fields = [
-            "input_answer",
-            "result",
-            "created_by",
-            "created_date",
-            # "user_id",
-            # "question_id",
-        ]
+        fields = ["input_answer", "result", "question"] #TODO user
 
 # --------------------------------------------------------
 
@@ -59,7 +51,7 @@ class MethodologiesListSerializer(serializers.ModelSerializer):
 class MethodologiesSerializer(serializers.ModelSerializer):
     class Meta:
         model = Methodology
-        fields = "__all__"
+        fields = ["methodology", "data_acquisition_method"]
 
 # --------------------------------------------------------
 
@@ -72,7 +64,7 @@ class ProgressListSerializer(serializers.ModelSerializer):
 class ProgressSerializer(serializers.ModelSerializer):
     class Meta:
         model = Progress
-        fields = "__all__"
+        fields = ["methodology_progress", "methodology"] #TODO user
 
 # --------------------------------------------------------
 
@@ -85,7 +77,7 @@ class QuestionsListSerializer(serializers.ModelSerializer):
 class QuestionsSerializer(serializers.ModelSerializer):
     class Meta:
         model = Question
-        fields = "__all__"
+        fields = ["question", "difficulty", "question_type", "methodology", "answer"]
 
 # --------------------------------------------------------
 

@@ -18,20 +18,20 @@ class TimeStamped(models.Model):    #TODO
     class Meta:
         abstract = True
 
-class User(models.Model):   # TimeStamped #TODO #FIXME 
-    """User"""
+# class User(models.Model):   # TimeStamped #TODO #FIXME 
+#     """User"""
 
-    first_name = models.CharField(max_length=255)
-    last_name = models.CharField(max_length=255)
-    email = models.EmailField(unique=True)
-    username = models.CharField(max_length=20, unique=True)
-    #password varchar,   #TODO #FIXME 
-    user_type = models.CharField(max_length=20)
-    created_date = models.DateTimeField(auto_now_add=True)
-    updated_date = models.DateTimeField(auto_now_add=True) ### Checar ###   #TODO #FIXME 
+#     first_name = models.CharField(max_length=255)
+#     last_name = models.CharField(max_length=255)
+#     email = models.EmailField(unique=True)
+#     username = models.CharField(max_length=20, unique=True)
+#     #password varchar,   #TODO #FIXME 
+#     user_type = models.CharField(max_length=20)
+#     created_date = models.DateTimeField(auto_now_add=True)
+#     updated_date = models.DateTimeField(auto_now_add=True) ### Checar ###   #TODO #FIXME 
 
-    def __str__(self):
-        return f"{self.first_name} {self.last_name} {self.username}"
+#     def __str__(self):
+#         return f"{self.first_name} {self.last_name} {self.username}"
 
 class Answer(TimeStamped):
     """ Answers """
@@ -39,26 +39,47 @@ class Answer(TimeStamped):
     wrong_answers = ArrayField(
             models.CharField(max_length=255, blank=True, default=""),
             size=10,
-        )    #TODO ARRAY
+        )
     
     created_by = models.CharField(max_length=255)
     updated_by = models.CharField(max_length=255)
-    # created_date = models.DateTimeField(auto_now_add=True)
-    # updated_date = models.DateTimeField(auto_now_add=True) ### Checar ###   #TODO #FIXME 
 
     def __str__(self):
         return f"{self.right_answer} {self.wrong_answers}"
 
 class DataAcquisitionMethod(models.Model):
     """ Data Acquisition Methods (DAM) """
-    method = models.CharField(max_length=255)
+    DATA_ACQUISITION_METHODS =(
+        ("OBSERVACION", "Observación"),
+        ("ENTREVISTA", "Entrevista"),
+        ("EXPLORACION", "Exploración Física"),
+    )
+    method = models.CharField(
+        max_length=50,
+        choices = DATA_ACQUISITION_METHODS,
+        default="OBSERVACION",
+    )
     
     def __str__(self):
         return f"{self.method}"
 
 class Methodology(models.Model):
     """ Assessment Methodologies """
-    methodology = models.CharField(max_length=255)
+    METHODOLOGIES =(
+        ("CEFALOCAUDAL", "Cefalocaudal"),
+        ("HABITOS", "Hábitos Externos"),
+        ("PATRONES", "Por Patrones Funcionales"),
+        ("ANAMNESIS", "Anamnésis de enfermería"),
+        ("AUSCULTACION", "Auscultación"),
+        ("PALPACION", "Palpación"),
+        ("PERCUSION", "Percursión"),
+        ("INSPECCION", "Inspección"),
+    )
+    methodology = models.CharField(
+        max_length=255,
+        choices = METHODOLOGIES,
+        default="CEFALOCAUDAL",
+    )
 
     # Relations
     data_acquisition_method = models.ForeignKey(DataAcquisitionMethod, on_delete=models.PROTECT, related_name="methodologies")
@@ -91,22 +112,27 @@ class Grades(models.Model):
     created_date = models.DateTimeField(auto_now_add=True)
 
     # Relations
-    user = models.ForeignKey(User, on_delete=models.PROTECT, related_name="grades")
+    # user = models.ForeignKey(User, on_delete=models.PROTECT, related_name="grades") #TODO
     question = models.ForeignKey(Question, on_delete=models.PROTECT, related_name="grades")
 
     def __str__(self):
-        return f"{self.input_answer} {self.result}"
+        return f"{self.input_answer} {self.result} {self.question_grade}"
 
 class Progress(models.Model):
     """ User Progress """
-    methodology_progress = models.IntegerField(validators=[MinValueValidator(0)],)
+    methodology_progress = models.IntegerField(validators=[MinValueValidator(0), MaxValueValidator(18)],)
 
     # Relations
-    user = models.ForeignKey(User, on_delete=models.PROTECT, related_name="progresses")
+    # user = models.ForeignKey(User, on_delete=models.PROTECT, related_name="progresses")
     methodology = models.ForeignKey(Methodology, on_delete=models.PROTECT, related_name="progresses")
 
     def __str__(self):
         return f"{self.methodology_progress}"
+
+    def level_up(self):
+        self.methodology_progress += 1
+        self.save()
+        return self.methodology_progress
 
 #serves_hot_dogs = models.BooleanField(default=False)
 # https://docs.djangoproject.com/en/3.1/topics/db/examples/one_to_one/     
