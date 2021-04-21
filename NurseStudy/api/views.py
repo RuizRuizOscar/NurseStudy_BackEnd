@@ -12,6 +12,8 @@ from .serializers import ProgressListSerializer, ProgressSerializer
 from .serializers import QuestionsListSerializer, QuestionsSerializer
 from .serializers import UsersListSerializer, UsersSerializer
 
+# Progress Logic goes here
+
 # Create your views here.
 # Answer
 class ListAnswersAPIView(generics.ListAPIView):
