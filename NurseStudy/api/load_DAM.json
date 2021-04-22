@@ -1,0 +1,23 @@
+[
+    {
+        "model": "api.DataAcquisitionMethod",
+        "pk": 1,
+        "fields": {
+            "method": "OBSERVACION"
+        }
+    },
+    {
+        "model": "api.DataAcquisitionMethod",
+        "pk": 2,
+        "fields": {
+            "method": "ENTREVISTA"
+        }
+    },
+    {
+        "model": "api.DataAcquisitionMethod",
+        "pk": 3,
+        "fields": {
+            "method": "EXPLORACION"
+        }
+    }
+]
