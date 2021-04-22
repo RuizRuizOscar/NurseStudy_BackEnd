@@ -1,0 +1,66 @@
+[
+    {
+        "model": "api.Methodology",
+        "pk": 1,
+        "fields": {
+            "methodology": "CEFALOCAUDAL",
+            "data_acquisition_method": "1"
+        }
+    },
+    {
+        "model": "api.Methodology",
+        "pk": 2,
+        "fields": {
+            "methodology": "HABITOS",
+            "data_acquisition_method": "1"
+        }
+    },
+    {
+        "model": "api.Methodology",
+        "pk": 3,
+        "fields": {
+            "methodology": "PATRONES",
+            "data_acquisition_method": "2"
+        }
+    },
+    {
+        "model": "api.Methodology",
+        "pk": 4,
+        "fields": {
+            "methodology": "ANAMNESIS",
+            "data_acquisition_method": "2"
+        }
+    },
+    {
+        "model": "api.Methodology",
+        "pk": 5,
+        "fields": {
+            "methodology": "AUSCULTACION",
+            "data_acquisition_method": "3"
+        }
+    },
+    {
+        "model": "api.Methodology",
+        "pk": 6,
+        "fields": {
+            "methodology": "PALPACION",
+            "data_acquisition_method": "3"
+        }
+    },
+    {
+        "model": "api.Methodology",
+        "pk": 7,
+        "fields": {
+            "methodology": "PERCUSION",
+            "data_acquisition_method": "3"
+        }
+    },
+    {
+        "model": "api.Methodology",
+        "pk": 8,
+        "fields": {
+            "methodology": "INSPECCION",
+            "data_acquisition_method": "3"
+        }
+    }
+]

@@ -1,0 +1,422 @@
+[
+    {
+        "model": "api.Question",
+        "pk": 1,
+        "fields": {
+            "question": "La valoración cefalocaudal se inicia del abdomen",
+            "difficulty": "1",
+            "question_type": "1",
+            "created_by": "nurse1",
+            "updated_by": "nurse1",
+            "created_date": "2021-04-21T12:59:32.169671Z",
+            "updated_date": "2021-04-21T12:59:32.169671Z",
+            "methodology": "1",
+            "answer": "1"
+        }
+    },
+    {
+        "model": "api.Question",
+        "pk": 2,
+        "fields": {
+            "question": "En que patrón funcional se busca la percepción que tiene el paciente sobre su estado de salud  ",
+            "difficulty": "1",
+            "question_type": "2",
+            "created_by": "nurse1",
+            "updated_by": "nurse1",
+            "created_date": "2021-04-21T12:59:32.169671Z",
+            "updated_date": "2021-04-21T12:59:32.169671Z",
+            "methodology": "3",
+            "answer": "2"
+        }
+    },
+    {
+        "model": "api.Question",
+        "pk": 3,
+        "fields": {
+            "question": "el patrón percepción manejo de la salud busca saber si los hábitos dietéticos son adecuados",
+            "difficulty": "2",
+            "question_type": "1",
+            "created_by": "nurse1",
+            "updated_by": "nurse1",
+            "created_date": "2021-04-21T12:59:32.169671Z",
+            "updated_date": "2021-04-21T12:59:32.169671Z",
+            "methodology": "3",
+            "answer": "3"
+        }
+    },
+    {
+        "model": "api.Question",
+        "pk": 4,
+        "fields": {
+            "question": "antecedentes quirúrgicos, antecedentes familiares, antecedentes de enfermedades previas; son puntos que evalúa , que patrón funcional ",
+            "difficulty": "2",
+            "question_type": "2",
+            "created_by": "nurse1",
+            "updated_by": "nurse1",
+            "created_date": "2021-04-21T12:59:32.169671Z",
+            "updated_date": "2021-04-21T12:59:32.169671Z",
+            "methodology": "3",
+            "answer": "4"
+        }
+    },
+    {
+        "model": "api.Question",
+        "pk": 5,
+        "fields": {
+            "question": "El patrón percepción manejo de la salud que es evaluado",
+            "difficulty": "3",
+            "question_type": "2",
+            "created_by": "nurse1",
+            "updated_by": "nurse1",
+            "created_date": "2021-04-21T12:59:32.169671Z",
+            "updated_date": "2021-04-21T12:59:32.169671Z",
+            "methodology": "3",
+            "answer": "5"
+        }
+    },
+    {
+        "model": "api.Question",
+        "pk": 6,
+        "fields": {
+            "question": "elige el punto que evalúa el patrón percepción manejo de la salud",
+            "difficulty": "3",
+            "question_type": "2",
+            "created_by": "nurse1",
+            "updated_by": "nurse1",
+            "created_date": "2021-04-21T12:59:32.169671Z",
+            "updated_date": "2021-04-21T12:59:32.169671Z",
+            "methodology": "3",
+            "answer": "6"
+        }
+    },
+    {
+        "model": "api.Question",
+        "pk": 7,
+        "fields": {
+            "question": "Patrón que pretende conocer y describir el consumo de alimentos y líquidos de la persona en relación con sus necesidades metabólicas.",
+            "difficulty": "3",
+            "question_type": "2",
+            "created_by": "nurse1",
+            "updated_by": "nurse1",
+            "created_date": "2021-04-21T12:59:32.169671Z",
+            "updated_date": "2021-04-21T12:59:32.169671Z",
+            "methodology": "3",
+            "answer": "7"
+        }
+    },
+    {
+        "model": "api.Question",
+        "pk": 8,
+        "fields": {
+            "question": "¿Qué se valora en el patrón nutricional metabólico?",
+            "difficulty": "3",
+            "question_type": "2",
+            "created_by": "nurse1",
+            "updated_by": "nurse1",
+            "created_date": "2021-04-21T12:59:32.169671Z",
+            "updated_date": "2021-04-21T12:59:32.169671Z",
+            "methodology": "3",
+            "answer": "8"
+        }
+    },
+    {
+        "model": "api.Question",
+        "pk": 9,
+        "fields": {
+            "question": "Además de la Ingesta alimentos y bebidas, ¿Qué otra cosa se valora en el patrón nutricional metabólico?",
+            "difficulty": "1",
+            "question_type": "2",
+            "created_by": "nurse1",
+            "updated_by": "nurse1",
+            "created_date": "2021-04-21T12:59:32.169671Z",
+            "updated_date": "2021-04-21T12:59:32.169671Z",
+            "methodology": "3",
+            "answer": "9"
+        }
+    },
+    {
+        "model": "api.Question",
+        "pk": 10,
+        "fields": {
+            "question": "En el patrón nutricional metabólico también se valora todo lo relacionado a la piel y pelo",
+            "difficulty": "1",
+            "question_type": "1",
+            "created_by": "nurse1",
+            "updated_by": "nurse1",
+            "created_date": "2021-04-21T12:59:32.169671Z",
+            "updated_date": "2021-04-21T12:59:32.169671Z",
+            "methodology": "3",
+            "answer": "10"
+        }
+    },
+    {
+        "model": "api.Question",
+        "pk": 11,
+        "fields": {
+            "question": "En el patrón nutricional metabólico se valora el estado de las membranas mucosas, dientes y problemas de incontinencia, diarrea o estreñimiento",
+            "difficulty": "1",
+            "question_type": "1",
+            "created_by": "nurse1",
+            "updated_by": "nurse1",
+            "created_date": "2021-04-21T12:59:32.169671Z",
+            "updated_date": "2021-04-21T12:59:32.169671Z",
+            "methodology": "3",
+            "answer": "11"
+        }
+    },
+    {
+        "model": "api.Question",
+        "pk": 12,
+        "fields": {
+            "question": "Elige que no valorarías en el patrón nutricional metabólico",
+            "difficulty": "1",
+            "question_type": "2",
+            "created_by": "nurse1",
+            "updated_by": "nurse1",
+            "created_date": "2021-04-21T12:59:32.169671Z",
+            "updated_date": "2021-04-21T12:59:32.169671Z",
+            "methodology": "3",
+            "answer": "12"
+        }
+    },
+    {
+        "model": "api.Question",
+        "pk": 13,
+        "fields": {
+            "question": "¿Valorarias en el patrón nutricional metabólico las alergias?",
+            "difficulty": "2",
+            "question_type": "2",
+            "created_by": "nurse1",
+            "updated_by": "nurse1",
+            "created_date": "2021-04-21T12:59:32.169671Z",
+            "updated_date": "2021-04-21T12:59:32.169671Z",
+            "methodology": "3",
+            "answer": "13"
+        }
+    },
+    {
+        "model": "api.Question",
+        "pk": 14,
+        "fields": {
+            "question": "¿Valorarias en el patrón nutricional metabólico el No. comidas, el lugar, horario y dietas específicas?",
+            "difficulty": "2",
+            "question_type": "2",
+            "created_by": "nurse1",
+            "updated_by": "nurse1",
+            "created_date": "2021-04-21T12:59:32.169671Z",
+            "updated_date": "2021-04-21T12:59:32.169671Z",
+            "methodology": "3",
+            "answer": "14"
+        }
+    },
+    {
+        "model": "api.Question",
+        "pk": 15,
+        "fields": {
+            "question": "¿Valorarias en el patrón nutricional metabólico el consumo de suplementos alimenticios?",
+            "difficulty": "2",
+            "question_type": "2",
+            "created_by": "nurse1",
+            "updated_by": "nurse1",
+            "created_date": "2021-04-21T12:59:32.169671Z",
+            "updated_date": "2021-04-21T12:59:32.169671Z",
+            "methodology": "3",
+            "answer": "15"
+        }
+    },
+    {
+        "model": "api.Question",
+        "pk": 16,
+        "fields": {
+            "question": "¿Valorarias en el patrón nutricional metabólico la fragilidad de uñas y pelo?",
+            "difficulty": "2",
+            "question_type": "2",
+            "created_by": "nurse1",
+            "updated_by": "nurse1",
+            "created_date": "2021-04-21T12:59:32.169671Z",
+            "updated_date": "2021-04-21T12:59:32.169671Z",
+            "methodology": "3",
+            "answer": "16"
+        }
+    },
+    {
+        "model": "api.Question",
+        "pk": 17,
+        "fields": {
+            "question": "¿Valorarias en el patrón nutricional metabólico la presencia de edema?",
+            "difficulty": "3",
+            "question_type": "2",
+            "created_by": "nurse1",
+            "updated_by": "nurse1",
+            "created_date": "2021-04-21T12:59:32.169671Z",
+            "updated_date": "2021-04-21T12:59:32.169671Z",
+            "methodology": "3",
+            "answer": "17"
+        }
+    },
+    {
+        "model": "api.Question",
+        "pk": 18,
+        "fields": {
+            "question": "El propósito de la inspección del cráneo es valorar el tamaño, forma y simetría",
+            "difficulty": "3",
+            "question_type": "1",
+            "created_by": "nurse1",
+            "updated_by": "nurse1",
+            "created_date": "2021-04-21T12:59:32.169671Z",
+            "updated_date": "2021-04-21T12:59:32.169671Z",
+            "methodology": "8",
+            "answer": "18"
+        }
+    },
+    {
+        "model": "api.Question",
+        "pk": 19,
+        "fields": {
+            "question": "Según la imagen que hallazgos se encuentran en el cráneo de la persona ",
+            "difficulty": "3",
+            "question_type": "2",
+            "created_by": "nurse1",
+            "updated_by": "nurse1",
+            "created_date": "2021-04-21T12:59:32.169671Z",
+            "updated_date": "2021-04-21T12:59:32.169671Z",
+            "methodology": "8",
+            "answer": "19"
+        }
+    },
+    {
+        "model": "api.Question",
+        "pk": 20,
+        "fields": {
+            "question": "Según la imagen que hallazgos se encuentran en la simetría facial ",
+            "difficulty": "3",
+            "question_type": "2",
+            "created_by": "nurse1",
+            "updated_by": "nurse1",
+            "created_date": "2021-04-21T12:59:32.169671Z",
+            "updated_date": "2021-04-21T12:59:32.169671Z",
+            "methodology": "8",
+            "answer": "20"
+        }
+    },
+    {
+        "model": "api.Question",
+        "pk": 21,
+        "fields": {
+            "question": "Según la imagen que hallazgos se encuentran en la simetría facial ",
+            "difficulty": "1",
+            "question_type": "2",
+            "created_by": "nurse1",
+            "updated_by": "nurse1",
+            "created_date": "2021-04-21T12:59:32.169671Z",
+            "updated_date": "2021-04-21T12:59:32.169671Z",
+            "methodology": "8",
+            "answer": "21"
+        }
+    },
+    {
+        "model": "api.Question",
+        "pk": 22,
+        "fields": {
+            "question": "Según la imagen que hallazgos se encuentran en la simetría facial ",
+            "difficulty": "1",
+            "question_type": "2",
+            "created_by": "nurse1",
+            "updated_by": "nurse1",
+            "created_date": "2021-04-21T12:59:32.169671Z",
+            "updated_date": "2021-04-21T12:59:32.169671Z",
+            "methodology": "8",
+            "answer": "22"
+        }
+    },
+    {
+        "model": "api.Question",
+        "pk": 23,
+        "fields": {
+            "question": "La palpación del cráneo se hace con movimientos suaves y giratorios comenzando por la mandíbula, siguiendo por la frente y finalmente cada lado",
+            "difficulty": "2",
+            "question_type": "1",
+            "created_by": "nurse1",
+            "updated_by": "nurse1",
+            "created_date": "2021-04-21T12:59:32.169671Z",
+            "updated_date": "2021-04-21T12:59:32.169671Z",
+            "methodology": "8",
+            "answer": "23"
+        }
+    },
+    {
+        "model": "api.Question",
+        "pk": 24,
+        "fields": {
+            "question": "Para observar la simetría facial que se debe pedir al paciente",
+            "difficulty": "2",
+            "question_type": "2",
+            "created_by": "nurse1",
+            "updated_by": "nurse1",
+            "created_date": "2021-04-21T12:59:32.169671Z",
+            "updated_date": "2021-04-21T12:59:32.169671Z",
+            "methodology": "8",
+            "answer": "24"
+        }
+    },
+    {
+        "model": "api.Question",
+        "pk": 25,
+        "fields": {
+            "question": "Para observar la simetría facial que se debe pedir al paciente",
+            "difficulty": "3",
+            "question_type": "2",
+            "created_by": "nurse1",
+            "updated_by": "nurse1",
+            "created_date": "2021-04-21T12:59:32.169671Z",
+            "updated_date": "2021-04-21T12:59:32.169671Z",
+            "methodology": "8",
+            "answer": "25"
+        }
+    },
+    {
+        "model": "api.Question",
+        "pk": 26,
+        "fields": {
+            "question": "Para observar la simetría facial que se debe pedir al paciente",
+            "difficulty": "3",
+            "question_type": "2",
+            "created_by": "nurse1",
+            "updated_by": "nurse1",
+            "created_date": "2021-04-21T12:59:32.169671Z",
+            "updated_date": "2021-04-21T12:59:32.169671Z",
+            "methodology": "8",
+            "answer": "26"
+        }
+    },
+    {
+        "model": "api.Question",
+        "pk": 27,
+        "fields": {
+            "question": "Para observar la simetría facial que se debe pedir al paciente",
+            "difficulty": "1",
+            "question_type": "2",
+            "created_by": "nurse1",
+            "updated_by": "nurse1",
+            "created_date": "2021-04-21T12:59:32.169671Z",
+            "updated_date": "2021-04-21T12:59:32.169671Z",
+            "methodology": "8",
+            "answer": "27"
+        }
+    },
+    {
+        "model": "api.Question",
+        "pk": 28,
+        "fields": {
+            "question": "La valoración del cráneo consta de inspección, palpación y percusión",
+            "difficulty": "2",
+            "question_type": "1",
+            "created_by": "nurse1",
+            "updated_by": "nurse1",
+            "created_date": "2021-04-21T12:59:32.169671Z",
+            "updated_date": "2021-04-21T12:59:32.169671Z",
+            "methodology": "8",
+            "answer": "28"
+        }
+    }
+]
