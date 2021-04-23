@@ -3,4 +3,4 @@ applications:
     random-route: false
     memory: 128M
     force_https: true
-    builpack: staticfile_builpack
+    buildpack: staticfile_buildpack
