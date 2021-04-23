@@ -1,0 +1,6 @@
+applications:
+  - name: nursestudy-api
+    random-route: false
+    memory: 128M
+    force_https: true
+  
