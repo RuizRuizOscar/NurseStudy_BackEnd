@@ -1,6 +1,5 @@
 applications:
   - name: nursestudy-api
-    random-route: false
+    random-route: true
     memory: 128M
-    force_https: true
-    buildpack: staticfile_buildpack
+    buildpack: https://github.com/cloudfoundry/python-buildpack.git
