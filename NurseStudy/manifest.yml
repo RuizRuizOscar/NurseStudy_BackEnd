@@ -2,6 +2,6 @@ applications:
   - name: nursestudy-api
     random-route: true
     memory: 128M
-    buildpack: https://github.com/cloudfoundry/python-buildpack.git
+    # buildpack: https://github.com/cloudfoundry/python-buildpack.git
     timeout: 120
   
