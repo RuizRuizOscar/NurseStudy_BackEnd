@@ -135,7 +135,7 @@ class Progress(models.Model):
     methodology = models.ForeignKey(Methodology, on_delete=models.PROTECT, related_name="progresses", null=True)
 
     def __str__(self):
-        return f"{self.methodology_progress}"
+        return f"{self.methodology_progress, self.user, self.methodology}"
 
     def level_up(self):
         self.methodology_progress += 1
