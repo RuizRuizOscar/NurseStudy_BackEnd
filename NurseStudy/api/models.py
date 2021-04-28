@@ -2,6 +2,7 @@ from django.db import models
 from django.contrib.postgres.fields import ArrayField
 from django.core.validators import MaxValueValidator, MinValueValidator
 from django.utils import timezone
+from django.contrib.auth.models import User
 
 # Create your models here.
 class TimeStamped(models.Model):    #TODO
@@ -32,6 +33,15 @@ class TimeStamped(models.Model):    #TODO
 
 #     def __str__(self):
 #         return f"{self.first_name} {self.last_name} {self.username}"
+
+# class Profile(models.Model):
+#     user = models.OneToOneField(User, on_delete=models.CASCADE)
+
+# class UserDetails(models.Model):
+#     user = models.OneToOneField(
+#         settings.AUTH_USER_MODEL, 
+#         related_name='userdetail_related')
+    
 
 class Answer(TimeStamped):
     """ Answers """
@@ -112,11 +122,11 @@ class Grades(models.Model):
     created_date = models.DateTimeField(auto_now_add=True)
 
     # Relations
-    # user = models.ForeignKey(User, on_delete=models.PROTECT, related_name="grades") #TODO
+    user = models.ForeignKey(User, on_delete=models.PROTECT, related_name="grades") #TODO
     question = models.ForeignKey(Question, on_delete=models.PROTECT, related_name="grades")
 
     def __str__(self):
-        return f"{self.input_answer} {self.result} {self.question_grade}"
+        return f"{self.input_answer} {self.result} {self.question}"
 
 class Progress(models.Model):
     """ User Progress """
@@ -124,7 +134,7 @@ class Progress(models.Model):
 
     # Relations
     # user = models.ForeignKey(User, on_delete=models.PROTECT, related_name="progresses")
-    methodology = models.ForeignKey(Methodology, on_delete=models.PROTECT, related_name="progresses")
+    methodology = models.ForeignKey(Methodology, on_delete=models.PROTECT, related_name="progresses", null=True)
 
     def __str__(self):
         return f"{self.methodology_progress}"
@@ -133,6 +143,3 @@ class Progress(models.Model):
         self.methodology_progress += 1
         self.save()
         return self.methodology_progress
-
-#serves_hot_dogs = models.BooleanField(default=False)
-# https://docs.djangoproject.com/en/3.1/topics/db/examples/one_to_one/     

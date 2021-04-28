@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Answer, DataAcquisitionMethod, Grades, Methodology, Progress, Question #, User
+from .models import Answer, DataAcquisitionMethod, Grades, Methodology, Question, Progress #, User  
 from django.contrib.auth.models import User
 
 #Serializers define the API representation
@@ -59,7 +59,7 @@ class MethodologiesSerializer(serializers.ModelSerializer):
 class ProgressListSerializer(serializers.ModelSerializer):
     class Meta:
         model = Progress
-        fields = ["id", "methodology_progress"]
+        fields = ["methodology_progress"]
 
 class ProgressSerializer(serializers.ModelSerializer):
     class Meta:
@@ -85,7 +85,7 @@ class QuestionsSerializer(serializers.ModelSerializer):
 class UsersListSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        fields = ["id", "first_name", "last_name", "user_name"]
+        fields = ["id", "first_name", "last_name", "username"]
 
 class UsersSerializer(serializers.ModelSerializer):
     class Meta:
