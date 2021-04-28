@@ -120,7 +120,7 @@ class Grades(models.Model):
     created_date = models.DateTimeField(auto_now_add=True)
 
     # Relations
-    user = models.ForeignKey(User, on_delete=models.PROTECT, related_name="grades") #TODO
+    user = models.ForeignKey(User, on_delete=models.PROTECT, related_name="grades")
     question = models.ForeignKey(Question, on_delete=models.PROTECT, related_name="grades")
 
     def __str__(self):
