@@ -117,7 +117,7 @@ class UsersSerializer(serializers.ModelSerializer):
         print("**********************")
         return user
 
-class QuestionAnswerMethodologySerializer(serializers.ModelSerializer):
+class QuestionAnswerMethodologyListSerializer(serializers.ModelSerializer):
     answer = AnswersListSerializer()
     methodology = MethodologiesListSerializer(many=False)
 
@@ -132,6 +132,20 @@ class QuestionAnswerMethodologySerializer(serializers.ModelSerializer):
             "methodology",
         ]
 
+class QuestionAnswerMethodologySerializer(serializers.ModelSerializer):
+    answer = AnswersListSerializer()
+    methodology = MethodologiesListSerializer(many=False)
+
+    class Meta:
+        model = Question
+        fields = [
+            "id",
+            "question",
+            "difficulty",
+            "question_type",
+            "answer",
+            "methodology",
+        ]
 
 
 
