@@ -76,13 +76,11 @@ class DataAcquisitionMethod(models.Model):
 class Methodology(models.Model):
     """ Assessment Methodologies """
     METHODOLOGIES =(
+        ("PATRONES", "Patrones funcionales"),
         ("CEFALOCAUDAL", "Cefalocaudal"),
-        ("HABITOS", "Hábitos Externos"),
-        ("PATRONES", "Por Patrones Funcionales"),
-        ("ANAMNESIS", "Anamnésis de enfermería"),
-        ("AUSCULTACION", "Auscultación"),
+        ("HABITOS", "Hábitos externos"),
+        ("ANAMNESIS", "Anamnesis de enfermería"),
         ("PALPACION", "Palpación"),
-        ("PERCUSION", "Percursión"),
         ("INSPECCION", "Inspección"),
     )
     methodology = models.CharField(
@@ -133,7 +131,7 @@ class Progress(models.Model):
     methodology_progress = models.IntegerField(validators=[MinValueValidator(0), MaxValueValidator(18)],)
 
     # Relations
-    # user = models.ForeignKey(User, on_delete=models.PROTECT, related_name="progresses")
+    user = models.ForeignKey(User, on_delete=models.PROTECT, related_name="progresses")
     methodology = models.ForeignKey(Methodology, on_delete=models.PROTECT, related_name="progresses", null=True)
 
     def __str__(self):

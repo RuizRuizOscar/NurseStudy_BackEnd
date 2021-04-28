@@ -40,6 +40,13 @@ class GradesSerializer(serializers.ModelSerializer):
         model = Grades
         fields = ["input_answer", "result", "question"] #TODO user
 
+    def evalua():
+        if Grades.input_answer == True:
+            Grades.result = True
+        else:
+            Grades.result = False
+
+
 # --------------------------------------------------------
 
 # Methodology

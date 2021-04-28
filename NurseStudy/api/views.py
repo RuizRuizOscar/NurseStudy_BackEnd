@@ -137,7 +137,7 @@ class CreateProgressAPIView(generics.CreateAPIView):
 
 class RetrieveProgressAPIView(generics.RetrieveAPIView):
     queryset = Progress.objects.all()
-    print(queryset)
+    # print(queryset)
     serializer_class = ProgressSerializer
 
 class UpdateProgressAPIView(generics.UpdateAPIView):
