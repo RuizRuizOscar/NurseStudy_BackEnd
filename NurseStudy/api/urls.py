@@ -11,6 +11,7 @@ from .views import ListMethodologiesAPIView, RetrieveMethodologiesAPIView, Destr
 from .views import ListProgressAPIView, RetrieveProgressAPIView, DestroyProgressAPIView, UpdateProgressAPIView, CreateProgressAPIView
 from .views import ListQuestionsAPIView, RetrieveQuestionsAPIView, DestroyQuestionsAPIView, UpdateQuestionsAPIView, CreateQuestionsAPIView
 from .views import ListUsersAPIView, RetrieveUsersAPIView, DestroyUsersAPIView, UpdateUsersAPIView, CreateUsersAPIView
+from .views import RetrieveQuestionAnswerMethodologyAPIView
 
 urlpatterns = [
     # URLs Answers
@@ -66,4 +67,5 @@ urlpatterns = [
     # URLs Token Auth
     path('api-token-auth/', obtain_auth_token, name='api_token_auth'),
     path('token-id-username/', CustomObtainAuthToken.as_view(), name='token-id-username'),
+    path('answ-ques/<int:pk>/', RetrieveQuestionAnswerMethodologyAPIView.as_view(), name='retrieve-question-answer-methodology'),
 ]

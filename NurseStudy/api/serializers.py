@@ -71,7 +71,7 @@ class ProgressListSerializer(serializers.ModelSerializer):
 class ProgressSerializer(serializers.ModelSerializer):
     class Meta:
         model = Progress
-        fields = ["methodology_progress", "methodology"] #TODO user
+        fields = ["methodology_progress", "methodology_id", "user_id"] #TODO user
 
 # --------------------------------------------------------
 
@@ -106,13 +106,43 @@ class UsersSerializer(serializers.ModelSerializer):
         ]
         extra_kwargs = {"password": {"write_only": True}}
 
-    # def init_progress():
-    #     progress = Progress.
-
     def create(self, validate_data):
         print(validate_data)
         user = User.objects.create_user(**validate_data)
-        init_progress()
+        progress =  Progress.objects.create(
+            methodology_progress='0',
+            user_id='1',
+            methodology_id='2')
+        # self.init_progress()
+        print("**********************")
         return user
+
+class QuestionAnswerMethodologySerializer(serializers.ModelSerializer):
+    answer = AnswersListSerializer()
+    methodology = MethodologiesListSerializer(many=False)
+
+    class Meta:
+        model = Question
+        fields = [
+            "id",
+            "question",
+            "difficulty",
+            "question_type",
+            "answer",
+            "methodology",
+        ]
+
+
+
+
+# Progress Logic goes here
+    # def init_progress(self):
+    #     progress =  Progress(
+    #         methodology_progress='0',
+    #         user='1',
+    #         methodology='2'
+    #     )
+    #     progress.save()
+
 
 # --------------------------------------------------------

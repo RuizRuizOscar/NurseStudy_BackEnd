@@ -3,15 +3,15 @@
         "model": "api.Methodology",
         "pk": 1,
         "fields": {
-            "methodology": "CEFALOCAUDAL",
-            "data_acquisition_method": "1"
+            "methodology": "PATRONES",
+            "data_acquisition_method": "2"
         }
     },
     {
         "model": "api.Methodology",
         "pk": 2,
         "fields": {
-            "methodology": "HABITOS",
+            "methodology": "CEFALOCAUDAL",
             "data_acquisition_method": "1"
         }
     },
@@ -19,8 +19,8 @@
         "model": "api.Methodology",
         "pk": 3,
         "fields": {
-            "methodology": "PATRONES",
-            "data_acquisition_method": "2"
+            "methodology": "HABITOS",
+            "data_acquisition_method": "1"
         }
     },
     {
