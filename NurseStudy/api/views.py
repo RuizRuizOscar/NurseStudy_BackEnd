@@ -16,7 +16,7 @@ from .serializers import MethodologiesListSerializer, MethodologiesSerializer
 from .serializers import ProgressListSerializer, ProgressSerializer
 from .serializers import QuestionsListSerializer, QuestionsSerializer
 from .serializers import UsersListSerializer, UsersSerializer
-from .serializers import QuestionAnswerMethodologySerializer
+from .serializers import QuestionAnswerMethodologySerializer, QuestionAnswerMethodologyListSerializer
 
 # Create your views here.
 # GET User.id & Token & username
@@ -169,9 +169,16 @@ class DestroyQuestionsAPIView(generics.DestroyAPIView):
     queryset = Question.objects.all()
     serializer_class = QuestionsSerializer
 
+# -----------------------------------------------------------
+
 class RetrieveQuestionAnswerMethodologyAPIView(generics.RetrieveAPIView):
     queryset = Question.objects.all()
     serializer_class = QuestionAnswerMethodologySerializer
+
+class ListQuestionAnswerMethodologyAPIView(generics.ListAPIView):
+    queryset = Question.objects.all().order_by("difficulty")
+    serializer_class = QuestionAnswerMethodologyListSerializer
+
 
 # -----------------------------------------------------------
 
