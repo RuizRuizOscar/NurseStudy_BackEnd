@@ -35,29 +35,13 @@
         "model": "api.Methodology",
         "pk": 5,
         "fields": {
-            "methodology": "AUSCULTACION",
-            "data_acquisition_method": "3"
-        }
-    },
-    {
-        "model": "api.Methodology",
-        "pk": 6,
-        "fields": {
             "methodology": "PALPACION",
             "data_acquisition_method": "3"
         }
     },
     {
         "model": "api.Methodology",
-        "pk": 7,
-        "fields": {
-            "methodology": "PERCUSION",
-            "data_acquisition_method": "3"
-        }
-    },
-    {
-        "model": "api.Methodology",
-        "pk": 8,
+        "pk": 6,
         "fields": {
             "methodology": "INSPECCION",
             "data_acquisition_method": "3"

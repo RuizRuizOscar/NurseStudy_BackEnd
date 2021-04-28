@@ -1,6 +1,9 @@
 from django.urls import path, include
 from rest_framework.authtoken.views import obtain_auth_token
 
+from django.conf.urls import url
+from .views import CustomObtainAuthToken
+
 from .views import ListAnswersAPIView, RetrieveAnswersAPIView, DestroyAnswersAPIView, UpdateAnswersAPIView, CreateAnswersAPIView
 from .views import ListDamsAPIView, RetrieveDamsAPIView, DestroyDamsAPIView, UpdateDamsAPIView, CreateDamsAPIView
 from .views import ListGradesAPIView, RetrieveGradesAPIView, DestroyGradesAPIView, UpdateGradesAPIView, CreateGradesAPIView
@@ -62,4 +65,5 @@ urlpatterns = [
 
     # URLs Token Auth
     path('api-token-auth/', obtain_auth_token, name='api_token_auth'),
+    path('token-id-username/', CustomObtainAuthToken.as_view(), name='token-id-username'),
 ]

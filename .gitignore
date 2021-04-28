@@ -148,9 +148,9 @@ Thumbs.db #thumbnail cache on Windows
 # profiling data
 .prof
 
-# OTROS
-NurseStudyKeys.pem
-Diagrama Logica Progress-Grades-Questions.ods
+# Otros 
 Sustento de menos preguntas.ods
+Diagrama Logica Progress-Grades-Questions.ods
+NurseStudyKeys.pem
 
 # End of https://www.toptal.com/developers/gitignore/api/python
