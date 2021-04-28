@@ -82,7 +82,7 @@ class Methodology(models.Model):
         ("ANAMNESIS", "Anamnesis de enfermería"),
         ("PALPACION", "Palpación"),
         ("INSPECCION", "Inspección"),
-    )
+    ) #https://docs.djangoproject.com/en/3.2/ref/models/fields/ ver human readable
     methodology = models.CharField(
         max_length=255,
         choices = METHODOLOGIES,
