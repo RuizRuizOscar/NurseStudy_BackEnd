@@ -106,9 +106,13 @@ class UsersSerializer(serializers.ModelSerializer):
         ]
         extra_kwargs = {"password": {"write_only": True}}
 
+    # def init_progress():
+    #     progress = Progress.
+
     def create(self, validate_data):
         print(validate_data)
         user = User.objects.create_user(**validate_data)
+        init_progress()
         return user
 
 # --------------------------------------------------------
