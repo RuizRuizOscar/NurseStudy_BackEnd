@@ -1,534 +1,2187 @@
 [
-    {
-        "model": "api.Answer",
-        "pk": 1,
-        "fields": {
-            "right_answer": "verdadero",
-            "wrong_answers": [
-                "falso",
-                "",
-                "",
-                "",
-                "",
-                ""
-            ],
-            "created_by": "nurse1",
-            "updated_by": "nurse1",
-            "created_date": "2021-04-21T12:27:32.169671Z",
-            "updated_date": "2021-04-21T12:27:32.169671Z"
-        }
-    },
-    {
-        "model": "api.Answer",
-        "pk": 2,
-        "fields": {
-            "right_answer": "percepción manejo de la salud",
-            "wrong_answers": [
-                "nutricional ",
-                "autopercepción autoconcepto",
-                "",
-                "",
-                "",
-                ""
-            ],
-            "created_by": "nurse1",
-            "updated_by": "nurse1",
-            "created_date": "2021-04-21T12:27:32.169671Z",
-            "updated_date": "2021-04-21T12:27:32.169671Z"
-        }
-    },
-    {
-        "model": "api.Answer",
-        "pk": 3,
-        "fields": {
-            "right_answer": "falso",
-            "wrong_answers": [
-                "verdadero",
-                "",
-                "",
-                "",
-                "",
-                ""
-            ],
-            "created_by": "nurse1",
-            "updated_by": "nurse1",
-            "created_date": "2021-04-21T12:27:32.169671Z",
-            "updated_date": "2021-04-21T12:27:32.169671Z"
-        }
-    },
-    {
-        "model": "api.Answer",
-        "pk": 4,
-        "fields": {
-            "right_answer": "percepción manejo de la salud",
-            "wrong_answers": [
-                "cognitivo perceptual",
-                "Autopercepción autoconcepto",
-                "",
-                "",
-                "",
-                ""
-            ],
-            "created_by": "nurse1",
-            "updated_by": "nurse1",
-            "created_date": "2021-04-21T12:27:32.169671Z",
-            "updated_date": "2021-04-21T12:27:32.169671Z"
-        }
-    },
-    {
-        "model": "api.Answer",
-        "pk": 5,
-        "fields": {
-            "right_answer": "conductas de salud",
-            "wrong_answers": [
-                "IMC",
-                "presenta algún trastorno alimenticio",
-                "estado de conciencia",
-                "características de la piel",
-                "",
-                ""
-            ],
-            "created_by": "nurse1",
-            "updated_by": "nurse1",
-            "created_date": "2021-04-21T12:27:32.169671Z",
-            "updated_date": "2021-04-21T12:27:32.169671Z"
-        }
-    },
-    {
-        "model": "api.Answer",
-        "pk": 6,
-        "fields": {
-            "right_answer": "higiene personal (buena, regular, mala)",
-            "wrong_answers": [
-                "IMC",
-                "presenta algún trastorno alimenticio",
-                "estado de conciencia",
-                "características de la piel",
-                "",
-                ""
-            ],
-            "created_by": "nurse1",
-            "updated_by": "nurse1",
-            "created_date": "2021-04-21T12:27:32.169671Z",
-            "updated_date": "2021-04-21T12:27:32.169671Z"
-        }
-    },
-    {
-        "model": "api.Answer",
-        "pk": 7,
-        "fields": {
-            "right_answer": "Nutricional /metabólico",
-            "wrong_answers": [
-                "Percepción manejo de la salud",
-                "Eliminación",
-                "Actividad / ejercicio",
-                "",
-                "",
-                ""
-            ],
-            "created_by": "nurse1",
-            "updated_by": "nurse1",
-            "created_date": "2021-04-21T12:27:32.169671Z",
-            "updated_date": "2021-04-21T12:27:32.169671Z"
-        }
-    },
-    {
-        "model": "api.Answer",
-        "pk": 8,
-        "fields": {
-            "right_answer": "Ingesta alimentos y bebidas",
-            "wrong_answers": [
-                "Todo lo relacionado al cuidado personal de la persona",
-                "Cómo percibe la persona su salud y que medidas lleva a cabo para cuidarse",
-                "",
-                "",
-                "",
-                ""
-            ],
-            "created_by": "nurse1",
-            "updated_by": "nurse1",
-            "created_date": "2021-04-21T12:27:32.169671Z",
-            "updated_date": "2021-04-21T12:27:32.169671Z"
-        }
-    },
-    {
-        "model": "api.Answer",
-        "pk": 9,
-        "fields": {
-            "right_answer": "Talla, peso, IMC y temperatura",
-            "wrong_answers": [
-                "Todo lo relacionado al cuidado personal de la persona",
-                "Cómo percibe la persona su salud y que medidas lleva a cabo para cuidarse",
-                "",
-                "",
-                "",
-                ""
-            ],
-            "created_by": "nurse1",
-            "updated_by": "nurse1",
-            "created_date": "2021-04-21T12:27:32.169671Z",
-            "updated_date": "2021-04-21T12:27:32.169671Z"
-        }
-    },
-    {
-        "model": "api.Answer",
-        "pk": 10,
-        "fields": {
-            "right_answer": "VERDADERO",
-            "wrong_answers": [
-                "FALSO",
-                "",
-                "",
-                "",
-                "",
-                ""
-            ],
-            "created_by": "nurse1",
-            "updated_by": "nurse1",
-            "created_date": "2021-04-21T12:27:32.169671Z",
-            "updated_date": "2021-04-21T12:27:32.169671Z"
-        }
-    },
-    {
-        "model": "api.Answer",
-        "pk": 11,
-        "fields": {
-            "right_answer": "FALSO",
-            "wrong_answers": [
-                "VERDADERO",
-                "",
-                "",
-                "",
-                "",
-                ""
-            ],
-            "created_by": "nurse1",
-            "updated_by": "nurse1",
-            "created_date": "2021-04-21T12:27:32.169671Z",
-            "updated_date": "2021-04-21T12:27:32.169671Z"
-        }
-    },
-    {
-        "model": "api.Answer",
-        "pk": 12,
-        "fields": {
-            "right_answer": "Consumo de alcohol, tabaco y drogas",
-            "wrong_answers": [
-                "Peso, talla y IMC",
-                "Presencia de problemas digestivos (náuseas y vómitos)",
-                "Presencia de úlceras por presión",
-                "",
-                "",
-                ""
-            ],
-            "created_by": "nurse1",
-            "updated_by": "nurse1",
-            "created_date": "2021-04-21T12:27:32.169671Z",
-            "updated_date": "2021-04-21T12:27:32.169671Z"
-        }
-    },
-    {
-        "model": "api.Answer",
-        "pk": 13,
-        "fields": {
-            "right_answer": "VERDADERO",
-            "wrong_answers": [
-                "FALSO",
-                "",
-                "",
-                "",
-                "",
-                ""
-            ],
-            "created_by": "nurse1",
-            "updated_by": "nurse1",
-            "created_date": "2021-04-21T12:27:32.169671Z",
-            "updated_date": "2021-04-21T12:27:32.169671Z"
-        }
-    },
-    {
-        "model": "api.Answer",
-        "pk": 14,
-        "fields": {
-            "right_answer": "VERDADERO",
-            "wrong_answers": [
-                "FALSO",
-                "",
-                "",
-                "",
-                "",
-                ""
-            ],
-            "created_by": "nurse1",
-            "updated_by": "nurse1",
-            "created_date": "2021-04-21T12:27:32.169671Z",
-            "updated_date": "2021-04-21T12:27:32.169671Z"
-        }
-    },
-    {
-        "model": "api.Answer",
-        "pk": 15,
-        "fields": {
-            "right_answer": "VERDADERO",
-            "wrong_answers": [
-                "FALSO",
-                "",
-                "",
-                "",
-                "",
-                ""
-            ],
-            "created_by": "nurse1",
-            "updated_by": "nurse1",
-            "created_date": "2021-04-21T12:27:32.169671Z",
-            "updated_date": "2021-04-21T12:27:32.169671Z"
-        }
-    },
-    {
-        "model": "api.Answer",
-        "pk": 16,
-        "fields": {
-            "right_answer": "VERDADERO",
-            "wrong_answers": [
-                "FALSO",
-                "",
-                "",
-                "",
-                "",
-                ""
-            ],
-            "created_by": "nurse1",
-            "updated_by": "nurse1",
-            "created_date": "2021-04-21T12:27:32.169671Z",
-            "updated_date": "2021-04-21T12:27:32.169671Z"
-        }
-    },
-    {
-        "model": "api.Answer",
-        "pk": 17,
-        "fields": {
-            "right_answer": "VERDADERO",
-            "wrong_answers": [
-                "FALSO",
-                "",
-                "",
-                "",
-                "",
-                ""
-            ],
-            "created_by": "nurse1",
-            "updated_by": "nurse1",
-            "created_date": "2021-04-21T12:27:32.169671Z",
-            "updated_date": "2021-04-21T12:27:32.169671Z"
-        }
-    },
-    {
-        "model": "api.Answer",
-        "pk": 18,
-        "fields": {
-            "right_answer": "VERDADERO",
-            "wrong_answers": [
-                "FALSO",
-                "",
-                "",
-                "",
-                "",
-                ""
-            ],
-            "created_by": "nurse1",
-            "updated_by": "nurse1",
-            "created_date": "2021-04-21T12:27:32.169671Z",
-            "updated_date": "2021-04-21T12:27:32.169671Z"
-        }
-    },
-    {
-        "model": "api.Answer",
-        "pk": 19,
-        "fields": {
-            "right_answer": "Tumoraciones",
-            "wrong_answers": [
-                "Cráneo simétrico y sin anormalidades",
-                "Cráneo asimétrico",
-                "Aumento del tamaño del cráneo",
-                "",
-                "",
-                ""
-            ],
-            "created_by": "nurse1",
-            "updated_by": "nurse1",
-            "created_date": "2021-04-21T12:27:32.169671Z",
-            "updated_date": "2021-04-21T12:27:32.169671Z"
-        }
-    },
-    {
-        "model": "api.Answer",
-        "pk": 20,
-        "fields": {
-            "right_answer": "Párpado inferior caído",
-            "wrong_answers": [
-                "Simetría facial sin normalidades",
-                "Tics o temblores",
-                "",
-                "",
-                "",
-                ""
-            ],
-            "created_by": "nurse1",
-            "updated_by": "nurse1",
-            "created_date": "2021-04-21T12:27:32.169671Z",
-            "updated_date": "2021-04-21T12:27:32.169671Z"
-        }
-    },
-    {
-        "model": "api.Answer",
-        "pk": 21,
-        "fields": {
-            "right_answer": "Boca caída",
-            "wrong_answers": [
-                "Simetría facial sin normalidades",
-                "Tics o temblores",
-                "",
-                "",
-                "",
-                ""
-            ],
-            "created_by": "nurse1",
-            "updated_by": "nurse1",
-            "created_date": "2021-04-21T12:27:32.169671Z",
-            "updated_date": "2021-04-21T12:27:32.169671Z"
-        }
-    },
-    {
-        "model": "api.Answer",
-        "pk": 22,
-        "fields": {
-            "right_answer": "Ojo no puede cerrarse por completo",
-            "wrong_answers": [
-                "Simetría facial sin normalidades",
-                "Tics o temblores",
-                "",
-                "",
-                "",
-                ""
-            ],
-            "created_by": "nurse1",
-            "updated_by": "nurse1",
-            "created_date": "2021-04-21T12:27:32.169671Z",
-            "updated_date": "2021-04-21T12:27:32.169671Z"
-        }
-    },
-    {
-        "model": "api.Answer",
-        "pk": 23,
-        "fields": {
-            "right_answer": "FALSO",
-            "wrong_answers": [
-                "VERDADERO",
-                "",
-                "",
-                "",
-                "",
-                ""
-            ],
-            "created_by": "nurse1",
-            "updated_by": "nurse1",
-            "created_date": "2021-04-21T12:27:32.169671Z",
-            "updated_date": "2021-04-21T12:27:32.169671Z"
-        }
-    },
-    {
-        "model": "api.Answer",
-        "pk": 24,
-        "fields": {
-            "right_answer": "Eleve y baje cejas ",
-            "wrong_answers": [
-                "Mover una oreja",
-                "Hable",
-                "Deglutir saliva",
-                "Muestre la lengua",
-                "Inflar un globo",
-                "Soplar una vela"
-            ],
-            "created_by": "nurse1",
-            "updated_by": "nurse1",
-            "created_date": "2021-04-21T12:27:32.169671Z",
-            "updated_date": "2021-04-21T12:27:32.169671Z"
-        }
-    },
-    {
-        "model": "api.Answer",
-        "pk": 25,
-        "fields": {
-            "right_answer": "Frunza el ceño",
-            "wrong_answers": [
-                "Mover una oreja",
-                "Hable",
-                "Deglutir saliva",
-                "Muestre la lengua",
-                "Inflar un globo",
-                "Soplar una vela"
-            ],
-            "created_by": "nurse1",
-            "updated_by": "nurse1",
-            "created_date": "2021-04-21T12:27:32.169671Z",
-            "updated_date": "2021-04-21T12:27:32.169671Z"
-        }
-    },
-    {
-        "model": "api.Answer",
-        "pk": 26,
-        "fields": {
-            "right_answer": "Cierre los ojos con fuerza",
-            "wrong_answers": [
-                "Mover una oreja",
-                "Hable",
-                "Deglutir saliva",
-                "Muestre la lengua",
-                "Inflar un globo",
-                "Soplar una vela"
-            ],
-            "created_by": "nurse1",
-            "updated_by": "nurse1",
-            "created_date": "2021-04-21T12:27:32.169671Z",
-            "updated_date": "2021-04-21T12:27:32.169671Z"
-        }
-    },
-    {
-        "model": "api.Answer",
-        "pk": 27,
-        "fields": {
-            "right_answer": "Sonria mostrando los dientes",
-            "wrong_answers": [
-                "Mover una oreja",
-                "Hable",
-                "Deglutir saliva",
-                "Muestre la lengua",
-                "Inflar un globo",
-                "Soplar una vela"
-            ],
-            "created_by": "nurse1",
-            "updated_by": "nurse1",
-            "created_date": "2021-04-21T12:27:32.169671Z",
-            "updated_date": "2021-04-21T12:27:32.169671Z"
-        }
-    },
-    {
-        "model": "api.Answer",
-        "pk": 28,
-        "fields": {
-            "right_answer": "FALSE",
-            "wrong_answers": [
-                "TRUE",
-                "",
-                "",
-                "",
-                "",
-                ""
-            ],
-            "created_by": "nurse1",
-            "updated_by": "nurse1",
-            "created_date": "2021-04-21T12:27:32.169671Z",
-            "updated_date": "2021-04-21T12:27:32.169671Z"
-        }
+  {
+    "model": "api.Answer",
+    "pk": 1,
+    "fields": {
+      "right_answer": "verdadero",
+      "wrong_answers": ["falso", "", "", "", "", ""],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
     }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 2,
+    "fields": {
+      "right_answer": "percepción manejo de la salud",
+      "wrong_answers": [
+        "nutricional ",
+        "autopercepción autoconcepto",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 3,
+    "fields": {
+      "right_answer": "falso",
+      "wrong_answers": ["verdadero", "", "", "", "", ""],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 4,
+    "fields": {
+      "right_answer": "percepción manejo de la salud",
+      "wrong_answers": [
+        "cognitivo perceptual",
+        "Autopercepción autoconcepto",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 5,
+    "fields": {
+      "right_answer": "conductas de salud",
+      "wrong_answers": [
+        "IMC",
+        "presenta algún trastorno alimenticio",
+        "estado de conciencia",
+        "características de la piel",
+        "",
+        ""
+      ],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 6,
+    "fields": {
+      "right_answer": "higiene personal (buena, regular, mala)",
+      "wrong_answers": [
+        "IMC",
+        "presenta algún trastorno alimenticio",
+        "estado de conciencia",
+        "características de la piel",
+        "",
+        ""
+      ],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 7,
+    "fields": {
+      "right_answer": "Nutricional /metabólico",
+      "wrong_answers": [
+        "Percepción manejo de la salud",
+        "Eliminación",
+        "Actividad / ejercicio",
+        "",
+        "",
+        ""
+      ],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 8,
+    "fields": {
+      "right_answer": "Ingesta alimentos y bebidas",
+      "wrong_answers": [
+        "Todo lo relacionado al cuidado personal de la persona",
+        "Cómo percibe la persona su salud y que medidas lleva a cabo para cuidarse",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 9,
+    "fields": {
+      "right_answer": "Talla, peso, IMC y temperatura",
+      "wrong_answers": [
+        "Todo lo relacionado al cuidado personal de la persona",
+        "Cómo percibe la persona su salud y que medidas lleva a cabo para cuidarse",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 10,
+    "fields": {
+      "right_answer": "VERDADERO",
+      "wrong_answers": ["FALSO", "", "", "", "", ""],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 11,
+    "fields": {
+      "right_answer": "FALSO",
+      "wrong_answers": ["VERDADERO", "", "", "", "", ""],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 12,
+    "fields": {
+      "right_answer": "Consumo de alcohol, tabaco y drogas",
+      "wrong_answers": [
+        "Peso, talla y IMC",
+        "Presencia de problemas digestivos (náuseas y vómitos)",
+        "Presencia de úlceras por presión",
+        "",
+        "",
+        ""
+      ],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 13,
+    "fields": {
+      "right_answer": "VERDADERO",
+      "wrong_answers": ["FALSO", "", "", "", "", ""],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 14,
+    "fields": {
+      "right_answer": "VERDADERO",
+      "wrong_answers": ["FALSO", "", "", "", "", ""],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 15,
+    "fields": {
+      "right_answer": "VERDADERO",
+      "wrong_answers": ["FALSO", "", "", "", "", ""],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 16,
+    "fields": {
+      "right_answer": "VERDADERO",
+      "wrong_answers": ["FALSO", "", "", "", "", ""],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 17,
+    "fields": {
+      "right_answer": "VERDADERO",
+      "wrong_answers": ["FALSO", "", "", "", "", ""],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 18,
+    "fields": {
+      "right_answer": "Nutricional /metabólico",
+      "wrong_answers": [
+        "Percepción manejo de la salud",
+        "Eliminación",
+        "Actividad / ejercicio",
+        "",
+        "",
+        ""
+      ],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 19,
+    "fields": {
+      "right_answer": "TRUE",
+      "wrong_answers": ["FALSE", "", "", "", "", ""],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 20,
+    "fields": {
+      "right_answer": "FALSE",
+      "wrong_answers": ["TRUE", "", "", "", "", ""],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 21,
+    "fields": {
+      "right_answer": "Consumo de alcohol, tabaco y drogas",
+      "wrong_answers": [
+        "Peso, talla e IMC",
+        "Presencia de problemas digestivos (náuseas y vómitos)",
+        "Presencia de úlceras por presión",
+        "",
+        "",
+        ""
+      ],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 22,
+    "fields": {
+      "right_answer": "¿Qué alimentos y bebidas consume y con qué regularidad?",
+      "wrong_answers": [
+        "¿Cuántas veces al dia va al baño?",
+        "¿A consumido algún tipo de droga?",
+        "¿A presentado problemas para dormir o concentrarse?",
+        "",
+        "",
+        ""
+      ],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 23,
+    "fields": {
+      "right_answer": "TRUE",
+      "wrong_answers": ["FALSE", "", "", "", "", ""],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 24,
+    "fields": {
+      "right_answer": "FALSE",
+      "wrong_answers": ["TRUE", "", "", "", "", ""],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 25,
+    "fields": {
+      "right_answer": "FALSE",
+      "wrong_answers": ["TRUE", "", "", "", "", ""],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 26,
+    "fields": {
+      "right_answer": "TRUE",
+      "wrong_answers": ["FALSE", "", "", "", "", ""],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 27,
+    "fields": {
+      "right_answer": "Adaptación tolerancia al estrés",
+      "wrong_answers": [
+        "Autopercepción autoconcepto",
+        "Percepción manejo de la salud",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 28,
+    "fields": {
+      "right_answer": "Actividad / ejercicio",
+      "wrong_answers": [
+        "Cognitivo/ Perceptual",
+        "Eliminación",
+        "Nutricional /metabólico",
+        "",
+        "",
+        ""
+      ],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 29,
+    "fields": {
+      "right_answer": "FALSE",
+      "wrong_answers": ["TRUE", "", "", "", "", ""],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 30,
+    "fields": {
+      "right_answer": "TRUE",
+      "wrong_answers": ["FALSE", "", "", "", "", ""],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 31,
+    "fields": {
+      "right_answer": "TRUE",
+      "wrong_answers": ["FALSE", "", "", "", "", ""],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 32,
+    "fields": {
+      "right_answer": "Problemas con el entorno y comunicación",
+      "wrong_answers": [
+        "Frecuencia cardiaca, Frecuencia Respiratorio",
+        "Presión arterial",
+        "Problemas de la movilidad y estabilidad",
+        "",
+        "",
+        ""
+      ],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 33,
+    "fields": {
+      "right_answer": "¿Realiza alguna actividad física ?",
+      "wrong_answers": [
+        "¿Qué conocimientos tiene sobre el cuidado de su salud?",
+        "¿A sufrido de alguna pérdida en su vida recientemente?",
+        "¿Normalmente como se siente emocionalmente?",
+        "",
+        "",
+        ""
+      ],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 34,
+    "fields": {
+      "right_answer": "FALSE",
+      "wrong_answers": ["TRUE", "", "", "", "", ""],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 35,
+    "fields": {
+      "right_answer": "FALSE",
+      "wrong_answers": ["TRUE", "", "", "", "", ""],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 36,
+    "fields": {
+      "right_answer": "TRUE",
+      "wrong_answers": ["FALSE", "", "", "", "", ""],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 37,
+    "fields": {
+      "right_answer": "¿Presenta o presentó algún cambio en cuanto a su estado cardiovascular y respiratorio?",
+      "wrong_answers": [
+        "¿Por qué no se toma su medicamento?",
+        "¿Qué tan severo es su dolor de cabeza?",
+        "¿Cuándo empezó con la presencia de las náuseas?",
+        "",
+        "",
+        ""
+      ],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 38,
+    "fields": {
+      "right_answer": "Cognitivo/ Perceptual",
+      "wrong_answers": [
+        "Actividad / ejercicio",
+        "Eliminación",
+        "Nutricional /metabólico",
+        "",
+        "",
+        ""
+      ],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 39,
+    "fields": {
+      "right_answer": "TRUE",
+      "wrong_answers": ["FALSE", "", "", "", "", ""],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 40,
+    "fields": {
+      "right_answer": "TRUE",
+      "wrong_answers": ["FALSE", "", "", "", "", ""],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 41,
+    "fields": {
+      "right_answer": "Capacidad de orientación, comprensión, aprendizaje y cognitiva",
+      "wrong_answers": [
+        "Hábitos alimenticios",
+        "Capacidad para realizar diferentes actividades de la vida diaria",
+        "Capacidad para relacionarse con los demás",
+        "",
+        "",
+        ""
+      ],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 42,
+    "fields": {
+      "right_answer": "TRUE",
+      "wrong_answers": ["FALSE", "", "", "", "", ""],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 43,
+    "fields": {
+      "right_answer": "¿Usa algún medicamento para dormir?",
+      "wrong_answers": [
+        "¿A sufrido cambios en su concentración?",
+        "¿A sufrido algun cambio en la sensibilidad?",
+        "¿Presenta alguna dificultad para el aprendizaje?",
+        "",
+        "",
+        ""
+      ],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 44,
+    "fields": {
+      "right_answer": "¿Qué rol desempeña en su familia?",
+      "wrong_answers": [
+        "¿Tiene algún problema para expresar sus ideas?",
+        "¿Tiene algún problema en el lenguaje?",
+        "¿Utiliza algún dispositivo auditivo?",
+        "",
+        "",
+        ""
+      ],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 45,
+    "fields": {
+      "right_answer": "TRUE",
+      "wrong_answers": ["FALSE", "", "", "", "", ""],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 46,
+    "fields": {
+      "right_answer": "TRUE",
+      "wrong_answers": ["FALSE", "", "", "", "", ""],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 47,
+    "fields": {
+      "right_answer": "FALSE",
+      "wrong_answers": ["TRUE", "", "", "", "", ""],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 48,
+    "fields": {
+      "right_answer": "Tristeza y ansiedad",
+      "wrong_answers": [
+        "Tartamudeo",
+        "Dificultad para escribir",
+        "Pérdida del olfato",
+        "",
+        "",
+        ""
+      ],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 49,
+    "fields": {
+      "right_answer": "Dependencia",
+      "wrong_answers": [
+        "Dificultad para completar oraciones",
+        "Falta orientación lugar y tiempo",
+        "Pérdida de conocimientos",
+        "",
+        "",
+        ""
+      ],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 50,
+    "fields": {
+      "right_answer": "Adaptación tolerancia al estrés",
+      "wrong_answers": [
+        "Rol relaciones",
+        "Valores y creencias",
+        "Autopercepción autoconcepto",
+        "",
+        "",
+        ""
+      ],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 51,
+    "fields": {
+      "right_answer": "TRUE",
+      "wrong_answers": ["FALSE", "", "", "", "", ""],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 52,
+    "fields": {
+      "right_answer": "FALSE",
+      "wrong_answers": ["TRUE", "", "", "", "", ""],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 53,
+    "fields": {
+      "right_answer": "Capacidad cognitiva",
+      "wrong_answers": [
+        "Si la persona está tensa o relajada",
+        "Problemas en la vida diaria",
+        "Tipos de afrontamiento a situaciones o cambios",
+        "",
+        "",
+        ""
+      ],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 54,
+    "fields": {
+      "right_answer": "FALSE",
+      "wrong_answers": ["TRUE", "", "", "", "", ""],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 55,
+    "fields": {
+      "right_answer": "TRUE",
+      "wrong_answers": ["FALSE", "", "", "", "", ""],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 56,
+    "fields": {
+      "right_answer": "¿Has sufrido algún cambio importante en tu vida?",
+      "wrong_answers": [
+        "¿Haz tenido algún antecedente?",
+        "¿Haz presentado problemas escolares por falta de comunicación?",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 57,
+    "fields": {
+      "right_answer": "¿Cómo enfrentas las diferentes situaciones en tu vida?",
+      "wrong_answers": [
+        "¿Cómo es tu relación familiar?",
+        "¿Presentas alguna dependencia para realizar tus actividades?",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 58,
+    "fields": {
+      "right_answer": "¿Presentas algún problema para la adaptación?",
+      "wrong_answers": [
+        "¿Padeces alguna enfermedad crónica?",
+        "¿Qué valores consideras de mayor importancia?",
+        "¿Practicas alguna religión?",
+        "",
+        "",
+        ""
+      ],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 59,
+    "fields": {
+      "right_answer": "¿Qué estrategias adoptar para el manejo del estrés?",
+      "wrong_answers": [
+        "¿Tienes o haz tenido algun problema que afecte tu vida sexual?",
+        "¿Tienes alguna restricción en cuanto a salud por tu religión?",
+        "¿Cómo consideras tu estado de salud?",
+        "",
+        "",
+        ""
+      ],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 60,
+    "fields": {
+      "right_answer": "TRUE",
+      "wrong_answers": ["FALSE", "", "", "", "", ""],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 61,
+    "fields": {
+      "right_answer": "TRUE",
+      "wrong_answers": ["FALSE", "", "", "", "", ""],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 62,
+    "fields": {
+      "right_answer": "verdadero",
+      "wrong_answers": ["FALSE", "", "", "", "", ""],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 63,
+    "fields": {
+      "right_answer": "¿Tienes algún miedo?",
+      "wrong_answers": [
+        "¿Sigues todos los cuidados necesarios?",
+        "¿Cómo te ves a ti misma?",
+        "¿Qué has hecho para afrontar tu enfermedad?",
+        "¿Cómo has sobrellevado la situación actual por la que estás pasando ?",
+        "",
+        ""
+      ],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 64,
+    "fields": {
+      "right_answer": "Angustia",
+      "wrong_answers": [
+        "Falta de amigos",
+        "Insomnio",
+        "Mala relación con hermanos ",
+        "Impotencia",
+        "",
+        ""
+      ],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 65,
+    "fields": {
+      "right_answer": "Falta de apetito",
+      "wrong_answers": [
+        "Consumo de alcohol y pastillas",
+        "Frustración ",
+        "Rabia",
+        "",
+        "",
+        ""
+      ],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 66,
+    "fields": {
+      "right_answer": "¿Qué has hecho para afrontar tu pérdida?",
+      "wrong_answers": [
+        "¿Cuándo sufriste tu pérdida?",
+        "¿Qué medidas ha adoptado para manejar tu situación?",
+        "¿Cuántas horas al día sueles dormir?",
+        "¿Qué comes al dia?",
+        "",
+        ""
+      ],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 67,
+    "fields": {
+      "right_answer": "Rol Relaciones",
+      "wrong_answers": [
+        "Adaptación tolerancia al estrés",
+        "Autopercepción autoconcepto",
+        "Percepción manejo de la salud",
+        "",
+        "",
+        ""
+      ],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 68,
+    "fields": {
+      "right_answer": "Familia",
+      "wrong_answers": [
+        "Creencias ",
+        "Apoyo Familiar",
+        "Sueños y metas para el futuro",
+        "Grupo social",
+        "Trabajo o escuela",
+        ""
+      ],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 69,
+    "fields": {
+      "right_answer": "TRUE",
+      "wrong_answers": ["FALSE", "", "", "", "", ""],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 70,
+    "fields": {
+      "right_answer": "TRUE",
+      "wrong_answers": ["FALSE", "", "", "", "", ""],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 71,
+    "fields": {
+      "right_answer": "FALSE",
+      "wrong_answers": ["TRUE", "", "", "", "", ""],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 72,
+    "fields": {
+      "right_answer": "Con quien vive la persona",
+      "wrong_answers": [
+        "Creencia",
+        "Religion",
+        "Estructura Familiar",
+        "Presencia de violencia y abusos",
+        "Valores",
+        ""
+      ],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 73,
+    "fields": {
+      "right_answer": "Proplemas Propios",
+      "wrong_answers": [
+        "Problemas social",
+        "Problemas Familiar",
+        "Problemas Laboral",
+        "",
+        "",
+        ""
+      ],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 74,
+    "fields": {
+      "right_answer": "¿Presenta algun problema familiar?",
+      "wrong_answers": [
+        "¿Rol que desempeña en su familia?",
+        "¿Utiliza algun medicamento para dormir?",
+        "¿Cuenta con algun sistema de apoyo?",
+        "¿A presentado constantes cabios de humor?",
+        "",
+        ""
+      ],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 75,
+    "fields": {
+      "right_answer": "¿Cuida o depende de alguien?",
+      "wrong_answers": [
+        "¿Le cuesta sentirse bien?",
+        "¿Cómo soluciona los cambios en su vida?",
+        "¿Presenta algun problema de relación social, familiar o laboral?",
+        "¿Como considera su imagen corporal?",
+        "",
+        ""
+      ],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 76,
+    "fields": {
+      "right_answer": "¿Qué considera mas valioso en su vida?",
+      "wrong_answers": [
+        "¿Presenta dificulrad paea comunicarse?",
+        "¿Pertenece a un grupo social?",
+        "¿Cómo son sus relaciones en el trabajo o escuela?",
+        "",
+        "",
+        ""
+      ],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 77,
+    "fields": {
+      "right_answer": "¿Cómo es su estado de animo?",
+      "wrong_answers": [
+        "¿Su adecimiento le ocasiona conflictos familiares?",
+        "¿En quien se apoya en sus problemas?",
+        "¿Cuenta con amigos cercanos?",
+        "",
+        "",
+        ""
+      ],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 78,
+    "fields": {
+      "right_answer": "FALSE",
+      "wrong_answers": ["TRUE", "", "", "", "", ""],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 79,
+    "fields": {
+      "right_answer": "verdadero ",
+      "wrong_answers": ["FALSE", "", "", "", "", ""],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 80,
+    "fields": {
+      "right_answer": "inspeccionar presencia de aleteo nasal",
+      "wrong_answers": [
+        "descripción de implantación del cabello",
+        "buscar presencia de parásitos",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 81,
+    "fields": {
+      "right_answer": "FALSO",
+      "wrong_answers": ["verdadero", "", "", "", "", ""],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 82,
+    "fields": {
+      "right_answer": "verdadero",
+      "wrong_answers": ["FALSO", "", "", "", "", ""],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 83,
+    "fields": {
+      "right_answer": "verdadero",
+      "wrong_answers": ["falso", "", "", "", "", ""],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 84,
+    "fields": {
+      "right_answer": "verdadero",
+      "wrong_answers": ["falso", "", "", "", "", ""],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 85,
+    "fields": {
+      "right_answer": "FALSO",
+      "wrong_answers": ["verdadero", "", "", "", "", ""],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 86,
+    "fields": {
+      "right_answer": "VERDADERO",
+      "wrong_answers": ["FALSO", "", "", "", "", ""],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 87,
+    "fields": {
+      "right_answer": "FALSO",
+      "wrong_answers": ["VERDADERO", "", "", "", "", ""],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 88,
+    "fields": {
+      "right_answer": "Eleve y baje cejas ",
+      "wrong_answers": [
+        "Mover una oreja",
+        "Hable",
+        "Deglutir saliva",
+        "Muestre la lengua",
+        "Inflar un globo",
+        "Soplar una vela"
+      ],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 89,
+    "fields": {
+      "right_answer": "Frunza el ceño",
+      "wrong_answers": [
+        "Mover una oreja",
+        "Hable",
+        "Deglutir saliva",
+        "Muestre la lengua",
+        "Inflar un globo",
+        "Soplar una vela"
+      ],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 90,
+    "fields": {
+      "right_answer": "Cierre los ojos con fuerza",
+      "wrong_answers": [
+        "Mover una oreja",
+        "Hable",
+        "Deglutir saliva",
+        "Muestre la lengua",
+        "Inflar un globo",
+        "Soplar una vela"
+      ],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 91,
+    "fields": {
+      "right_answer": "Sonria mostrando los dientes",
+      "wrong_answers": [
+        "Mover una oreja",
+        "Hable",
+        "Deglutir saliva",
+        "Muestre la lengua",
+        "Inflar un globo",
+        "Soplar una vela"
+      ],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 92,
+    "fields": {
+      "right_answer": "FALSE",
+      "wrong_answers": ["TRUE", "", "", "", "", ""],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 93,
+    "fields": {
+      "right_answer": "tipo de tubo endotraqueal, fijación, lumen",
+      "wrong_answers": [
+        "tipo de dispositivo con el que se está administrando oxigeno",
+        "color,características, de secreciones",
+        "permeabilidad y fijación de la sonda",
+        "",
+        "",
+        ""
+      ],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 94,
+    "fields": {
+      "right_answer": "características del gasto urinario",
+      "wrong_answers": [
+        "fijación de sonda",
+        "permeabilidad",
+        "presencia de secreciones",
+        "",
+        "",
+        ""
+      ],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 95,
+    "fields": {
+      "right_answer": "VERDADERO",
+      "wrong_answers": ["FALSO", "", "", "", "", ""],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 96,
+    "fields": {
+      "right_answer": "VERDADERO",
+      "wrong_answers": ["FALSO", "", "", "", "", ""],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 97,
+    "fields": {
+      "right_answer": "FALSO",
+      "wrong_answers": ["VERDADERO", "", "", "", "", ""],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 98,
+    "fields": {
+      "right_answer": "FALSO",
+      "wrong_answers": ["VERDADERO", "", "", "", "", ""],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 99,
+    "fields": {
+      "right_answer": "FALSO",
+      "wrong_answers": ["VERDADERO", "", "", "", "", ""],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 100,
+    "fields": {
+      "right_answer": "FALSO",
+      "wrong_answers": ["verdadero", "", "", "", "", ""],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 101,
+    "fields": {
+      "right_answer": "nariz",
+      "wrong_answers": ["ojos", "párpados", "orejas y oídos", "", "", ""],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 102,
+    "fields": {
+      "right_answer": "falso",
+      "wrong_answers": ["VERDADERO", "", "", "", "", ""],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 103,
+    "fields": {
+      "right_answer": "VERDADERO",
+      "wrong_answers": ["falso", "", "", "", "", ""],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 104,
+    "fields": {
+      "right_answer": "falso",
+      "wrong_answers": ["VERDADERO", "", "", "", "", ""],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 105,
+    "fields": {
+      "right_answer": "permeabilidad de fosas nasales",
+      "wrong_answers": ["cabello", "color y textura", "", "", "", ""],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 106,
+    "fields": {
+      "right_answer": "FALSO",
+      "wrong_answers": ["verdadero", "", "", "", "", ""],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 107,
+    "fields": {
+      "right_answer": "2",
+      "wrong_answers": ["5", "4", "", "", "", ""],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 108,
+    "fields": {
+      "right_answer": "verdadero",
+      "wrong_answers": ["FALSO", "", "", "", "", ""],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 109,
+    "fields": {
+      "right_answer": "VERDADERO",
+      "wrong_answers": ["FALSO", "", "", "", "", ""],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 110,
+    "fields": {
+      "right_answer": "FALSO",
+      "wrong_answers": ["VERDADERO", "", "", "", "", ""],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 111,
+    "fields": {
+      "right_answer": "Conflictos familiares",
+      "wrong_answers": [
+        "Femenino de 35 años",
+        "Vive sola",
+        "Ansiedad",
+        "Depresión",
+        "Aislamiento social",
+        ""
+      ],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 112,
+    "fields": {
+      "right_answer": "verdadero ",
+      "wrong_answers": ["FALSE", "", "", "", "", ""],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 113,
+    "fields": {
+      "right_answer": "Problemas de ansiedad y depresión",
+      "wrong_answers": [
+        "Aislamiento social (Prefiere quedarse sola en casa)",
+        "Vive sola",
+        "Mala comunicación con su familia",
+        "",
+        "",
+        ""
+      ],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 114,
+    "fields": {
+      "right_answer": "Vive con su pareja e hijo",
+      "wrong_answers": [
+        "Chequeo post- parto",
+        "Desinteres por su hijo",
+        "Edad 16 años",
+        "Disminucipon relaciones sociales (ya no puede salir con sus amigos)",
+        "Discusiones seguidas con su pareja",
+        ""
+      ],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 115,
+    "fields": {
+      "right_answer": "¿Sufres de algun tipo de violencia?",
+      "wrong_answers": [
+        "¿Cómo cuidas tu salud?",
+        "¿Presentas dificultad para comunicarse?",
+        "¿Cómo te sientes conforme a la función que desempeñas en tu familia?",
+        "¿Qué metas tienes en tu vida?",
+        "",
+        ""
+      ],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 116,
+    "fields": {
+      "right_answer": "VERDADERO",
+      "wrong_answers": ["FALSO", "", "", "", "", ""],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 117,
+    "fields": {
+      "right_answer": "presencia de heridas en tórax",
+      "wrong_answers": ["ocupación", "estado civil", "", "", "", ""],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 118,
+    "fields": {
+      "right_answer": "verdadero",
+      "wrong_answers": ["FALSO", "", "", "", "", ""],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 119,
+    "fields": {
+      "right_answer": "perfil del paciente",
+      "wrong_answers": [
+        "enfermedad actual",
+        "antecedentes familiares",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 120,
+    "fields": {
+      "right_answer": "Mala relación con compañeros de trabajo",
+      "wrong_answers": [
+        "Tristeza",
+        "",
+        "Persona de mayor edad en el trabajo",
+        "Insatisfacción en el trabajo",
+        "Aislamiento laboral",
+        ""
+      ],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 121,
+    "fields": {
+      "right_answer": "FALSE",
+      "wrong_answers": ["verdadero ", "", "", "", "", ""],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 122,
+    "fields": {
+      "right_answer": "Cuestionamiento sobre el rol que desempeña en la familia",
+      "wrong_answers": [
+        "Toma de temperatura",
+        "",
+        "Habitos alimentarios",
+        "Cambios en el estado de animo",
+        "Cuestionamiento sobre el numero de integrantes en su familia",
+        "Cuestionamiento de presencia de problemas para relacionarse con familiares o amigos"
+      ],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 123,
+    "fields": {
+      "right_answer": "Valores importantes para la persona",
+      "wrong_answers": [
+        "Cuetionamiento sobre antecedentes de padecimiento de ITS",
+        "Signos vitales",
+        "Pregutas sobre la pertenecia a algun grupo social ",
+        "Cuestionamiento sobre relación laboral",
+        "",
+        "Cusestionamiento sobre algun problema de comunicación que permita la interacción"
+      ],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 124,
+    "fields": {
+      "right_answer": "Violencia Familiar",
+      "wrong_answers": [
+        "Encargado del cuidadoy mantenimientos de toda su familia (alteración funcion del rol)",
+        "Edad 17 años",
+        "Mala relación con su padre",
+        "Moretones en distinas partes del cuerpo",
+        "",
+        "Antecedentes de ITS"
+      ],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 125,
+    "fields": {
+      "right_answer": "ninguno",
+      "wrong_answers": [
+        "cognitivo perseptual ",
+        "rol relaciones",
+        "persepcion manejo de la salud",
+        "",
+        "",
+        ""
+      ],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 126,
+    "fields": {
+      "right_answer": "enfermedad actual",
+      "wrong_answers": [
+        "antecedentes patológicos",
+        "antecedentes familiares",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 127,
+    "fields": {
+      "right_answer": "enfermedad actual",
+      "wrong_answers": [
+        "perfil del paciente",
+        "antecedentes patológicos",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 128,
+    "fields": {
+      "right_answer": "motivo de la consulta",
+      "wrong_answers": [
+        "enfermedad actual",
+        "antecedentes familiares",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 129,
+    "fields": {
+      "right_answer": "se interroga a familia o acompañante",
+      "wrong_answers": [
+        "se interroga al paciente",
+        "se observa el expediente clínico",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 130,
+    "fields": {
+      "right_answer": "hábitos externos",
+      "wrong_answers": ["hábitos internos", "aspecto general", "", "", "", ""],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 131,
+    "fields": {
+      "right_answer": "anormalidades del hábito exterior",
+      "wrong_answers": ["expresión del paciente", "postura", "", "", "", ""],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 132,
+    "fields": {
+      "right_answer": "VERDADERO",
+      "wrong_answers": ["FALSO", "", "", "", "", ""],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 133,
+    "fields": {
+      "right_answer": "VERDADERO",
+      "wrong_answers": ["FALSO", "", "", "", "", ""],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 134,
+    "fields": {
+      "right_answer": "dolor",
+      "wrong_answers": [
+        "estado de conciencia",
+        "sexo del paciente",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 135,
+    "fields": {
+      "right_answer": "hábitos externos",
+      "wrong_answers": [
+        "patrones funcionales",
+        "entrevista indirecta",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 136,
+    "fields": {
+      "right_answer": "edad que representa a simple vista",
+      "wrong_answers": [
+        "grasa corporal",
+        "estado de conciencia",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 137,
+    "fields": {
+      "right_answer": "edad aparente",
+      "wrong_answers": ["compleccion fisica", "constitucion", "", "", "", ""],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 138,
+    "fields": {
+      "right_answer": "grado de robustez del individuo",
+      "wrong_answers": [
+        "aspecto particular",
+        "constitución del paciente",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 139,
+    "fields": {
+      "right_answer": "movimientos coordinados",
+      "wrong_answers": [
+        "movimientos involuntarios",
+        "movimientos arrítmicos",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 140,
+    "fields": {
+      "right_answer": "fasciculaciones",
+      "wrong_answers": [
+        "hemibalismo",
+        "movimientos parkinsonianos",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 141,
+    "fields": {
+      "right_answer": "hemiplejias",
+      "wrong_answers": ["marcha helicópoda", "marcha atáxica", "", "", "", ""],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 142,
+    "fields": {
+      "right_answer": "confusión",
+      "wrong_answers": ["obnubilación", "alerta", "estupor", "", "", ""],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  },
+  {
+    "model": "api.Answer",
+    "pk": 143,
+    "fields": {
+      "right_answer": "estupor",
+      "wrong_answers": ["confusión", "alerta", "obnubilación", "", "", ""],
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:27:32.169671Z",
+      "updated_date": "2021-04-21T12:27:32.169671Z"
+    }
+  }
 ]
