@@ -12,6 +12,7 @@ from .views import ListProgressAPIView, RetrieveProgressAPIView, DestroyProgress
 from .views import ListQuestionsAPIView, RetrieveQuestionsAPIView, DestroyQuestionsAPIView, UpdateQuestionsAPIView, CreateQuestionsAPIView
 from .views import ListUsersAPIView, RetrieveUsersAPIView, DestroyUsersAPIView, UpdateUsersAPIView, CreateUsersAPIView
 from .views import RetrieveQuestionAnswerMethodologyAPIView, ListQuestionAnswerMethodologyAPIView
+from .views import RetrieveMethodologyDifficultyAPIView
 
 urlpatterns = [
     # URLs Answers
@@ -36,7 +37,7 @@ urlpatterns = [
     path("grades/<int:pk>/destroy/", DestroyGradesAPIView.as_view(), name="destroy-grades"),
 
     # URLs Methodologies
-    path("method/", ListMethodologiesAPIView.as_view(), name="list-methodologies"),
+    path("trivias/", ListMethodologiesAPIView.as_view(), name="list-methodologies"),
     path("method/create/", CreateMethodologiesAPIView.as_view(), name="create-methodologies"),
     path("method/<int:pk>/", RetrieveMethodologiesAPIView.as_view(), name="retrieve-methodologies"),
     path("method/<int:pk>/update/", UpdateMethodologiesAPIView.as_view(), name="update-methodologies"),
@@ -69,4 +70,6 @@ urlpatterns = [
     path('token-id-username/', CustomObtainAuthToken.as_view(), name='token-id-username'),
     path('answ-ques/<int:pk>/', RetrieveQuestionAnswerMethodologyAPIView.as_view(), name='retrieve-question-answer-methodology'),
     path('answ-ques/', ListQuestionAnswerMethodologyAPIView.as_view(), name='list-questions-answers-methodologies'),
+
+    path('trivias/<int:pk>/', RetrieveMethodologyDifficultyAPIView.as_view(), name='retrieve-idmethodology-difficulty'),
 ]

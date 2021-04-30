@@ -17,6 +17,7 @@ from .serializers import ProgressListSerializer, ProgressSerializer
 from .serializers import QuestionsListSerializer, QuestionsSerializer
 from .serializers import UsersListSerializer, UsersSerializer
 from .serializers import QuestionAnswerMethodologySerializer, QuestionAnswerMethodologyListSerializer
+from .serializers import MethodologyDifficultySerializer
 
 # Create your views here.
 # GET User.id & Token & username
@@ -41,6 +42,7 @@ class ListAnswersAPIView(generics.ListAPIView):
 class CreateAnswersAPIView(generics.CreateAPIView):
     queryset = Answer.objects.all()
     serializer_class = AnswersSerializer
+    print("adios")
 
 class RetrieveAnswersAPIView(generics.RetrieveAPIView):
     queryset = Answer.objects.all()
@@ -191,7 +193,9 @@ class CreateUsersAPIView(generics.CreateAPIView):
     queryset = User.objects.all()
     serializer_class = UsersSerializer
     permission_classes = []
-
+    # eluserid = User.objects.get()
+    print("*****hola*****")
+    
     def init_progress(uservar,methvar):
         progress =  Progress(
             methodology_progress='0',
@@ -199,8 +203,8 @@ class CreateUsersAPIView(generics.CreateAPIView):
             methodology_id=methvar
         )
         progress.save()
-    init_progress(2,6) #   User.objects.get(id)
-    # print(queryset.id)
+    init_progress(5,6) #   User.objects.get(id)
+    print(queryset)
 
 class RetrieveUsersAPIView(generics.RetrieveAPIView):
     queryset = User.objects.all()
@@ -219,3 +223,7 @@ class DestroyUsersAPIView(generics.DestroyAPIView):
     serializer_class = UsersSerializer
 
 # -----------------------------------------------------------
+
+class RetrieveMethodologyDifficultyAPIView(generics.RetrieveAPIView):
+    queryset = Methodology.objects.all()
+    serializer_class = MethodologyDifficultySerializer
