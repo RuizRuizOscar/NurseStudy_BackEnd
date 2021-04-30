@@ -1865,7 +1865,7 @@
     "fields": {
       "question": "En el patron  funcional es importante saber si existe algun problema entre sus creencias y el tratamiento que se le brinda",
       "difficulty": "2",
-      "question_type": "",
+      "question_type": "2",
       "created_by": "nurse1",
       "updated_by": "nurse1",
       "created_date": "2021-04-21T12:59:32.169671Z",
@@ -1878,7 +1878,7 @@
     "model": "api.Question",
     "pk": 126,
     "fields": {
-      "question": "A que parte de la anamnesis de enfermería pertenece 'tiempo de la enfermedad'",
+      "question": "A que parte de la anamnesis de enfermería pertenece tiempo de la enfermedad",
       "difficulty": "3",
       "question_type": "2",
       "created_by": "nurse1",
