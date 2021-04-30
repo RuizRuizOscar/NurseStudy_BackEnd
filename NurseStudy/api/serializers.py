@@ -71,7 +71,7 @@ class ProgressListSerializer(serializers.ModelSerializer):
 class ProgressSerializer(serializers.ModelSerializer):
     class Meta:
         model = Progress
-        fields = ["methodology_progress", "methodology_id", "user_id"] #TODO user
+        fields = ["methodology_progress", "methodology", "user"] #TODO user
 
 # --------------------------------------------------------
 
@@ -106,16 +106,15 @@ class UsersSerializer(serializers.ModelSerializer):
         ]
         extra_kwargs = {"password": {"write_only": True}}
 
-    def create(self, validate_data):
-        print(validate_data)
-        user = User.objects.create_user(**validate_data)
-        progress =  Progress.objects.create(
-            methodology_progress='0',
-            user_id='1',
-            methodology_id='2')
-        # self.init_progress()
-        print("**********************")
-        return user
+    # def create(self, validate_data): # NO HACE NADA!
+    #     print(validate_data)
+    #     user = User.objects.create_user(**validate_data)
+    #     # progress =  Progress.objects.create( #TODO DELETE block
+    #     #     methodology_progress='0',
+    #     #     user_id='1',
+    #     #     methodology_id='2')
+    #     # # self.init_progress()
+    #     return user
 
 class QuestionAnswerMethodologyListSerializer(serializers.ModelSerializer):
     answer = AnswersListSerializer()
@@ -147,8 +146,6 @@ class QuestionAnswerMethodologySerializer(serializers.ModelSerializer):
             "methodology",
         ]
 
-
-
 # Progress Logic goes here
     # def init_progress(self):
     #     progress =  Progress(
@@ -158,5 +155,13 @@ class QuestionAnswerMethodologySerializer(serializers.ModelSerializer):
     #     )
     #     progress.save()
 
-
 # --------------------------------------------------------
+
+class MethodologyDifficultySerializer(serializers.ModelSerializer):
+    questions = MethodologiesListSerializer(many=True)
+    class Meta:
+        model = Question
+        fields = ["id", "questions", "difficulty",]
+        
+        # max_rated_entry = YourModel.objects.latest()
+        # return max_rated_entry.details
