@@ -1,4 +1,5 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
+from django.db.models import Max
 from rest_framework import generics
 from rest_framework import viewsets
 
@@ -17,6 +18,7 @@ from .serializers import ProgressListSerializer, ProgressSerializer
 from .serializers import QuestionsListSerializer, QuestionsSerializer
 from .serializers import UsersListSerializer, UsersSerializer
 from .serializers import QuestionAnswerMethodologySerializer, QuestionAnswerMethodologyListSerializer
+from .serializers import MethodologyDifficultySerializer
 
 # Create your views here.
 # GET User.id & Token & username
@@ -192,23 +194,9 @@ class CreateUsersAPIView(generics.CreateAPIView):
     serializer_class = UsersSerializer
     permission_classes = []
 
-    def init_progress(uservar,methvar):
-        progress =  Progress(
-            methodology_progress='0',
-            user_id=uservar,
-            methodology_id=methvar
-        )
-        progress.save()
-    init_progress(2,6) #   User.objects.get(id)
-    # print(queryset.id)
-
 class RetrieveUsersAPIView(generics.RetrieveAPIView):
     queryset = User.objects.all()
     serializer_class = UsersSerializer
-    
-    # def sample_view(username):
-    #     current_user = username.user
-    #     print current_user.id
 
 class UpdateUsersAPIView(generics.UpdateAPIView):
     queryset = User.objects.all()
@@ -219,3 +207,10 @@ class DestroyUsersAPIView(generics.DestroyAPIView):
     serializer_class = UsersSerializer
 
 # -----------------------------------------------------------
+
+class RetrieveMethodologyDifficultyAPIView(generics.RetrieveAPIView):
+    def get(self, *args, **kwargs):
+        methodology_id = kwargs["pk"] #url
+        methodology = get_object_or_404(Methodology, pk=methodology_id) # modelo, field por el que va a buscar
+        result = Question.objects.filter(methodology_id=methodology_id).aggregate(Max('difficulty')) # methodology_id=methodology_id el primero es el campo a buscar, el segundo es el valor obtenido
+        return Response(result)

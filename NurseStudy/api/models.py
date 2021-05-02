@@ -106,8 +106,8 @@ class Question(TimeStamped):
     # updated_date = models.DateTimeField(auto_now_add=True)
 
     # Relations
-    methodology = models.ForeignKey(Methodology, on_delete=models.PROTECT, related_name="questions")
-    answer = models.OneToOneField(Answer, on_delete=models.PROTECT, related_name="question")
+    methodology = models.ForeignKey(Methodology, on_delete=models.PROTECT, related_name="questions_rel")
+    answer = models.OneToOneField(Answer, on_delete=models.PROTECT, related_name="question_rel")
 
     def __str__(self):
         return f"{self.question} {self.difficulty} {self.question_type} {self.answer} {self.methodology}"
