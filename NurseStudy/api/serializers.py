@@ -106,15 +106,20 @@ class UsersSerializer(serializers.ModelSerializer):
         ]
         extra_kwargs = {"password": {"write_only": True}}
 
-    # def create(self, validate_data): # NO HACE NADA!
-    #     print(validate_data)
-    #     user = User.objects.create_user(**validate_data)
-    #     # progress =  Progress.objects.create( #TODO DELETE block
-    #     #     methodology_progress='0',
-    #     #     user_id='1',
-    #     #     methodology_id='2')
-    #     # # self.init_progress()
-    #     return user
+    def create(self, validate_data):
+        user = User.objects.create_user(**validate_data)
+        progress = []
+        methodologies = Methodology.objects.all()
+        for methodology in methodologies:
+            progress.append(
+                Progress(
+                    methodology_progress='0',
+                    user_id=user.id,
+                    methodology_id=methodology.id
+                )
+            )
+        Progress.objects.bulk_create(progress)
+        return user
 
 class QuestionAnswerMethodologyListSerializer(serializers.ModelSerializer):
     answer = AnswersListSerializer()
@@ -157,11 +162,18 @@ class QuestionAnswerMethodologySerializer(serializers.ModelSerializer):
 
 # --------------------------------------------------------
 
-class MethodologyDifficultySerializer(serializers.ModelSerializer):
-    questions = MethodologiesListSerializer(many=True)
+class QuestionsDifficultyListSerializer(serializers.ModelSerializer):
     class Meta:
         model = Question
-        fields = ["id", "questions", "difficulty",]
+        fields = ["difficulty"]
+
+class MethodologyDifficultySerializer(serializers.ModelSerializer):
+    questions_rel = QuestionsDifficultyListSerializer(many=True)
+    class Meta:
+        model = Methodology
+        fields = ["id", "questions_rel",]# "difficulty",]
+        depth = 1
+        # fields.__getattribute__('questions_rel') #aggregate(Max('difficulty'))
         
         # max_rated_entry = YourModel.objects.latest()
         # return max_rated_entry.details
