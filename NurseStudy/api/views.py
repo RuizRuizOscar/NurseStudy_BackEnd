@@ -1,4 +1,5 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
+from django.db.models import Max
 from rest_framework import generics
 from rest_framework import viewsets
 
@@ -42,7 +43,6 @@ class ListAnswersAPIView(generics.ListAPIView):
 class CreateAnswersAPIView(generics.CreateAPIView):
     queryset = Answer.objects.all()
     serializer_class = AnswersSerializer
-    print("adios")
 
 class RetrieveAnswersAPIView(generics.RetrieveAPIView):
     queryset = Answer.objects.all()
@@ -193,26 +193,10 @@ class CreateUsersAPIView(generics.CreateAPIView):
     queryset = User.objects.all()
     serializer_class = UsersSerializer
     permission_classes = []
-    # eluserid = User.objects.get()
-    print("*****hola*****")
-    
-    def init_progress(uservar,methvar):
-        progress =  Progress(
-            methodology_progress='0',
-            user_id=uservar,
-            methodology_id=methvar
-        )
-        progress.save()
-    init_progress(5,6) #   User.objects.get(id)
-    print(queryset)
 
 class RetrieveUsersAPIView(generics.RetrieveAPIView):
     queryset = User.objects.all()
     serializer_class = UsersSerializer
-    
-    # def sample_view(username):
-    #     current_user = username.user
-    #     print current_user.id
 
 class UpdateUsersAPIView(generics.UpdateAPIView):
     queryset = User.objects.all()
@@ -225,5 +209,8 @@ class DestroyUsersAPIView(generics.DestroyAPIView):
 # -----------------------------------------------------------
 
 class RetrieveMethodologyDifficultyAPIView(generics.RetrieveAPIView):
-    queryset = Methodology.objects.all()
-    serializer_class = MethodologyDifficultySerializer
+    def get(self, *args, **kwargs):
+        methodology_id = kwargs["pk"] #url
+        methodology = get_object_or_404(Methodology, pk=methodology_id) # modelo, field por el que va a buscar
+        result = Question.objects.filter(methodology_id=methodology_id).aggregate(Max('difficulty')) # methodology_id=methodology_id el primero es el campo a buscar, el segundo es el valor obtenido
+        return Response(result)

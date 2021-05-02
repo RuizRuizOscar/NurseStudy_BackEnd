@@ -37,7 +37,7 @@ urlpatterns = [
     path("grades/<int:pk>/destroy/", DestroyGradesAPIView.as_view(), name="destroy-grades"),
 
     # URLs Methodologies
-    path("trivias/", ListMethodologiesAPIView.as_view(), name="list-methodologies"),
+    path("method/", ListMethodologiesAPIView.as_view(), name="list-methodologies"),
     path("method/create/", CreateMethodologiesAPIView.as_view(), name="create-methodologies"),
     path("method/<int:pk>/", RetrieveMethodologiesAPIView.as_view(), name="retrieve-methodologies"),
     path("method/<int:pk>/update/", UpdateMethodologiesAPIView.as_view(), name="update-methodologies"),
@@ -71,5 +71,5 @@ urlpatterns = [
     path('answ-ques/<int:pk>/', RetrieveQuestionAnswerMethodologyAPIView.as_view(), name='retrieve-question-answer-methodology'),
     path('answ-ques/', ListQuestionAnswerMethodologyAPIView.as_view(), name='list-questions-answers-methodologies'),
 
-    path('trivias/<int:pk>/', RetrieveMethodologyDifficultyAPIView.as_view(), name='retrieve-idmethodology-difficulty'),
+    path('methodology/<int:pk>/difficulty/', RetrieveMethodologyDifficultyAPIView.as_view(), name='retrieve-idmethodology-difficulty'),
 ]
