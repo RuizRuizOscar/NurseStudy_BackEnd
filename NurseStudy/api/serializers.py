@@ -38,7 +38,7 @@ class GradesListSerializer(serializers.ModelSerializer):
 class GradesSerializer(serializers.ModelSerializer):
     class Meta:
         model = Grades
-        fields = ["input_answer", "result", "question"] #TODO user
+        fields = ["input_answer", "result", "question", "user"] #TODO user
 
     def evalua():
         if Grades.input_answer == True:
