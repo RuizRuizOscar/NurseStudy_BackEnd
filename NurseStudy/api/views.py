@@ -225,6 +225,8 @@ class ListQuestionsByMethAPIView(generics.ListAPIView):
     # queryset = Question.objects.filter(methodology_id)
     # serializer_class = QuestionsListSerializer
     # depth =2
+    queryset = Question.objects.all()
+    serializer_class = QuestionAnswerMethodologySerializer
     def get(self, *args, **kwargs):
         methodology_id = kwargs["pk"] #url
         difficulty_level = kwargs["pk_alt"]
@@ -264,6 +266,7 @@ class RetrieveProgressByUserAPIView(generics.RetrieveAPIView):
         # methodology = kwargs["pk_alt"]
         methodology = get_object_or_404(Methodology, pk=methodology_id) # modelo, field por el que va a buscar
         result = Question.objects.filter(methodology_id=methodology_id).aggregate(Max('difficulty')) # methodology_id=methodology_id el primero es el campo a buscar, el segundo es el valor obtenido
+        result2 = Progress.objects.filter(user_id)
         return Response(result)
 
 class RetrieveMethodologyDifficultyAPIView(generics.RetrieveAPIView):

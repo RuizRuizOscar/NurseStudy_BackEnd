@@ -1,0 +1,2147 @@
+[
+  {
+    "model": "api.Question",
+    "pk": 1,
+    "fields": {
+      "question": "La valoración cefalocaudal se inicia del abdomen",
+      "difficulty": "1",
+      "question_type": "1",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "2",
+      "answer": "1"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 2,
+    "fields": {
+      "question": "En que patrón funcional se busca la percepción que tiene el paciente sobre su estado de salud  ",
+      "difficulty": "1",
+      "question_type": "2",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "1",
+      "answer": "2"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 3,
+    "fields": {
+      "question": "el patrón percepción manejo de la salud busca saber si los hábitos dietéticos son adecuados",
+      "difficulty": "2",
+      "question_type": "1",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "1",
+      "answer": "3"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 4,
+    "fields": {
+      "question": "antecedentes quirúrgicos, antecedentes familiares, antecedentes de enfermedades previas; son puntos que evalúa , que patrón funcional ",
+      "difficulty": "2",
+      "question_type": "2",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "1",
+      "answer": "4"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 5,
+    "fields": {
+      "question": "El patrón percepción manejo de la salud que es evaluado",
+      "difficulty": "3",
+      "question_type": "2",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "1",
+      "answer": "5"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 6,
+    "fields": {
+      "question": "elige el punto que evalúa el patrón percepción manejo de la salud",
+      "difficulty": "3",
+      "question_type": "2",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "1",
+      "answer": "6"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 7,
+    "fields": {
+      "question": "Patrón que pretende conocer y describir el consumo de alimentos y líquidos de la persona en relación con sus necesidades metabólicas.",
+      "difficulty": "3",
+      "question_type": "2",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "1",
+      "answer": "7"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 8,
+    "fields": {
+      "question": "¿Qué se valora en el patrón nutricional metabólico?",
+      "difficulty": "3",
+      "question_type": "2",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "1",
+      "answer": "8"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 9,
+    "fields": {
+      "question": "Además de la Ingesta alimentos y bebidas, ¿Qué otra cosa se valora en el patrón nutricional metabólico?",
+      "difficulty": "1",
+      "question_type": "2",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "1",
+      "answer": "9"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 10,
+    "fields": {
+      "question": "En el patrón nutricional metabólico también se valora todo lo relacionado a la piel y pelo",
+      "difficulty": "1",
+      "question_type": "1",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "1",
+      "answer": "10"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 11,
+    "fields": {
+      "question": "En el patrón nutricional metabólico se valora el estado de las membranas mucosas, dientes y problemas de incontinencia, diarrea o estreñimiento",
+      "difficulty": "1",
+      "question_type": "1",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "1",
+      "answer": "11"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 12,
+    "fields": {
+      "question": "Elige que no valorarías en el patrón nutricional metabólico",
+      "difficulty": "1",
+      "question_type": "2",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "1",
+      "answer": "12"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 13,
+    "fields": {
+      "question": "¿Valorarias en el patrón nutricional metabólico las alergias?",
+      "difficulty": "2",
+      "question_type": "2",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "1",
+      "answer": "13"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 14,
+    "fields": {
+      "question": "¿Valorarias en el patrón nutricional metabólico el No. comidas, el lugar, horario y dietas específicas?",
+      "difficulty": "2",
+      "question_type": "2",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "1",
+      "answer": "14"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 15,
+    "fields": {
+      "question": "¿Valorarias en el patrón nutricional metabólico el consumo de suplementos alimenticios?",
+      "difficulty": "2",
+      "question_type": "2",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "1",
+      "answer": "15"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 16,
+    "fields": {
+      "question": "¿Valorarias en el patrón nutricional metabólico la fragilidad de uñas y pelo?",
+      "difficulty": "2",
+      "question_type": "2",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "1",
+      "answer": "16"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 17,
+    "fields": {
+      "question": "¿Valorarias en el patrón nutricional metabólico la presencia de edema?",
+      "difficulty": "3",
+      "question_type": "2",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "1",
+      "answer": "17"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 18,
+    "fields": {
+      "question": "Patrón que pretende conocer y describir el consumo de alimentos y líquidos de la persona en relación con sus necesidades metabólicas.",
+      "difficulty": "1",
+      "question_type": "2",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "1",
+      "answer": "18"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 19,
+    "fields": {
+      "question": "En el patrón nutricional metabólico también se valora todo lo relacionado a la piel y pelo",
+      "difficulty": "1",
+      "question_type": "1",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "1",
+      "answer": "19"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 20,
+    "fields": {
+      "question": "En el patrón nutricional metabólico se valora el estado de las membranas mucosas, dientes y problemas de incontinencia, diarrea y estreñimiento ",
+      "difficulty": "1",
+      "question_type": "1",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "1",
+      "answer": "20"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 21,
+    "fields": {
+      "question": "Elige que no valorarías en el patrón nutricional metabólico",
+      "difficulty": "1",
+      "question_type": "2",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "1",
+      "answer": "21"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 22,
+    "fields": {
+      "question": "El profesional de enfermería desea obtener información para valorar el patrón nutricional metabólico ¿Que deberia pregunta?",
+      "difficulty": "1",
+      "question_type": "2",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "1",
+      "answer": "22"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 23,
+    "fields": {
+      "question": "De acuerdo al caso de anemia las manos y pies frías son una alteracion del patrón nutricional metabólico",
+      "difficulty": "1",
+      "question_type": "1",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "1",
+      "answer": "23"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 24,
+    "fields": {
+      "question": "De acuerdo al caso de anemia el consumo de medicamentos, IMC 16.1 y los latidos irregulares son una alteracion del patron nutricional metabólico",
+      "difficulty": "1",
+      "question_type": "1",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "1",
+      "answer": "24"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 25,
+    "fields": {
+      "question": "De acuerdo al caso de obesidad la HTA y la DM2 son una alteracion del patrón nutricional metabólico",
+      "difficulty": "1",
+      "question_type": "1",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "1",
+      "answer": "25"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 26,
+    "fields": {
+      "question": "De acuerdo al caso de obesidad el IMC 35.2 son una alteracion del patron nutricional metabólico",
+      "difficulty": "1",
+      "question_type": "1",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "1",
+      "answer": "26"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 27,
+    "fields": {
+      "question": "Patrón funcional que valora, la función que se tiene en el ámbito social y familiar y cómo son tus relaciones con la familia, trabajo y sociedad",
+      "difficulty": "1",
+      "question_type": "2",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "1",
+      "answer": "27"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 28,
+    "fields": {
+      "question": "Patrón funcional que describe las capacidades de la movilidad autónoma y la actividad para la realización de ejercicios",
+      "difficulty": "2",
+      "question_type": "2",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "1",
+      "answer": "28"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 29,
+    "fields": {
+      "question": "El patrón actividad ejercicio está alterado cuando la persona tiene índices de estrés y ansiedad severos",
+      "difficulty": "2",
+      "question_type": "1",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "1",
+      "answer": "29"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 30,
+    "fields": {
+      "question": "La escala de Barthel (grado de dependencia) puede ser usada para valorar el patrón actividad ejercicio",
+      "difficulty": "2",
+      "question_type": "1",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "1",
+      "answer": "30"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 31,
+    "fields": {
+      "question": "El patrón actividad ejercicio también mide la dependencia para realizar actividades de la vida cotidiana que puede presentar el individuo",
+      "difficulty": "2",
+      "question_type": "1",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "1",
+      "answer": "31"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 32,
+    "fields": {
+      "question": "Elige que no valorarías en el patrón actividad ejercicio",
+      "difficulty": "2",
+      "question_type": "2",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "1",
+      "answer": "32"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 33,
+    "fields": {
+      "question": "El profesional de enfermería desea obtener información para valorar el patrón actividad/ejercicio ¿Que deberia pregunta?",
+      "difficulty": "2",
+      "question_type": "2",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "1",
+      "answer": "33"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 34,
+    "fields": {
+      "question": "En cuanto al caso de fractura se puede decir que debido a que el dolor también es parte de la fractura este dato se considera también una alteración del patrón actividad ejercicio",
+      "difficulty": "2",
+      "question_type": "1",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "1",
+      "answer": "34"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 35,
+    "fields": {
+      "question": "En cuanto al caso de osteoporosis se puede decir que debido a que la edad es un factor de osteoporosis, también debe considerarse como una afectación del patrón actividad- ejercicio",
+      "difficulty": "2",
+      "question_type": "1",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "1",
+      "answer": "35"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 36,
+    "fields": {
+      "question": "En cuanto al caso de HTA,  el que el ECG normal también debe considerarse como un dato que se debe incluir en el patrón actividad ejercicio ",
+      "difficulty": "2",
+      "question_type": "1",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "1",
+      "answer": "36"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 37,
+    "fields": {
+      "question": "¿Qué preguntas se le deben hacer a la paciente con HTA para valorar mejor el patrón actividad ejercicio?",
+      "difficulty": "2",
+      "question_type": "2",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "1",
+      "answer": "37"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 38,
+    "fields": {
+      "question": "Patrón funcional que describe lo sensorio- perceptual y cognitivo",
+      "difficulty": "3",
+      "question_type": "2",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "1",
+      "answer": "38"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 39,
+    "fields": {
+      "question": "En el patrón cognitivo perceptual se valora el dolor",
+      "difficulty": "3",
+      "question_type": "1",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "1",
+      "answer": "39"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 40,
+    "fields": {
+      "question": "Las escalas de EVA y Glasgow se utilizan para valorar el patrón cognitivo perceptual",
+      "difficulty": "3",
+      "question_type": "1",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "1",
+      "answer": "40"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 41,
+    "fields": {
+      "question": "¿Qué valora el patrón cognitivo perceptual?",
+      "difficulty": "3",
+      "question_type": "2",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "1",
+      "answer": "41"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 42,
+    "fields": {
+      "question": "En el patrón cognitivo perceptual se valoran las diferentes alteraciones de los sentidos",
+      "difficulty": "3",
+      "question_type": "1",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "1",
+      "answer": "42"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 43,
+    "fields": {
+      "question": "El profesional de enfermería desea obtener información para valorar el patrón cognitivo perceptual ¿Qué no deberia pregunta?",
+      "difficulty": "3",
+      "question_type": "2",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "1",
+      "answer": "43"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 44,
+    "fields": {
+      "question": "El profesional de enfermería desea obtener información para valorar el patrón cognitivo perceptual ¿Qué no deberia pregunta?",
+      "difficulty": "3",
+      "question_type": "2",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "1",
+      "answer": "44"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 45,
+    "fields": {
+      "question": "En el patrón cognitivo perceptual se valora la conciencia ",
+      "difficulty": "3",
+      "question_type": "1",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "1",
+      "answer": "45"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 46,
+    "fields": {
+      "question": "En el patrón cognitivo perceptual se valoran las alteraciones perceptivas y alteraciones cognitivas ",
+      "difficulty": "3",
+      "question_type": "1",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "1",
+      "answer": "46"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 47,
+    "fields": {
+      "question": "De acuerdo al caso de esquizofrenia la edad, las ilusiones, la risa inapropiada y el decaimiento forman parte del patrón cognitivo perceptual",
+      "difficulty": "3",
+      "question_type": "1",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "1",
+      "answer": "47"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 48,
+    "fields": {
+      "question": "De acuerdo al caso de parkinson que dato no corresponde al patrón cognitivo perceptual",
+      "difficulty": "3",
+      "question_type": "2",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "1",
+      "answer": "48"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 49,
+    "fields": {
+      "question": "De acuerdo al caso de alzheimer que dato no corresponde al patrón cognitivo perceptual",
+      "difficulty": "3",
+      "question_type": "2",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "1",
+      "answer": "49"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 50,
+    "fields": {
+      "question": "Patrón funcional que describe las formas o estrategias de afrontamiento",
+      "difficulty": "1",
+      "question_type": "2",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "2",
+      "answer": "50"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 51,
+    "fields": {
+      "question": "En el patrón adaptación tolerancia al estrés se toman en cuenta los cambios importantes de la vida",
+      "difficulty": "1",
+      "question_type": "1",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "2",
+      "answer": "51"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 52,
+    "fields": {
+      "question": "En el patrón adaptación tolerancia al estrés se toman en cuenta la perspectiva que tiene la persona sobre sí mismo",
+      "difficulty": "1",
+      "question_type": "1",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "2",
+      "answer": "52"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 53,
+    "fields": {
+      "question": "Elige que no se valora en el patrón adaptación tolerancia al estrés",
+      "difficulty": "1",
+      "question_type": "2",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "2",
+      "answer": "53"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 54,
+    "fields": {
+      "question": "El patrón afrontamiento tolerancia al estrés se considera alterado cuando la persona puede hablar de sus problemas y se adapta a los cambios",
+      "difficulty": "1",
+      "question_type": "1",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "2",
+      "answer": "54"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 55,
+    "fields": {
+      "question": "El patrón afrontamiento tolerancia al estrés se considera alterado cuando la persona recurre a drogas o alcohol ante un problema",
+      "difficulty": "1",
+      "question_type": "1",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "2",
+      "answer": "55"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 56,
+    "fields": {
+      "question": "El profesional de enfermería desea obtener información para valorar el patrón adaptación tolerancia al estrés ¿Que deberia preguntar?",
+      "difficulty": "1",
+      "question_type": "2",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "2",
+      "answer": "56"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 57,
+    "fields": {
+      "question": "El profesional de enfermería desea obtener información para valorar el patrón adaptación tolerancia al estrés ¿Que deberia preguntar?",
+      "difficulty": "1",
+      "question_type": "2",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "2",
+      "answer": "57"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 58,
+    "fields": {
+      "question": "El profesional de enfermería desea obtener información para valorar el patrón adaptación tolerancia al estrés ¿Que no deberia preguntar?",
+      "difficulty": "1",
+      "question_type": "2",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "2",
+      "answer": "58"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 59,
+    "fields": {
+      "question": "El profesional de enfermería desea obtener información para valorar el patrón adaptación tolerancia al estrés ¿Que no deberia preguntar?",
+      "difficulty": "1",
+      "question_type": "2",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "2",
+      "answer": "59"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 60,
+    "fields": {
+      "question": "El patrón adaptación tolerancia al estrés puede verse alterado cuando la persona minimiza o niega el problema",
+      "difficulty": "2",
+      "question_type": "1",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "2",
+      "answer": "60"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 61,
+    "fields": {
+      "question": "En el patrón adaptación tolerancia al estrés también se incluyen aspectos como preocupación exagerada, tensión y estrés",
+      "difficulty": "2",
+      "question_type": "1",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "2",
+      "answer": "61"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 62,
+    "fields": {
+      "question": "El llanto y la ira ante una situación o cambio se valoran en el patrón adaptación tolerancia al estrés",
+      "difficulty": "2",
+      "question_type": "1",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "2",
+      "answer": "62"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 63,
+    "fields": {
+      "question": "De acuerdo al caso clínico de Cáncer  que deberia de preguntar el personal de enfermería para valorar mejor el patrón adaptación tolerancia al estrés",
+      "difficulty": "2",
+      "question_type": "2",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "2",
+      "answer": "63"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 64,
+    "fields": {
+      "question": "Según el caso clínico de pérdida que datos en cuanto al patrón adaptación tolerancia al estrés  se encuentran",
+      "difficulty": "2",
+      "question_type": "2",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "2",
+      "answer": "64"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 65,
+    "fields": {
+      "question": "De acuerdo al caso de pérdida que dato no corresponde al patrón adaptación tolerancia al estrés",
+      "difficulty": "2",
+      "question_type": "2",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "2",
+      "answer": "65"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 66,
+    "fields": {
+      "question": "De acuerdo al caso de pérdida que deberia de preguntar el personal de enfermería para valorar mejor el patrón adaptación tolerancia al estrés ",
+      "difficulty": "2",
+      "question_type": "2",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "2",
+      "answer": "66"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 67,
+    "fields": {
+      "question": "Patrón funcional que valora, la función que se tiene en el ambito social y familiar y como son tus relaciones con la familia, trabajo y sociedad",
+      "difficulty": "2",
+      "question_type": "2",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "2",
+      "answer": "67"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 68,
+    "fields": {
+      "question": "¿Qué se valora en el patron rol/ relaciones?",
+      "difficulty": "2",
+      "question_type": "2",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "2",
+      "answer": "68"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 69,
+    "fields": {
+      "question": "El sentirse solo es muestra de alteracion del patrón rol relaciones",
+      "difficulty": "2",
+      "question_type": "1",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "2",
+      "answer": "69"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 70,
+    "fields": {
+      "question": "La violencia domestia es muestra de alteración del patron rol relaciones",
+      "difficulty": "3",
+      "question_type": "1",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "2",
+      "answer": "70"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 71,
+    "fields": {
+      "question": "En el patron rol relaciones tambien se deben de valorar los estados de animo de la persona",
+      "difficulty": "3",
+      "question_type": "1",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "2",
+      "answer": "71"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 72,
+    "fields": {
+      "question": "Escoge lo que si se valora en el patron rol relaciones",
+      "difficulty": "3",
+      "question_type": "2",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "2",
+      "answer": "72"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 73,
+    "fields": {
+      "question": "Escoge lo que no se valora en el patron rol relaciones",
+      "difficulty": "3",
+      "question_type": "2",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "2",
+      "answer": "73"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 74,
+    "fields": {
+      "question": "El profesional de enfermeria desea obtener información para valorar el patron rol relaciones ¿Qué deberia pregunta?",
+      "difficulty": "3",
+      "question_type": "2",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "2",
+      "answer": "74"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 75,
+    "fields": {
+      "question": "El profesional de enfermeria desea obtener información para valorar el patron rol relaciones¿Qué deberia pregunta?",
+      "difficulty": "3",
+      "question_type": "2",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "2",
+      "answer": "75"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 76,
+    "fields": {
+      "question": "El profesional de enfermeria desea obtener información para valorar el patron rol relaciones ¿Qué no deberia pregunta?",
+      "difficulty": "3",
+      "question_type": "2",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "2",
+      "answer": "76"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 77,
+    "fields": {
+      "question": "El profesional de enfermeria desea obtener información para valorar el patron rol relaciones¿Qué no deberia pregunta?",
+      "difficulty": "3",
+      "question_type": "2",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "2",
+      "answer": "77"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 78,
+    "fields": {
+      "question": "La valoración del patron rol relaciones solo se enfoca en las relaciones familiares",
+      "difficulty": "3",
+      "question_type": "1",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "2",
+      "answer": "78"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 79,
+    "fields": {
+      "question": "El patron rol relaciones nos ayuda a identificar que funcion desempeñamos en nuestra familia ",
+      "difficulty": "3",
+      "question_type": "1",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "2",
+      "answer": "79"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 80,
+    "fields": {
+      "question": "Todas estas respuestas son puntos a valorar la cabeza, excepto",
+      "difficulty": "1",
+      "question_type": "2",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "6",
+      "answer": "80"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 81,
+    "fields": {
+      "question": "El estado de conciencia pertenece a la valoración del cuello",
+      "difficulty": "1",
+      "question_type": "1",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "6",
+      "answer": "81"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 82,
+    "fields": {
+      "question": "durante la valoración cefalocaudal en la cabeza se evalúa fragilidad del cabello, alopecia, estado de conciencia",
+      "difficulty": "2",
+      "question_type": "1",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "6",
+      "answer": "82"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 83,
+    "fields": {
+      "question": "el estado de conciencia pertenece a la valoración de la cabeza",
+      "difficulty": "2",
+      "question_type": "1",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "6",
+      "answer": "83"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 84,
+    "fields": {
+      "question": "la presencia de drenajes y vendajes de cabeza se evalúa durante la inspección en cabeza",
+      "difficulty": "3",
+      "question_type": "1",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "6",
+      "answer": "84"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 85,
+    "fields": {
+      "question": "durante la valoración de la nariz se observa, presencia de manchas,lunares y heridas.",
+      "difficulty": "3",
+      "question_type": "1",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "6",
+      "answer": "85"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 86,
+    "fields": {
+      "question": "El propósito de la inspección del cráneo es valorar el tamaño, forma y simetría",
+      "difficulty": "1",
+      "question_type": "1",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "6",
+      "answer": "86"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 87,
+    "fields": {
+      "question": "La palpación del cráneo se hace con movimientos suaves y giratorios comenzando por la mandíbula, siguiendo por la frente y finalmente cada lado",
+      "difficulty": "1",
+      "question_type": "1",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "6",
+      "answer": "87"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 88,
+    "fields": {
+      "question": "Para observar la simetría facial que se debe pedir al paciente",
+      "difficulty": "1",
+      "question_type": "2",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "6",
+      "answer": "88"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 89,
+    "fields": {
+      "question": "Para observar la simetría facial que se debe pedir al paciente",
+      "difficulty": "2",
+      "question_type": "2",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "6",
+      "answer": "89"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 90,
+    "fields": {
+      "question": "Para observar la simetría facial que se debe pedir al paciente",
+      "difficulty": "2",
+      "question_type": "2",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "6",
+      "answer": "90"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 91,
+    "fields": {
+      "question": "Para observar la simetría facial que se debe pedir al paciente",
+      "difficulty": "2",
+      "question_type": "2",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "6",
+      "answer": "91"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 92,
+    "fields": {
+      "question": "La valoración del cráneo consta de inspección, palpación y percusión",
+      "difficulty": "3",
+      "question_type": "1",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "6",
+      "answer": "92"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 93,
+    "fields": {
+      "question": "Al inspeccionar la nariz observamos estos aspectos,excepto",
+      "difficulty": "3",
+      "question_type": "2",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "5",
+      "answer": "93"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 94,
+    "fields": {
+      "question": "Al evaluar la presencia de dispositivos nasales como lo son la sonda nasofaríngea, dispositivos para administrar oxigeno, debemos evaluar estos aspectos, excepto",
+      "difficulty": "3",
+      "question_type": "2",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "5",
+      "answer": "94"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 95,
+    "fields": {
+      "question": "El edema parpebral se refiere a la acumulacion anormal de líquido en tejidos de las superficie interna del párpado",
+      "difficulty": "3",
+      "question_type": "1",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "5",
+      "answer": "95"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 96,
+    "fields": {
+      "question": "Entropion se refiere cuando el párpado se pliega sobre sí mismo contra el globo ocular",
+      "difficulty": "2",
+      "question_type": "1",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "5",
+      "answer": "96"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 97,
+    "fields": {
+      "question": "Entropion se refiere cuando el párpado se pliega hacia afuera y no entra en contacto con el globo ocular",
+      "difficulty": "2",
+      "question_type": "1",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "5",
+      "answer": "97"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 98,
+    "fields": {
+      "question": "Entropion se refiere a la propulsión notable del globo ocular de la cavidad orbitaria",
+      "difficulty": "2",
+      "question_type": "1",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "5",
+      "answer": "98"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 99,
+    "fields": {
+      "question": "Ectropión se pliega hacia afuera y entra en contacto con el globo ocular",
+      "difficulty": "2",
+      "question_type": "1",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "5",
+      "answer": "99"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 100,
+    "fields": {
+      "question": "Cuando valoramos la nariz en valoracion cefalocaudal se observa midriasis ,anisocoria?",
+      "difficulty": "1",
+      "question_type": "1",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "5",
+      "answer": "100"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 101,
+    "fields": {
+      "question": "A que parte de la valoración cefalocaudal pertenece estos dispositivos?",
+      "difficulty": "1",
+      "question_type": "2",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "5",
+      "answer": "101"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 102,
+    "fields": {
+      "question": "La cánula nasofaríngea se utiliza para administrar alimentación entera o para realizar lavados gástricos",
+      "difficulty": "1",
+      "question_type": "1",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "5",
+      "answer": "102"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 103,
+    "fields": {
+      "question": "El aleteo nasal corresponde a una forma de observar si existe presencia de dificultad respiratoria",
+      "difficulty": "2",
+      "question_type": "1",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "5",
+      "answer": "103"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 104,
+    "fields": {
+      "question": "Para valorar la existencia de secreciones nasales debemos describir: color,consistencia y distribución.",
+      "difficulty": "2",
+      "question_type": "1",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "5",
+      "answer": "104"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 105,
+    "fields": {
+      "question": "Que evaluamos al inspeccionar la nariz?",
+      "difficulty": "2",
+      "question_type": "2",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "5",
+      "answer": "105"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 106,
+    "fields": {
+      "question": "Existe 1 tipo de anamnesis de enfermería",
+      "difficulty": "1",
+      "question_type": "1",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "4",
+      "answer": "106"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 107,
+    "fields": {
+      "question": "Cuantos tipos de anamnesis de enfermería existen",
+      "difficulty": "1",
+      "question_type": "2",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "4",
+      "answer": "107"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 108,
+    "fields": {
+      "question": "Cuando realizamos anamnesis de enfermería preguntamos procedencia y ocupación del paciente",
+      "difficulty": "1",
+      "question_type": "1",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "4",
+      "answer": "108"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 109,
+    "fields": {
+      "question": "Es importante indagar sobre los antecedentes patológicos",
+      "difficulty": "1",
+      "question_type": "1",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "4",
+      "answer": "109"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 110,
+    "fields": {
+      "question": "Los antecedentes familiares no son de utilidad en la valoración de enfermería",
+      "difficulty": "1",
+      "question_type": "1",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "4",
+      "answer": "110"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 111,
+    "fields": {
+      "question": "Según el caso clinico de mala relación familiar que datos en cuanto al patron rol  relaciones  se encuentran",
+      "difficulty": "1",
+      "question_type": "2",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "4",
+      "answer": "111"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 112,
+    "fields": {
+      "question": "Según el caso clinico de mala relación familiar el no contar con alguien para hablar es una alteracion en el patron rol relaciones",
+      "difficulty": "1",
+      "question_type": "1",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "4",
+      "answer": "112"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 113,
+    "fields": {
+      "question": "De acuerdo al caso de mala relación familiar que dato no corresponde al patron rol relaciones",
+      "difficulty": "1",
+      "question_type": "2",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "4",
+      "answer": "113"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 114,
+    "fields": {
+      "question": "Según el caso clinico de insatisfacción del rol que datos en cuanto al patron rol  relaciones  se encuentran",
+      "difficulty": "1",
+      "question_type": "2",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "4",
+      "answer": "114"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 115,
+    "fields": {
+      "question": "De acuerdo al caso de isatisfacción del rol que deberia de preguntar el personal de enfermeria para valorar mejor el patron rol relaciones",
+      "difficulty": "1",
+      "question_type": "2",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "4",
+      "answer": "115"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 116,
+    "fields": {
+      "question": "El perfil del paciente se refiere a los datos bibliográficos y modo de vida actual",
+      "difficulty": "2",
+      "question_type": "1",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "4",
+      "answer": "116"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 117,
+    "fields": {
+      "question": "En la anamnesis de enfermería indagamos estos puntos, excepto",
+      "difficulty": "2",
+      "question_type": "2",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "4",
+      "answer": "117"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 118,
+    "fields": {
+      "question": "Es importante indagar sobre los antecedentes patológicos familiares para tener una relación con la enfermedad del paciente",
+      "difficulty": "2",
+      "question_type": "1",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "4",
+      "answer": "118"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 119,
+    "fields": {
+      "question": "A que parte de la anamnesis de enfermería pertenece los datos bibliográficos",
+      "difficulty": "2",
+      "question_type": "2",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "4",
+      "answer": "119"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 120,
+    "fields": {
+      "question": "Según el caso clinico de mala relación laboral que datos en cuanto al patron rol  relaciones  se encuentran",
+      "difficulty": "2",
+      "question_type": "2",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "4",
+      "answer": "120"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 121,
+    "fields": {
+      "question": "En cuanto al caso mala relación laboral, debido a que la edad puede influir en las relaciones laborales, la edad tambien tendria que agregarse dentro del patron rol relaciones",
+      "difficulty": "2",
+      "question_type": "1",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "4",
+      "answer": "121"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 122,
+    "fields": {
+      "question": "En la imagen se muestra que se valoro en un paciente, elige que elementos fueron valorados del patron rol relaciones",
+      "difficulty": "2",
+      "question_type": "2",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "4",
+      "answer": "122"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 123,
+    "fields": {
+      "question": "En la imagen se muestra que se valoro en un paciente, elige que elementos NO pertenecen al patron rol relaciones",
+      "difficulty": "2",
+      "question_type": "2",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "4",
+      "answer": "123"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 124,
+    "fields": {
+      "question": "Que elementos del patron rol relaciones estan alterados",
+      "difficulty": "2",
+      "question_type": "2",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "4",
+      "answer": "124"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 125,
+    "fields": {
+      "question": "En el patron  funcional es importante saber si existe algun problema entre sus creencias y el tratamiento que se le brinda",
+      "difficulty": "2",
+      "question_type": "2",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "4",
+      "answer": "125"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 126,
+    "fields": {
+      "question": "A que parte de la anamnesis de enfermería pertenece tiempo de la enfermedad",
+      "difficulty": "3",
+      "question_type": "2",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "4",
+      "answer": "126"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 127,
+    "fields": {
+      "question": "Evalúa la forma de aparición de la enfermedad desde el momento en que inicia esta",
+      "difficulty": "3",
+      "question_type": "2",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "4",
+      "answer": "127"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 128,
+    "fields": {
+      "question": "En esta fase de la anamnesis de enfermería , debe considerarse frases más breves para redactar :",
+      "difficulty": "3",
+      "question_type": "2",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "4",
+      "answer": "128"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 129,
+    "fields": {
+      "question": "La anamnesis se considera indirecta",
+      "difficulty": "3",
+      "question_type": "2",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "4",
+      "answer": "129"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 130,
+    "fields": {
+      "question": "Se define como el grado de correlación entre el aspecto físico",
+      "difficulty": "1",
+      "question_type": "2",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "3",
+      "answer": "130"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 131,
+    "fields": {
+      "question": "El aumento desproporcionado de la longitud de las extremidades en relación con el tronco se refiere a",
+      "difficulty": "1",
+      "question_type": "2",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "3",
+      "answer": "131"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 132,
+    "fields": {
+      "question": "El observar el aspecto general del paciente nos ayuda a valorar nivel de conciencia del paciente a simple vista",
+      "difficulty": "1",
+      "question_type": "1",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "3",
+      "answer": "132"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 133,
+    "fields": {
+      "question": "Cuando a primera vista observamos movimientos o marcha anormal, estamos evaluando hábitos externos",
+      "difficulty": "1",
+      "question_type": "1",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "3",
+      "answer": "133"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 134,
+    "fields": {
+      "question": "La expresión de la cara nos puede dar signos de",
+      "difficulty": "1",
+      "question_type": "2",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "3",
+      "answer": "134"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 135,
+    "fields": {
+      "question": "Aquí se debe señalar la condición genérica del paciente",
+      "difficulty": "2",
+      "question_type": "2",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "3",
+      "answer": "135"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 136,
+    "fields": {
+      "question": "La importancia de la valoración de este punto reside en que hay enfermedades propias de una edad, además que los mecanismos de acción y de defensa son diferentes de acuerdo a los diferentes grupos etéreos",
+      "difficulty": "2",
+      "question_type": "2",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "3",
+      "answer": "136"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 137,
+    "fields": {
+      "question": "Refleja el estilo de vida, así como los antecedentes patológicos del paciente. El proceso de envejecimiento",
+      "difficulty": "2",
+      "question_type": "2",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "3",
+      "answer": "137"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 138,
+    "fields": {
+      "question": "Está determinado en base a la relación que hay entre el tejido óseo, muscular y tejido celular subcutáneo",
+      "difficulty": "2",
+      "question_type": "2",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "3",
+      "answer": "138"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 139,
+    "fields": {
+      "question": "Son aquellos movimientos que por sus características se apartan de los que hay en un individuo sano Temblores convulsiones Tics Movimientos Coreicos Atetósicos Distónicos Fasciculaciones Hemibalismo Movimientos Parkinsonianos",
+      "difficulty": "3",
+      "question_type": "2",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "3",
+      "answer": "139"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 140,
+    "fields": {
+      "question": "Se refiere a Movimientos involuntarios de zonas musculares",
+      "difficulty": "3",
+      "question_type": "2",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "3",
+      "answer": "140"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 141,
+    "fields": {
+      "question": "Es Debido a la contractura de los extensores y a la rigidez en extensión, describe a la pierna paralizada en un movimiento circular",
+      "difficulty": "3",
+      "question_type": "2",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "3",
+      "answer": "141"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 142,
+    "fields": {
+      "question": "En este estado de conciencia el paciente responde mal ante estímulos, vuelve a caer en sueño, pierde momentáneamente el estado de conciencia responde a estímulos mayores como hablarle, moverle o tocarle",
+      "difficulty": "3",
+      "question_type": "2",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "3",
+      "answer": "142"
+    }
+  },
+  {
+    "model": "api.Question",
+    "pk": 143,
+    "fields": {
+      "question": "No hay reacción de defensa ante estímulos dolorosos y realiza solo movimientos involuntarios, emite algunos sonidos.",
+      "difficulty": "3",
+      "question_type": "2",
+      "created_by": "nurse1",
+      "updated_by": "nurse1",
+      "created_date": "2021-04-21T12:59:32.169671Z",
+      "updated_date": "2021-04-21T12:59:32.169671Z",
+      "methodology": "3",
+      "answer": "143"
+    }
+  }
+]
