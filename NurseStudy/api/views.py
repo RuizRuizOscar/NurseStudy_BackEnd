@@ -1,3 +1,7 @@
+# import json
+from django.http import HttpResponse
+from django.core import serializers
+from django.http import JsonResponse
 from django.shortcuts import render, get_object_or_404
 from django.db.models import Max
 from rest_framework import generics
@@ -207,6 +211,60 @@ class DestroyUsersAPIView(generics.DestroyAPIView):
     serializer_class = UsersSerializer
 
 # -----------------------------------------------------------
+
+class RetrieveMethodologyDifficultyAPIView(generics.RetrieveAPIView):
+    def get(self, *args, **kwargs):
+        methodology_id = kwargs["pk"] #url
+        methodology = get_object_or_404(Methodology, pk=methodology_id) # modelo, field por el que va a buscar
+        result = Question.objects.filter(methodology_id=methodology_id).aggregate(Max('difficulty')) # methodology_id=methodology_id el primero es el campo a buscar, el segundo es el valor obtenido
+        return Response(result)
+
+# -----------------------------------------------------------
+
+class ListQuestionsByMethAPIView(generics.ListAPIView):
+    # queryset = Question.objects.filter(methodology_id)
+    # serializer_class = QuestionsListSerializer
+    # depth =2
+    def get(self, *args, **kwargs):
+        methodology_id = kwargs["pk"] #url
+        difficulty_level = kwargs["pk_alt"]
+        methodology = get_object_or_404(Methodology, pk=methodology_id) # modelo, field por el que va a buscar
+        result = Question.objects.filter(methodology_id=methodology_id).filter(difficulty=difficulty_level) #.values()
+        print(result)
+        # print(result[0].__dict__)
+        result2 = Answer.objects.filter(id=answer_id)
+        # result2 = Answer.objects.values_list('right_answer', flat = True)
+        # .filter(id= result.id )
+        
+        x = []
+        for q in result:
+            item_as_dict = {}
+            item_as_dict['question_type'] = q.question_type
+            item_as_dict['right_answer'] = q.right_answer
+            item_as_dict['wrong_answers'] = q.wrong_answers
+            x.append(item_as_dict)
+
+        print(x)
+
+        return JsonResponse({"Question": list(result.values('id', 'question', 'question_type', 'methodology', 'answer_id'))})
+
+        # return JsonResponse({"Answer": list(result2.values('right_answer'))})  #, 'wrong_answers'
+        # return JsonResponse({"Question": list(result)}) #.values('question', 'question_type', 'methodology', 'answer')
+
+        # result_json = serializers.serialize('json', result)
+        # return HttpResponse(result_json, content_type='application/json')
+
+        # result_list = list(my_queryset.values('first_named_field', 'second_named_field'))
+        # return HttpResponse(json.data(result))
+# -----------------------------------------------------------
+
+class RetrieveProgressByUserAPIView(generics.RetrieveAPIView):
+    def get(self, *args, **kwargs):
+        user = kwargs["pk"]
+        # methodology = kwargs["pk_alt"]
+        methodology = get_object_or_404(Methodology, pk=methodology_id) # modelo, field por el que va a buscar
+        result = Question.objects.filter(methodology_id=methodology_id).aggregate(Max('difficulty')) # methodology_id=methodology_id el primero es el campo a buscar, el segundo es el valor obtenido
+        return Response(result)
 
 class RetrieveMethodologyDifficultyAPIView(generics.RetrieveAPIView):
     def get(self, *args, **kwargs):

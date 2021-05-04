@@ -12,7 +12,7 @@ from .views import ListProgressAPIView, RetrieveProgressAPIView, DestroyProgress
 from .views import ListQuestionsAPIView, RetrieveQuestionsAPIView, DestroyQuestionsAPIView, UpdateQuestionsAPIView, CreateQuestionsAPIView
 from .views import ListUsersAPIView, RetrieveUsersAPIView, DestroyUsersAPIView, UpdateUsersAPIView, CreateUsersAPIView
 from .views import RetrieveQuestionAnswerMethodologyAPIView, ListQuestionAnswerMethodologyAPIView
-from .views import RetrieveMethodologyDifficultyAPIView
+from .views import RetrieveMethodologyDifficultyAPIView, ListQuestionsByMethAPIView #, RetrieveProgressByUserMethodologyAPIView
 
 urlpatterns = [
     # URLs Answers
@@ -71,5 +71,8 @@ urlpatterns = [
     path('answ-ques/<int:pk>/', RetrieveQuestionAnswerMethodologyAPIView.as_view(), name='retrieve-question-answer-methodology'),
     path('answ-ques/', ListQuestionAnswerMethodologyAPIView.as_view(), name='list-questions-answers-methodologies'),
 
+    # path('methodology/<int:pk>/difficulty/', RetrieveMethodologyDifficultyAPIView.as_view(), name='retrieve-idmethodology-difficulty'),
     path('methodology/<int:pk>/difficulty/', RetrieveMethodologyDifficultyAPIView.as_view(), name='retrieve-idmethodology-difficulty'),
+    path("questions/<int:pk>/<int:pk_alt>/", ListQuestionsByMethAPIView.as_view(), name="retrieve-questions-answers"),
+    # path("progress/<int:pk>/<int:pk_alt>/", RetrieveProgressByUserMethodologyAPIView.as_view(), name="retrieve-progress-by-user-meth"),
 ]
