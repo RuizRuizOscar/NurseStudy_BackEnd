@@ -73,6 +73,7 @@ urlpatterns = [
 
     # path('methodology/<int:pk>/difficulty/', RetrieveMethodologyDifficultyAPIView.as_view(), name='retrieve-idmethodology-difficulty'),
     path('methodology/<int:pk>/difficulty/', RetrieveMethodologyDifficultyAPIView.as_view(), name='retrieve-idmethodology-difficulty'),
-    path("questions/<int:pk>/<int:pk_alt>/", ListQuestionsByMethAPIView.as_view(), name="retrieve-questions-answers"),
+    path("questions/<int:methodologyURL>/<int:difficultyURL>/", ListQuestionsByMethAPIView.as_view(), name="retrieve-questions-answers"),
     # path("progress/<int:pk>/<int:pk_alt>/", RetrieveProgressByUserMethodologyAPIView.as_view(), name="retrieve-progress-by-user-meth"),
+
 ]

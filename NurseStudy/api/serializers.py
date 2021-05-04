@@ -177,3 +177,17 @@ class MethodologyDifficultySerializer(serializers.ModelSerializer):
         
         # max_rated_entry = YourModel.objects.latest()
         # return max_rated_entry.details
+
+class QuestionsAnswersMethodologyDifficultySerializer(serializers.ModelSerializer):
+    answer = AnswersListSerializer()
+    # methodology = MethodologiesListSerializer(many=False)
+
+    class Meta:
+        model = Question
+        fields = [
+            "id",
+            "question",
+            "question_type",
+            "answer",
+            # "methodology",
+        ]
