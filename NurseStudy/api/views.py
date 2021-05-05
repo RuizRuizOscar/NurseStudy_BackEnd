@@ -100,7 +100,7 @@ class DestroyDamsAPIView(generics.DestroyAPIView):
 
 # Grades
 class ListGradesAPIView(generics.ListAPIView):
-    permission_classes = [IsAuthenticated,]
+    # permission_classes = [IsAuthenticated,]
     queryset = Grades.objects.all()
     serializer_class = GradesListSerializer
 
@@ -262,7 +262,7 @@ class RetrieveMethodologyDifficultyAPIView(generics.RetrieveAPIView):
 # -----------------------------------------------------------
 
 class ListQuestionsByMethAPIView(generics.ListAPIView):
-    permission_classes = [IsAuthenticated,]
+    # permission_classes = [IsAuthenticated,]
     def get(self, *args, **kwargs):
         methodology_id = kwargs["methodologyURL"]
         difficulty_level = kwargs["difficultyURL"]
@@ -271,8 +271,9 @@ class ListQuestionsByMethAPIView(generics.ListAPIView):
         # print(user_id)
     
         queryset = Question.objects.filter(methodology_id=methodology_id, difficulty=difficulty_level)
+        # total_questions_meth_level = queryset.count()
         valid_questions = queryset.exclude(id__in=Grades.objects.filter(question_id__in=queryset.values_list("id", flat=True), user_id=user_id).values_list("question_id",flat=True))    
-
+        print(type(valid_questions))
         # # print(queryset.count())
         # question_ids = queryset.values_list("id", flat=True)
         # # print(question_ids)
@@ -281,7 +282,10 @@ class ListQuestionsByMethAPIView(generics.ListAPIView):
         # valid_questions = queryset.exclude(id__in=answered_questions)
         # # print(valid_questions.values_list("id",flat=True))
         
-        next_question=valid_questions.first()
+        try:
+            next_question=valid_questions.first()
+        except:
+            loquesea()
         
         response = {
             "id":next_question.id,
@@ -337,12 +341,4 @@ class RetrieveProgressByUserAPIView(generics.RetrieveAPIView):
         methodology = get_object_or_404(Methodology, pk=methodology_id) # modelo, field por el que va a buscar
         result = Question.objects.filter(methodology_id=methodology_id).aggregate(Max('difficulty')) # methodology_id=methodology_id el primero es el campo a buscar, el segundo es el valor obtenido
         result2 = Progress.objects.filter(user_id)
-        return Response(result)
-
-class RetrieveMethodologyDifficultyAPIView(generics.RetrieveAPIView):
-    permission_classes = [IsAuthenticated,]
-    def get(self, *args, **kwargs):
-        methodology_id = kwargs["pk"] #url
-        methodology = get_object_or_404(Methodology, pk=methodology_id) # modelo, field por el que va a buscar
-        result = Question.objects.filter(methodology_id=methodology_id).aggregate(Max('difficulty')) # methodology_id=methodology_id el primero es el campo a buscar, el segundo es el valor obtenido
         return Response(result)
