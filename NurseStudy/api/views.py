@@ -268,19 +268,10 @@ class ListQuestionsByMethAPIView(generics.ListAPIView):
         difficulty_level = kwargs["difficultyURL"]
 
         user_id=self.request._user.id
-        # print(user_id)
     
         queryset = Question.objects.filter(methodology_id=methodology_id, difficulty=difficulty_level)
         valid_questions = queryset.exclude(id__in=Grades.objects.filter(question_id__in=queryset.values_list("id", flat=True), user_id=user_id).values_list("question_id",flat=True))    
 
-        # # print(queryset.count())
-        # question_ids = queryset.values_list("id", flat=True)
-        # # print(question_ids)
-        # answered_questions = Grades.objects.filter(question_id__in=question_ids, user_id=user_id).values_list("question_id",flat=True)
-        # # print(answered_questions)
-        # valid_questions = queryset.exclude(id__in=answered_questions)
-        # # print(valid_questions.values_list("id",flat=True))
-        
         next_question=valid_questions.first()
         
         response = {
@@ -292,57 +283,18 @@ class ListQuestionsByMethAPIView(generics.ListAPIView):
         }
         return Response(response)
 
-        # for item in queryset:
-        #     print(item) #= list(item['question'])
-
-        # return HttpResponse(json.simplejson.dumps(queryset), mimetype="application/json")
-
-        # methodology = get_object_or_404(Methodology, pk=methodology_id) # modelo, field por el que va a buscar
-        # result = Question.objects.filter(methodology_id=methodology_id).filter(difficulty=difficulty_level) #.values()
-        # print(result)
-        
-        # return JsonResponse({"Question": list(result.values('id', 'question', 'question_type', 'methodology', 'answer_id'))})
-        
-        
-        # print(result[0].__dict__)
-        # result2 = Answer.objects.filter(id=answer_id)
-        # result2 = Answer.objects.values_list('right_answer', flat = True)
-        # .filter(id= result.id )
-        
-        # x = []
-        # for q in result:
-        #     item_as_dict = {}
-        #     item_as_dict['question_type'] = q.question_type
-        #     item_as_dict['right_answer'] = q.right_answer
-        #     item_as_dict['wrong_answers'] = q.wrong_answers
-        #     x.append(item_as_dict)
-
-        # print(x)
-
-
-        # return JsonResponse({"Answer": list(result2.values('right_answer'))})  #, 'wrong_answers'
-        # return JsonResponse({"Question": list(result)}) #.values('question', 'question_type', 'methodology', 'answer')
-
-        # result_json = serializers.serialize('json', result)
-        # return HttpResponse(result_json, content_type='application/json')
-
-        # result_list = list(my_queryset.values('first_named_field', 'second_named_field'))
-        # return HttpResponse(json.data(result))
 # -----------------------------------------------------------
 
 class RetrieveProgressByUserAPIView(generics.RetrieveAPIView):
     permission_classes = [IsAuthenticated,]
     def get(self, *args, **kwargs):
-        user = kwargs["pk"]
-        methodology = get_object_or_404(Methodology, pk=methodology_id) # modelo, field por el que va a buscar
-        result = Question.objects.filter(methodology_id=methodology_id).aggregate(Max('difficulty')) # methodology_id=methodology_id el primero es el campo a buscar, el segundo es el valor obtenido
-        result2 = Progress.objects.filter(user_id)
-        return Response(result)
+        methodology_id = kwargs["methodologyURL"]
+        user_id=self.request._user.id
 
-class RetrieveMethodologyDifficultyAPIView(generics.RetrieveAPIView):
-    permission_classes = [IsAuthenticated,]
-    def get(self, *args, **kwargs):
-        methodology_id = kwargs["pk"] #url
-        methodology = get_object_or_404(Methodology, pk=methodology_id) # modelo, field por el que va a buscar
-        result = Question.objects.filter(methodology_id=methodology_id).aggregate(Max('difficulty')) # methodology_id=methodology_id el primero es el campo a buscar, el segundo es el valor obtenido
-        return Response(result)
+        queryset = (Progress.objects.filter(methodology_id=methodology_id, user_id=user_id).values())
+        method_prog = queryset.values_list("methodology_progress", flat=True).get()
+
+        response = {
+            "methodology_progress": method_prog,
+        }
+        return Response(response)
