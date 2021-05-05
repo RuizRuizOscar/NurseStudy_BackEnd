@@ -100,7 +100,7 @@ class DestroyDamsAPIView(generics.DestroyAPIView):
 
 # Grades
 class ListGradesAPIView(generics.ListAPIView):
-    permission_classes = [IsAuthenticated,]
+    # permission_classes = [IsAuthenticated,]
     queryset = Grades.objects.all()
     serializer_class = GradesListSerializer
 
@@ -262,7 +262,7 @@ class RetrieveMethodologyDifficultyAPIView(generics.RetrieveAPIView):
 # -----------------------------------------------------------
 
 class ListQuestionsByMethAPIView(generics.ListAPIView):
-    permission_classes = [IsAuthenticated,]
+    # permission_classes = [IsAuthenticated,]
     def get(self, *args, **kwargs):
         methodology_id = kwargs["methodologyURL"]
         difficulty_level = kwargs["difficultyURL"]
@@ -270,9 +270,26 @@ class ListQuestionsByMethAPIView(generics.ListAPIView):
         user_id=self.request._user.id
     
         queryset = Question.objects.filter(methodology_id=methodology_id, difficulty=difficulty_level)
+        # total_questions_meth_level = queryset.count()
         valid_questions = queryset.exclude(id__in=Grades.objects.filter(question_id__in=queryset.values_list("id", flat=True), user_id=user_id).values_list("question_id",flat=True))    
 
+        print(type(valid_questions))
+        # # print(queryset.count())
+        # question_ids = queryset.values_list("id", flat=True)
+        # # print(question_ids)
+        # answered_questions = Grades.objects.filter(question_id__in=question_ids, user_id=user_id).values_list("question_id",flat=True)
+        # # print(answered_questions)
+        # valid_questions = queryset.exclude(id__in=answered_questions)
+        # # print(valid_questions.values_list("id",flat=True))
+        
+        try:
+            next_question=valid_questions.first()
+        except:
+            loquesea()
+
+
         next_question=valid_questions.first()
+
         
         response = {
             "id":next_question.id,
