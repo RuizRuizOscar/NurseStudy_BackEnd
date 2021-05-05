@@ -1,5 +1,3 @@
-# import json
-# from django.forms.models import model_to_dict
 from django.contrib.auth.mixins import LoginRequiredMixin
 from rest_framework.permissions import IsAuthenticated
 from django.http import HttpResponse
@@ -14,7 +12,7 @@ from rest_framework.authtoken.views import ObtainAuthToken
 from rest_framework.authtoken.models import Token
 from rest_framework.response import Response
 
-from .models import Answer, DataAcquisitionMethod, Grades, Methodology, Progress, Question #, User 
+from .models import Answer, DataAcquisitionMethod, Grades, Methodology, Progress, Question
 from django.contrib.auth.models import User
 
 from .serializers import AnswersListSerializer, AnswersSerializer
@@ -44,27 +42,22 @@ class CustomObtainAuthToken(ObtainAuthToken):
 
 # Answer
 class ListAnswersAPIView(generics.ListAPIView):
-    permission_classes = [IsAuthenticated,]
     queryset = Answer.objects.all().order_by("created_by")
     serializer_class = AnswersListSerializer
 
 class CreateAnswersAPIView(generics.CreateAPIView):
-    permission_classes = [IsAuthenticated,]
     queryset = Answer.objects.all()
     serializer_class = AnswersSerializer
 
 class RetrieveAnswersAPIView(generics.RetrieveAPIView):
-    permission_classes = [IsAuthenticated,]
     queryset = Answer.objects.all()
     serializer_class = AnswersSerializer
 
 class UpdateAnswersAPIView(generics.UpdateAPIView):
-    permission_classes = [IsAuthenticated,]
     queryset = Answer.objects.all()
     serializer_class = AnswersSerializer
 
 class DestroyAnswersAPIView(generics.DestroyAPIView):
-    permission_classes = [IsAuthenticated,]
     queryset = Answer.objects.all()
     serializer_class = AnswersSerializer
 
@@ -72,27 +65,22 @@ class DestroyAnswersAPIView(generics.DestroyAPIView):
 
 # DataAcquisitionMethods (DAM)
 class ListDamsAPIView(generics.ListAPIView):
-    permission_classes = [IsAuthenticated,]
     queryset = DataAcquisitionMethod.objects.all()
     serializer_class = DamsListSerializer
 
 class CreateDamsAPIView(generics.CreateAPIView):
-    permission_classes = [IsAuthenticated,]
     queryset = DataAcquisitionMethod.objects.all()
     serializer_class = DamsSerializer
 
 class RetrieveDamsAPIView(generics.RetrieveAPIView):
-    permission_classes = [IsAuthenticated,]
     queryset = DataAcquisitionMethod.objects.all()
     serializer_class = DamsSerializer
 
 class UpdateDamsAPIView(generics.UpdateAPIView):
-    permission_classes = [IsAuthenticated,]
     queryset = DataAcquisitionMethod.objects.all()
     serializer_class = DamsSerializer
 
 class DestroyDamsAPIView(generics.DestroyAPIView):
-    permission_classes = [IsAuthenticated,]
     queryset = DataAcquisitionMethod.objects.all()
     serializer_class = DamsSerializer
 
@@ -100,27 +88,22 @@ class DestroyDamsAPIView(generics.DestroyAPIView):
 
 # Grades
 class ListGradesAPIView(generics.ListAPIView):
-    # permission_classes = [IsAuthenticated,]
     queryset = Grades.objects.all()
     serializer_class = GradesListSerializer
 
 class CreateGradesAPIView(generics.CreateAPIView):
-    permission_classes = [IsAuthenticated,]
     queryset = Grades.objects.all()
     serializer_class = GradesSerializer
 
 class RetrieveGradesAPIView(generics.RetrieveAPIView):
-    permission_classes = [IsAuthenticated,]
     queryset = Grades.objects.all()
     serializer_class = GradesSerializer
 
 class UpdateGradesAPIView(generics.UpdateAPIView):
-    permission_classes = [IsAuthenticated,]
     queryset = Grades.objects.all()
     serializer_class = GradesSerializer
 
 class DestroyGradesAPIView(generics.DestroyAPIView):
-    permission_classes = [IsAuthenticated,]
     queryset = Grades.objects.all()
     serializer_class = GradesSerializer
 
@@ -128,27 +111,22 @@ class DestroyGradesAPIView(generics.DestroyAPIView):
 
 # Methodology
 class ListMethodologiesAPIView(generics.ListAPIView):
-    permission_classes = [IsAuthenticated,]
     queryset = Methodology.objects.all()
     serializer_class = MethodologiesListSerializer
 
 class CreateMethodologiesAPIView(generics.CreateAPIView):
-    permission_classes = [IsAuthenticated,]
     queryset = Methodology.objects.all()
     serializer_class = MethodologiesSerializer
 
 class RetrieveMethodologiesAPIView(generics.RetrieveAPIView):
-    permission_classes = [IsAuthenticated,]
     queryset = Methodology.objects.all()
     serializer_class = MethodologiesSerializer
 
 class UpdateMethodologiesAPIView(generics.UpdateAPIView):
-    permission_classes = [IsAuthenticated,]
     queryset = Methodology.objects.all()
     serializer_class = MethodologiesSerializer
 
 class DestroyMethodologiesAPIView(generics.DestroyAPIView):
-    permission_classes = [IsAuthenticated,]
     queryset = Methodology.objects.all()
     serializer_class = MethodologiesSerializer
 
@@ -156,27 +134,22 @@ class DestroyMethodologiesAPIView(generics.DestroyAPIView):
 
 # Progress
 class ListProgressAPIView(generics.ListAPIView):
-    permission_classes = [IsAuthenticated,]
     queryset = Progress.objects.all()
     serializer_class = ProgressListSerializer
 
 class CreateProgressAPIView(generics.CreateAPIView):
-    permission_classes = [IsAuthenticated,]
     queryset = Progress.objects.all()
     serializer_class = ProgressSerializer
 
 class RetrieveProgressAPIView(generics.RetrieveAPIView):
-    permission_classes = [IsAuthenticated,]
     queryset = Progress.objects.all()
     serializer_class = ProgressSerializer
 
 class UpdateProgressAPIView(generics.UpdateAPIView):
-    permission_classes = [IsAuthenticated,]
     queryset = Progress.objects.all()
     serializer_class = ProgressSerializer
 
 class DestroyProgressAPIView(generics.DestroyAPIView):
-    permission_classes = [IsAuthenticated,]
     queryset = Progress.objects.all()
     serializer_class = ProgressSerializer
 
@@ -184,39 +157,32 @@ class DestroyProgressAPIView(generics.DestroyAPIView):
 
 # Question
 class ListQuestionsAPIView(generics.ListAPIView):
-    permission_classes = [IsAuthenticated,]
     queryset = Question.objects.all().order_by("created_by")
     serializer_class = QuestionsListSerializer
 
 class CreateQuestionsAPIView(generics.CreateAPIView):
-    permission_classes = [IsAuthenticated,]
     queryset = Question.objects.all()
     serializer_class = QuestionsSerializer
 
 class RetrieveQuestionsAPIView(generics.RetrieveAPIView):
-    permission_classes = [IsAuthenticated,]
     queryset = Question.objects.all()
     serializer_class = QuestionsSerializer
 
 class UpdateQuestionsAPIView(generics.UpdateAPIView):
-    permission_classes = [IsAuthenticated,]
     queryset = Question.objects.all()
     serializer_class = QuestionsSerializer
 
 class DestroyQuestionsAPIView(generics.DestroyAPIView):
-    permission_classes = [IsAuthenticated,]
     queryset = Question.objects.all()
     serializer_class = QuestionsSerializer
 
 # -----------------------------------------------------------
 
 class RetrieveQuestionAnswerMethodologyAPIView(generics.RetrieveAPIView):
-    permission_classes = [IsAuthenticated,]
     queryset = Question.objects.all()
     serializer_class = QuestionAnswerMethodologySerializer
 
 class ListQuestionAnswerMethodologyAPIView(generics.ListAPIView):
-    permission_classes = [IsAuthenticated,]
     queryset = Question.objects.all().order_by("difficulty")
     serializer_class = QuestionAnswerMethodologyListSerializer
 
@@ -225,7 +191,6 @@ class ListQuestionAnswerMethodologyAPIView(generics.ListAPIView):
 
 # User
 class ListUsersAPIView(generics.ListAPIView):
-    permission_classes = [IsAuthenticated,]
     queryset = User.objects.all()
     serializer_class = UsersListSerializer
 
@@ -235,24 +200,20 @@ class CreateUsersAPIView(generics.CreateAPIView):
     permission_classes = []
 
 class RetrieveUsersAPIView(generics.RetrieveAPIView):
-    permission_classes = [IsAuthenticated,]
     queryset = User.objects.all()
     serializer_class = UsersSerializer
 
 class UpdateUsersAPIView(generics.UpdateAPIView):
-    permission_classes = [IsAuthenticated,]
     queryset = User.objects.all()
     serializer_class = UsersSerializer
 
 class DestroyUsersAPIView(generics.DestroyAPIView):
-    permission_classes = [IsAuthenticated,]
     queryset = User.objects.all()
     serializer_class = UsersSerializer
 
 # -----------------------------------------------------------
 
 class RetrieveMethodologyDifficultyAPIView(generics.RetrieveAPIView):
-    permission_classes = [IsAuthenticated,]
     def get(self, *args, **kwargs):
         methodology_id = kwargs["pk"] #url
         methodology = get_object_or_404(Methodology, pk=methodology_id) # modelo, field por el que va a buscar
@@ -262,7 +223,6 @@ class RetrieveMethodologyDifficultyAPIView(generics.RetrieveAPIView):
 # -----------------------------------------------------------
 
 class ListQuestionsByMethAPIView(generics.ListAPIView):
-    # permission_classes = [IsAuthenticated,]
     def get(self, *args, **kwargs):
         methodology_id = kwargs["methodologyURL"]
         difficulty_level = kwargs["difficultyURL"]
@@ -273,37 +233,40 @@ class ListQuestionsByMethAPIView(generics.ListAPIView):
         # total_questions_meth_level = queryset.count()
         valid_questions = queryset.exclude(id__in=Grades.objects.filter(question_id__in=queryset.values_list("id", flat=True), user_id=user_id).values_list("question_id",flat=True))    
 
-        print(type(valid_questions))
         # # print(queryset.count())
-        # question_ids = queryset.values_list("id", flat=True)
+        question_ids = queryset.values_list("id", flat=True)
         # # print(question_ids)
-        # answered_questions = Grades.objects.filter(question_id__in=question_ids, user_id=user_id).values_list("question_id",flat=True)
+        answered_questions = Grades.objects.filter(question_id__in=question_ids, user_id=user_id).values_list("question_id",flat=True)
         # # print(answered_questions)
-        # valid_questions = queryset.exclude(id__in=answered_questions)
-        # # print(valid_questions.values_list("id",flat=True))
-        
-        try:
-            next_question=valid_questions.first()
-        except:
-            loquesea()
+        valid_questions = queryset.exclude(id__in=answered_questions)
+        # # print(valid_questions.values_list("id",flat=True)) ¡¡Made by David!!
 
+        # Intento de QuerySet para sacar respuestas contestadas correctamente (answers con result=True)
+        ok_answered_questions = Grades.objects.filter(question_id__in=question_ids, user_id=user_id, result=True).values_list("question_id",flat=True)
+        print(ok_answered_questions)
 
         next_question=valid_questions.first()
-
-        
-        response = {
-            "id":next_question.id,
-            "question":next_question.question,
-            "question_type":next_question.question_type,
-            "right_answer":next_question.answer.right_answer,
-            "wrong_answers":next_question.answer.wrong_answers,
-        }
-        return Response(response)
+        print("next_question: ",next_question)
+        if next_question!=None:
+            response = {
+                "id":next_question.id,
+                "question":next_question.question,
+                "question_type":next_question.question_type,
+                "right_answer":next_question.answer.right_answer,
+                "wrong_answers":next_question.answer.wrong_answers,
+            }
+            return Response(response)
+        elif ok_answered_questions.count() >=6:
+            if difficulty_level<3:
+                return Question.objects.filter(methodology_id=methodology_id, difficulty=difficulty_level+1) # Avanza de nivel y regresa siguientes preguntas
+            else:
+                return {} # Ya completó los 3 niveles
+        else: # no ha alcanzado 6 ok answers
+            return Response(valid_questions) # se envian más valid_questions para mostrarse en Front
 
 # -----------------------------------------------------------
 
 class RetrieveProgressByUserAPIView(generics.RetrieveAPIView):
-    permission_classes = [IsAuthenticated,]
     def get(self, *args, **kwargs):
         methodology_id = kwargs["methodologyURL"]
         user_id=self.request._user.id
