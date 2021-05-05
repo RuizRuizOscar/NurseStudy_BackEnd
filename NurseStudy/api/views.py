@@ -291,9 +291,10 @@ class RetrieveProgressByUserAPIView(generics.RetrieveAPIView):
         methodology_id = kwargs["methodologyURL"]
         user_id=self.request._user.id
 
-        queryset = list(Progress.objects.filter(methodology_id=methodology_id, user_id=user_id).values())
-        print(queryset)
-        # response = {
-        #     "methodology_progress":queryset.methodology_progress,
-        # }
-        return JsonResponse(queryset,safe=False) # queryset
+        queryset = (Progress.objects.filter(methodology_id=methodology_id, user_id=user_id).values())
+        method_prog = queryset.values_list("methodology_progress", flat=True).get()
+
+        response = {
+            "methodology_progress": method_prog,
+        }
+        return Response(response)
