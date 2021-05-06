@@ -184,7 +184,7 @@ class RetrieveQuestionAnswerMethodologyAPIView(generics.RetrieveAPIView):
     serializer_class = QuestionAnswerMethodologySerializer
 
 class ListQuestionAnswerMethodologyAPIView(generics.ListAPIView):
-    queryset = Question.objects.all().order_by("difficulty")
+    queryset = Question.objects.all().order_by("methodology")
     serializer_class = QuestionAnswerMethodologyListSerializer
 
 
@@ -239,8 +239,12 @@ class ListQuestionsByMethAPIView(generics.ListAPIView):
         # # print(valid_questions.values_list("id",flat=True)) ¡¡Made by David!!
 
         # Intento de QuerySet para sacar respuestas contestadas correctamente (answers con result=True)
-        # ok_answered_questions = Grades.objects.filter(question_id__in=question_ids, user_id=user_id, result=True).values_list("question_id",flat=True)
-        # print(ok_answered_questions)
+        ok_answered_questions = Grades.objects.filter(question_id__in=question_ids, user_id=user_id, result=True).values_list("question_id",flat=True).count()
+        print("ok_answered_questions: ",ok_answered_questions)
+        if ok_answered_questions >= 6:
+            return Response({
+                "level_up":True
+            })
 
         next_question=valid_questions.first()
         print("next_question: ",next_question)
@@ -254,7 +258,7 @@ class ListQuestionsByMethAPIView(generics.ListAPIView):
             }
             return Response(response) #regresa los valores de la pregunta actual
         return Response({
-            is_ending:True
+            "is_ending":True
         })
 
         #     return Response(response) #regresa los valores de la pregunta actual
@@ -312,4 +316,17 @@ class RetrieveProgressByUserAPIView(generics.RetrieveAPIView):
         
         return Response({
             "result":"Not found",
+        })
+
+# -----------------------------------------------------------
+
+class CountQuestionsByMethAPIView(generics.ListAPIView):
+    def get(self, request, *args, **kwargs):
+        methodology_id= request.data["methodology_id"]
+        difficulty_level= request.data["difficulty"]
+    
+        total_questions_meth_diff = Question.objects.filter(methodology_id=methodology_id, difficulty=difficulty_level).count()
+
+        return Response({
+            "total_questions_by_meth_by_diff":total_questions_meth_diff
         })

@@ -12,7 +12,7 @@ from .views import ListProgressAPIView, RetrieveProgressAPIView, DestroyProgress
 from .views import ListQuestionsAPIView, RetrieveQuestionsAPIView, DestroyQuestionsAPIView, UpdateQuestionsAPIView, CreateQuestionsAPIView
 from .views import ListUsersAPIView, RetrieveUsersAPIView, DestroyUsersAPIView, UpdateUsersAPIView, CreateUsersAPIView
 from .views import RetrieveQuestionAnswerMethodologyAPIView, ListQuestionAnswerMethodologyAPIView
-from .views import RetrieveMethodologyDifficultyAPIView, ListQuestionsByMethAPIView, RetrieveProgressByUserAPIView, CreateUpdateGradesProgressArgsAPIView
+from .views import RetrieveMethodologyDifficultyAPIView, ListQuestionsByMethAPIView, RetrieveProgressByUserAPIView, CreateUpdateGradesProgressArgsAPIView, CountQuestionsByMethAPIView
 
 urlpatterns = [
     # URLs Answers
@@ -74,6 +74,7 @@ urlpatterns = [
     path('methodology/<int:pk>/difficulty/', RetrieveMethodologyDifficultyAPIView.as_view(), name='retrieve-idmethodology-difficulty'),
     path("questions/<int:methodologyURL>/<int:difficultyURL>/", ListQuestionsByMethAPIView.as_view(), name="retrieve-questions-answers"),
     path("updateProgress/", CreateUpdateGradesProgressArgsAPIView.as_view(), name="create-grades-result"),
+    path('question/counter/', CountQuestionsByMethAPIView.as_view(), name='list-questions-counter'),
     
     path("progressbyuser/<int:methodologyURL>/", RetrieveProgressByUserAPIView.as_view(), name="retrieve-progress-by-user"),
 
