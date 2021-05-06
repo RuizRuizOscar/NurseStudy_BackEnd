@@ -38,13 +38,13 @@ class GradesListSerializer(serializers.ModelSerializer):
 class GradesSerializer(serializers.ModelSerializer):
     class Meta:
         model = Grades
-        fields = ["input_answer", "result", "question"] #TODO user
+        fields = ["input_answer", "result", "question", "user"]
 
-    def evalua():
-        if Grades.input_answer == True:
-            Grades.result = True
-        else:
-            Grades.result = False
+    # def evalua():
+    #     if Grades.input_answer == True:
+    #         Grades.result = True
+    #     else:
+    #         Grades.result = False
 
 
 # --------------------------------------------------------
@@ -177,3 +177,17 @@ class MethodologyDifficultySerializer(serializers.ModelSerializer):
         
         # max_rated_entry = YourModel.objects.latest()
         # return max_rated_entry.details
+
+class QuestionsAnswersMethodologyDifficultySerializer(serializers.ModelSerializer):
+    answer = AnswersListSerializer()
+    # methodology = MethodologiesListSerializer(many=False)
+
+    class Meta:
+        model = Question
+        fields = [
+            "id",
+            "question",
+            "question_type",
+            "answer",
+            # "methodology",
+        ]

@@ -3,8 +3,8 @@
     "model": "api.Answer",
     "pk": 1,
     "fields": {
-      "right_answer": "verdadero",
-      "wrong_answers": ["falso", "", "", "", "", ""],
+      "right_answer": "Verdadero",
+      "wrong_answers": ["Falso", "", "", "", "", ""],
       "created_by": "nurse1",
       "updated_by": "nurse1",
       "created_date": "2021-04-21T12:27:32.169671Z",
@@ -15,10 +15,10 @@
     "model": "api.Answer",
     "pk": 2,
     "fields": {
-      "right_answer": "percepción manejo de la salud",
+      "right_answer": "Percepción manejo de la salud",
       "wrong_answers": [
-        "nutricional ",
-        "autopercepción autoconcepto",
+        "Nutricional ",
+        "Autopercepción - Autoconcepto",
         "",
         "",
         "",
@@ -34,8 +34,8 @@
     "model": "api.Answer",
     "pk": 3,
     "fields": {
-      "right_answer": "falso",
-      "wrong_answers": ["verdadero", "", "", "", "", ""],
+      "right_answer": "Falso",
+      "wrong_answers": ["Verdadero", "", "", "", "", ""],
       "created_by": "nurse1",
       "updated_by": "nurse1",
       "created_date": "2021-04-21T12:27:32.169671Z",
@@ -46,10 +46,10 @@
     "model": "api.Answer",
     "pk": 4,
     "fields": {
-      "right_answer": "percepción manejo de la salud",
+      "right_answer": "Percepción manejo de la salud",
       "wrong_answers": [
-        "cognitivo perceptual",
-        "Autopercepción autoconcepto",
+        "Cognitivo perceptual",
+        "Autopercepción - Autoconcepto",
         "",
         "",
         "",
@@ -65,12 +65,12 @@
     "model": "api.Answer",
     "pk": 5,
     "fields": {
-      "right_answer": "conductas de salud",
+      "right_answer": "Conductas de salud",
       "wrong_answers": [
         "IMC",
-        "presenta algún trastorno alimenticio",
-        "estado de conciencia",
-        "características de la piel",
+        "Presenta algún trastorno alimenticio",
+        "Estado de conciencia",
+        "Características de la piel",
         "",
         ""
       ],
@@ -84,12 +84,12 @@
     "model": "api.Answer",
     "pk": 6,
     "fields": {
-      "right_answer": "higiene personal (buena, regular, mala)",
+      "right_answer": "Higiene personal (buena, regular, mala)",
       "wrong_answers": [
         "IMC",
-        "presenta algún trastorno alimenticio",
-        "estado de conciencia",
-        "características de la piel",
+        "Presenta algún trastorno alimenticio",
+        "Estado de conciencia",
+        "Características de la piel",
         "",
         ""
       ],
@@ -103,11 +103,11 @@
     "model": "api.Answer",
     "pk": 7,
     "fields": {
-      "right_answer": "Nutricional /metabólico",
+      "right_answer": "Nutricional / Metabólico",
       "wrong_answers": [
         "Percepción manejo de la salud",
         "Eliminación",
-        "Actividad / ejercicio",
+        "Actividad / Ejercicio",
         "",
         "",
         ""
@@ -160,8 +160,8 @@
     "model": "api.Answer",
     "pk": 10,
     "fields": {
-      "right_answer": "VERDADERO",
-      "wrong_answers": ["FALSO", "", "", "", "", ""],
+      "right_answer": "Verdadero",
+      "wrong_answers": ["Falso", "", "", "", "", ""],
       "created_by": "nurse1",
       "updated_by": "nurse1",
       "created_date": "2021-04-21T12:27:32.169671Z",
@@ -172,8 +172,8 @@
     "model": "api.Answer",
     "pk": 11,
     "fields": {
-      "right_answer": "FALSO",
-      "wrong_answers": ["VERDADERO", "", "", "", "", ""],
+      "right_answer": "Falso",
+      "wrong_answers": ["Verdadero", "", "", "", "", ""],
       "created_by": "nurse1",
       "updated_by": "nurse1",
       "created_date": "2021-04-21T12:27:32.169671Z",
@@ -203,8 +203,8 @@
     "model": "api.Answer",
     "pk": 13,
     "fields": {
-      "right_answer": "VERDADERO",
-      "wrong_answers": ["FALSO", "", "", "", "", ""],
+      "right_answer": "Verdadero",
+      "wrong_answers": ["Falso", "", "", "", "", ""],
       "created_by": "nurse1",
       "updated_by": "nurse1",
       "created_date": "2021-04-21T12:27:32.169671Z",
@@ -215,8 +215,8 @@
     "model": "api.Answer",
     "pk": 14,
     "fields": {
-      "right_answer": "VERDADERO",
-      "wrong_answers": ["FALSO", "", "", "", "", ""],
+      "right_answer": "Verdadero",
+      "wrong_answers": ["Falso", "", "", "", "", ""],
       "created_by": "nurse1",
       "updated_by": "nurse1",
       "created_date": "2021-04-21T12:27:32.169671Z",
@@ -227,8 +227,8 @@
     "model": "api.Answer",
     "pk": 15,
     "fields": {
-      "right_answer": "VERDADERO",
-      "wrong_answers": ["FALSO", "", "", "", "", ""],
+      "right_answer": "Verdadero",
+      "wrong_answers": ["Falso", "", "", "", "", ""],
       "created_by": "nurse1",
       "updated_by": "nurse1",
       "created_date": "2021-04-21T12:27:32.169671Z",
@@ -239,8 +239,8 @@
     "model": "api.Answer",
     "pk": 16,
     "fields": {
-      "right_answer": "VERDADERO",
-      "wrong_answers": ["FALSO", "", "", "", "", ""],
+      "right_answer": "Verdadero",
+      "wrong_answers": ["Falso", "", "", "", "", ""],
       "created_by": "nurse1",
       "updated_by": "nurse1",
       "created_date": "2021-04-21T12:27:32.169671Z",
@@ -251,8 +251,8 @@
     "model": "api.Answer",
     "pk": 17,
     "fields": {
-      "right_answer": "VERDADERO",
-      "wrong_answers": ["FALSO", "", "", "", "", ""],
+      "right_answer": "Verdadero",
+      "wrong_answers": ["Falso", "", "", "", "", ""],
       "created_by": "nurse1",
       "updated_by": "nurse1",
       "created_date": "2021-04-21T12:27:32.169671Z",
@@ -267,7 +267,7 @@
       "wrong_answers": [
         "Percepción manejo de la salud",
         "Eliminación",
-        "Actividad / ejercicio",
+        "Actividad / Ejercicio",
         "",
         "",
         ""
@@ -282,8 +282,8 @@
     "model": "api.Answer",
     "pk": 19,
     "fields": {
-      "right_answer": "TRUE",
-      "wrong_answers": ["FALSE", "", "", "", "", ""],
+      "right_answer": "Verdadero",
+      "wrong_answers": ["Falso", "", "", "", "", ""],
       "created_by": "nurse1",
       "updated_by": "nurse1",
       "created_date": "2021-04-21T12:27:32.169671Z",
@@ -294,8 +294,8 @@
     "model": "api.Answer",
     "pk": 20,
     "fields": {
-      "right_answer": "FALSE",
-      "wrong_answers": ["TRUE", "", "", "", "", ""],
+      "right_answer": "Falso",
+      "wrong_answers": ["Verdadero", "", "", "", "", ""],
       "created_by": "nurse1",
       "updated_by": "nurse1",
       "created_date": "2021-04-21T12:27:32.169671Z",
@@ -344,8 +344,8 @@
     "model": "api.Answer",
     "pk": 23,
     "fields": {
-      "right_answer": "TRUE",
-      "wrong_answers": ["FALSE", "", "", "", "", ""],
+      "right_answer": "Verdadero",
+      "wrong_answers": ["Falso", "", "", "", "", ""],
       "created_by": "nurse1",
       "updated_by": "nurse1",
       "created_date": "2021-04-21T12:27:32.169671Z",
@@ -356,8 +356,8 @@
     "model": "api.Answer",
     "pk": 24,
     "fields": {
-      "right_answer": "FALSE",
-      "wrong_answers": ["TRUE", "", "", "", "", ""],
+      "right_answer": "Falso",
+      "wrong_answers": ["Verdadero", "", "", "", "", ""],
       "created_by": "nurse1",
       "updated_by": "nurse1",
       "created_date": "2021-04-21T12:27:32.169671Z",
@@ -368,8 +368,8 @@
     "model": "api.Answer",
     "pk": 25,
     "fields": {
-      "right_answer": "FALSE",
-      "wrong_answers": ["TRUE", "", "", "", "", ""],
+      "right_answer": "Falso",
+      "wrong_answers": ["Verdadero", "", "", "", "", ""],
       "created_by": "nurse1",
       "updated_by": "nurse1",
       "created_date": "2021-04-21T12:27:32.169671Z",
@@ -380,8 +380,8 @@
     "model": "api.Answer",
     "pk": 26,
     "fields": {
-      "right_answer": "TRUE",
-      "wrong_answers": ["FALSE", "", "", "", "", ""],
+      "right_answer": "Verdadero",
+      "wrong_answers": ["Falso", "", "", "", "", ""],
       "created_by": "nurse1",
       "updated_by": "nurse1",
       "created_date": "2021-04-21T12:27:32.169671Z",
@@ -415,7 +415,7 @@
       "wrong_answers": [
         "Cognitivo/ Perceptual",
         "Eliminación",
-        "Nutricional /metabólico",
+        "Nutricional / Metabólico",
         "",
         "",
         ""
@@ -430,8 +430,8 @@
     "model": "api.Answer",
     "pk": 29,
     "fields": {
-      "right_answer": "FALSE",
-      "wrong_answers": ["TRUE", "", "", "", "", ""],
+      "right_answer": "Falso",
+      "wrong_answers": ["Verdadero", "", "", "", "", ""],
       "created_by": "nurse1",
       "updated_by": "nurse1",
       "created_date": "2021-04-21T12:27:32.169671Z",
@@ -442,8 +442,8 @@
     "model": "api.Answer",
     "pk": 30,
     "fields": {
-      "right_answer": "TRUE",
-      "wrong_answers": ["FALSE", "", "", "", "", ""],
+      "right_answer": "Verdadero",
+      "wrong_answers": ["Falso", "", "", "", "", ""],
       "created_by": "nurse1",
       "updated_by": "nurse1",
       "created_date": "2021-04-21T12:27:32.169671Z",
@@ -454,8 +454,8 @@
     "model": "api.Answer",
     "pk": 31,
     "fields": {
-      "right_answer": "TRUE",
-      "wrong_answers": ["FALSE", "", "", "", "", ""],
+      "right_answer": "Verdadero",
+      "wrong_answers": ["Falso", "", "", "", "", ""],
       "created_by": "nurse1",
       "updated_by": "nurse1",
       "created_date": "2021-04-21T12:27:32.169671Z",
@@ -485,7 +485,7 @@
     "model": "api.Answer",
     "pk": 33,
     "fields": {
-      "right_answer": "¿Realiza alguna actividad física ?",
+      "right_answer": "¿Realiza alguna actividad física?",
       "wrong_answers": [
         "¿Qué conocimientos tiene sobre el cuidado de su salud?",
         "¿A sufrido de alguna pérdida en su vida recientemente?",
@@ -504,8 +504,8 @@
     "model": "api.Answer",
     "pk": 34,
     "fields": {
-      "right_answer": "FALSE",
-      "wrong_answers": ["TRUE", "", "", "", "", ""],
+      "right_answer": "Falso",
+      "wrong_answers": ["Verdadero", "", "", "", "", ""],
       "created_by": "nurse1",
       "updated_by": "nurse1",
       "created_date": "2021-04-21T12:27:32.169671Z",
@@ -516,8 +516,8 @@
     "model": "api.Answer",
     "pk": 35,
     "fields": {
-      "right_answer": "FALSE",
-      "wrong_answers": ["TRUE", "", "", "", "", ""],
+      "right_answer": "Falso",
+      "wrong_answers": ["Verdadero", "", "", "", "", ""],
       "created_by": "nurse1",
       "updated_by": "nurse1",
       "created_date": "2021-04-21T12:27:32.169671Z",
@@ -528,8 +528,8 @@
     "model": "api.Answer",
     "pk": 36,
     "fields": {
-      "right_answer": "TRUE",
-      "wrong_answers": ["FALSE", "", "", "", "", ""],
+      "right_answer": "Verdadero",
+      "wrong_answers": ["Falso", "", "", "", "", ""],
       "created_by": "nurse1",
       "updated_by": "nurse1",
       "created_date": "2021-04-21T12:27:32.169671Z",
@@ -561,9 +561,9 @@
     "fields": {
       "right_answer": "Cognitivo/ Perceptual",
       "wrong_answers": [
-        "Actividad / ejercicio",
+        "Actividad / Ejercicio",
         "Eliminación",
-        "Nutricional /metabólico",
+        "Nutricional / Metabólico",
         "",
         "",
         ""
@@ -578,8 +578,8 @@
     "model": "api.Answer",
     "pk": 39,
     "fields": {
-      "right_answer": "TRUE",
-      "wrong_answers": ["FALSE", "", "", "", "", ""],
+      "right_answer": "Verdadero",
+      "wrong_answers": ["Falso", "", "", "", "", ""],
       "created_by": "nurse1",
       "updated_by": "nurse1",
       "created_date": "2021-04-21T12:27:32.169671Z",
@@ -590,8 +590,8 @@
     "model": "api.Answer",
     "pk": 40,
     "fields": {
-      "right_answer": "TRUE",
-      "wrong_answers": ["FALSE", "", "", "", "", ""],
+      "right_answer": "Verdadero",
+      "wrong_answers": ["Falso", "", "", "", "", ""],
       "created_by": "nurse1",
       "updated_by": "nurse1",
       "created_date": "2021-04-21T12:27:32.169671Z",
@@ -621,8 +621,8 @@
     "model": "api.Answer",
     "pk": 42,
     "fields": {
-      "right_answer": "TRUE",
-      "wrong_answers": ["FALSE", "", "", "", "", ""],
+      "right_answer": "Verdadero",
+      "wrong_answers": ["Falso", "", "", "", "", ""],
       "created_by": "nurse1",
       "updated_by": "nurse1",
       "created_date": "2021-04-21T12:27:32.169671Z",
@@ -671,8 +671,8 @@
     "model": "api.Answer",
     "pk": 45,
     "fields": {
-      "right_answer": "TRUE",
-      "wrong_answers": ["FALSE", "", "", "", "", ""],
+      "right_answer": "Verdadero",
+      "wrong_answers": ["Falso", "", "", "", "", ""],
       "created_by": "nurse1",
       "updated_by": "nurse1",
       "created_date": "2021-04-21T12:27:32.169671Z",
@@ -683,8 +683,8 @@
     "model": "api.Answer",
     "pk": 46,
     "fields": {
-      "right_answer": "TRUE",
-      "wrong_answers": ["FALSE", "", "", "", "", ""],
+      "right_answer": "Verdadero",
+      "wrong_answers": ["Falso", "", "", "", "", ""],
       "created_by": "nurse1",
       "updated_by": "nurse1",
       "created_date": "2021-04-21T12:27:32.169671Z",
@@ -695,8 +695,8 @@
     "model": "api.Answer",
     "pk": 47,
     "fields": {
-      "right_answer": "FALSE",
-      "wrong_answers": ["TRUE", "", "", "", "", ""],
+      "right_answer": "Falso",
+      "wrong_answers": ["Verdadero", "", "", "", "", ""],
       "created_by": "nurse1",
       "updated_by": "nurse1",
       "created_date": "2021-04-21T12:27:32.169671Z",
@@ -764,8 +764,8 @@
     "model": "api.Answer",
     "pk": 51,
     "fields": {
-      "right_answer": "TRUE",
-      "wrong_answers": ["FALSE", "", "", "", "", ""],
+      "right_answer": "Verdadero",
+      "wrong_answers": ["Falso", "", "", "", "", ""],
       "created_by": "nurse1",
       "updated_by": "nurse1",
       "created_date": "2021-04-21T12:27:32.169671Z",
@@ -776,8 +776,8 @@
     "model": "api.Answer",
     "pk": 52,
     "fields": {
-      "right_answer": "FALSE",
-      "wrong_answers": ["TRUE", "", "", "", "", ""],
+      "right_answer": "Falso",
+      "wrong_answers": ["Verdadero", "", "", "", "", ""],
       "created_by": "nurse1",
       "updated_by": "nurse1",
       "created_date": "2021-04-21T12:27:32.169671Z",
@@ -807,8 +807,8 @@
     "model": "api.Answer",
     "pk": 54,
     "fields": {
-      "right_answer": "FALSE",
-      "wrong_answers": ["TRUE", "", "", "", "", ""],
+      "right_answer": "Falso",
+      "wrong_answers": ["Verdadero", "", "", "", "", ""],
       "created_by": "nurse1",
       "updated_by": "nurse1",
       "created_date": "2021-04-21T12:27:32.169671Z",
@@ -819,8 +819,8 @@
     "model": "api.Answer",
     "pk": 55,
     "fields": {
-      "right_answer": "TRUE",
-      "wrong_answers": ["FALSE", "", "", "", "", ""],
+      "right_answer": "Verdadero",
+      "wrong_answers": ["Falso", "", "", "", "", ""],
       "created_by": "nurse1",
       "updated_by": "nurse1",
       "created_date": "2021-04-21T12:27:32.169671Z",
@@ -907,8 +907,8 @@
     "model": "api.Answer",
     "pk": 60,
     "fields": {
-      "right_answer": "TRUE",
-      "wrong_answers": ["FALSE", "", "", "", "", ""],
+      "right_answer": "Verdadero",
+      "wrong_answers": ["Falso", "", "", "", "", ""],
       "created_by": "nurse1",
       "updated_by": "nurse1",
       "created_date": "2021-04-21T12:27:32.169671Z",
@@ -919,8 +919,8 @@
     "model": "api.Answer",
     "pk": 61,
     "fields": {
-      "right_answer": "TRUE",
-      "wrong_answers": ["FALSE", "", "", "", "", ""],
+      "right_answer": "Verdadero",
+      "wrong_answers": ["Falso", "", "", "", "", ""],
       "created_by": "nurse1",
       "updated_by": "nurse1",
       "created_date": "2021-04-21T12:27:32.169671Z",
@@ -931,8 +931,8 @@
     "model": "api.Answer",
     "pk": 62,
     "fields": {
-      "right_answer": "verdadero",
-      "wrong_answers": ["FALSE", "", "", "", "", ""],
+      "right_answer": "Verdadero",
+      "wrong_answers": ["Falso", "", "", "", "", ""],
       "created_by": "nurse1",
       "updated_by": "nurse1",
       "created_date": "2021-04-21T12:27:32.169671Z",
@@ -1057,8 +1057,8 @@
     "model": "api.Answer",
     "pk": 69,
     "fields": {
-      "right_answer": "TRUE",
-      "wrong_answers": ["FALSE", "", "", "", "", ""],
+      "right_answer": "Verdadero",
+      "wrong_answers": ["Falso", "", "", "", "", ""],
       "created_by": "nurse1",
       "updated_by": "nurse1",
       "created_date": "2021-04-21T12:27:32.169671Z",
@@ -1069,8 +1069,8 @@
     "model": "api.Answer",
     "pk": 70,
     "fields": {
-      "right_answer": "TRUE",
-      "wrong_answers": ["FALSE", "", "", "", "", ""],
+      "right_answer": "Verdadero",
+      "wrong_answers": ["Falso", "", "", "", "", ""],
       "created_by": "nurse1",
       "updated_by": "nurse1",
       "created_date": "2021-04-21T12:27:32.169671Z",
@@ -1081,8 +1081,8 @@
     "model": "api.Answer",
     "pk": 71,
     "fields": {
-      "right_answer": "FALSE",
-      "wrong_answers": ["TRUE", "", "", "", "", ""],
+      "right_answer": "Falso",
+      "wrong_answers": ["Verdadero", "", "", "", "", ""],
       "created_by": "nurse1",
       "updated_by": "nurse1",
       "created_date": "2021-04-21T12:27:32.169671Z",
@@ -1207,8 +1207,8 @@
     "model": "api.Answer",
     "pk": 78,
     "fields": {
-      "right_answer": "FALSE",
-      "wrong_answers": ["TRUE", "", "", "", "", ""],
+      "right_answer": "Falso",
+      "wrong_answers": ["Verdadero", "", "", "", "", ""],
       "created_by": "nurse1",
       "updated_by": "nurse1",
       "created_date": "2021-04-21T12:27:32.169671Z",
@@ -1219,8 +1219,8 @@
     "model": "api.Answer",
     "pk": 79,
     "fields": {
-      "right_answer": "verdadero ",
-      "wrong_answers": ["FALSE", "", "", "", "", ""],
+      "right_answer": "Verdadero",
+      "wrong_answers": ["Falso", "", "", "", "", ""],
       "created_by": "nurse1",
       "updated_by": "nurse1",
       "created_date": "2021-04-21T12:27:32.169671Z",
@@ -1231,10 +1231,10 @@
     "model": "api.Answer",
     "pk": 80,
     "fields": {
-      "right_answer": "inspeccionar presencia de aleteo nasal",
+      "right_answer": "Inspeccionar presencia de aleteo nasal",
       "wrong_answers": [
-        "descripción de implantación del cabello",
-        "buscar presencia de parásitos",
+        "Descripción de implantación del cabello",
+        "Buscar presencia de parásitos",
         "",
         "",
         "",
@@ -1250,8 +1250,8 @@
     "model": "api.Answer",
     "pk": 81,
     "fields": {
-      "right_answer": "FALSO",
-      "wrong_answers": ["verdadero", "", "", "", "", ""],
+      "right_answer": "Falso",
+      "wrong_answers": ["Verdadero", "", "", "", "", ""],
       "created_by": "nurse1",
       "updated_by": "nurse1",
       "created_date": "2021-04-21T12:27:32.169671Z",
@@ -1262,8 +1262,8 @@
     "model": "api.Answer",
     "pk": 82,
     "fields": {
-      "right_answer": "verdadero",
-      "wrong_answers": ["FALSO", "", "", "", "", ""],
+      "right_answer": "Verdadero",
+      "wrong_answers": ["Falso", "", "", "", "", ""],
       "created_by": "nurse1",
       "updated_by": "nurse1",
       "created_date": "2021-04-21T12:27:32.169671Z",
@@ -1274,8 +1274,8 @@
     "model": "api.Answer",
     "pk": 83,
     "fields": {
-      "right_answer": "verdadero",
-      "wrong_answers": ["falso", "", "", "", "", ""],
+      "right_answer": "Verdadero",
+      "wrong_answers": ["Falso", "", "", "", "", ""],
       "created_by": "nurse1",
       "updated_by": "nurse1",
       "created_date": "2021-04-21T12:27:32.169671Z",
@@ -1286,8 +1286,8 @@
     "model": "api.Answer",
     "pk": 84,
     "fields": {
-      "right_answer": "verdadero",
-      "wrong_answers": ["falso", "", "", "", "", ""],
+      "right_answer": "Verdadero",
+      "wrong_answers": ["Falso", "", "", "", "", ""],
       "created_by": "nurse1",
       "updated_by": "nurse1",
       "created_date": "2021-04-21T12:27:32.169671Z",
@@ -1298,8 +1298,8 @@
     "model": "api.Answer",
     "pk": 85,
     "fields": {
-      "right_answer": "FALSO",
-      "wrong_answers": ["verdadero", "", "", "", "", ""],
+      "right_answer": "Falso",
+      "wrong_answers": ["Verdadero", "", "", "", "", ""],
       "created_by": "nurse1",
       "updated_by": "nurse1",
       "created_date": "2021-04-21T12:27:32.169671Z",
@@ -1310,8 +1310,8 @@
     "model": "api.Answer",
     "pk": 86,
     "fields": {
-      "right_answer": "VERDADERO",
-      "wrong_answers": ["FALSO", "", "", "", "", ""],
+      "right_answer": "Verdadero",
+      "wrong_answers": ["Falso", "", "", "", "", ""],
       "created_by": "nurse1",
       "updated_by": "nurse1",
       "created_date": "2021-04-21T12:27:32.169671Z",
@@ -1322,8 +1322,8 @@
     "model": "api.Answer",
     "pk": 87,
     "fields": {
-      "right_answer": "FALSO",
-      "wrong_answers": ["VERDADERO", "", "", "", "", ""],
+      "right_answer": "Falso",
+      "wrong_answers": ["Verdadero", "", "", "", "", ""],
       "created_by": "nurse1",
       "updated_by": "nurse1",
       "created_date": "2021-04-21T12:27:32.169671Z",
@@ -1410,8 +1410,8 @@
     "model": "api.Answer",
     "pk": 92,
     "fields": {
-      "right_answer": "FALSE",
-      "wrong_answers": ["TRUE", "", "", "", "", ""],
+      "right_answer": "Falso",
+      "wrong_answers": ["Verdadero", "", "", "", "", ""],
       "created_by": "nurse1",
       "updated_by": "nurse1",
       "created_date": "2021-04-21T12:27:32.169671Z",
@@ -1422,11 +1422,11 @@
     "model": "api.Answer",
     "pk": 93,
     "fields": {
-      "right_answer": "tipo de tubo endotraqueal, fijación, lumen",
+      "right_answer": "Tipo de tubo endotraqueal, fijación, lumen",
       "wrong_answers": [
-        "tipo de dispositivo con el que se está administrando oxigeno",
-        "color,características, de secreciones",
-        "permeabilidad y fijación de la sonda",
+        "Tipo de dispositivo con el que se está administrando oxigeno",
+        "Color,características, de secreciones",
+        "Permeabilidad y fijación de la sonda",
         "",
         "",
         ""
@@ -1441,11 +1441,11 @@
     "model": "api.Answer",
     "pk": 94,
     "fields": {
-      "right_answer": "características del gasto urinario",
+      "right_answer": "Características del gasto urinario",
       "wrong_answers": [
-        "fijación de sonda",
-        "permeabilidad",
-        "presencia de secreciones",
+        "Fijación de sonda",
+        "Permeabilidad",
+        "Presencia de secreciones",
         "",
         "",
         ""
@@ -1460,8 +1460,8 @@
     "model": "api.Answer",
     "pk": 95,
     "fields": {
-      "right_answer": "VERDADERO",
-      "wrong_answers": ["FALSO", "", "", "", "", ""],
+      "right_answer": "Verdadero",
+      "wrong_answers": ["Falso", "", "", "", "", ""],
       "created_by": "nurse1",
       "updated_by": "nurse1",
       "created_date": "2021-04-21T12:27:32.169671Z",
@@ -1472,8 +1472,8 @@
     "model": "api.Answer",
     "pk": 96,
     "fields": {
-      "right_answer": "VERDADERO",
-      "wrong_answers": ["FALSO", "", "", "", "", ""],
+      "right_answer": "Verdadero",
+      "wrong_answers": ["Falso", "", "", "", "", ""],
       "created_by": "nurse1",
       "updated_by": "nurse1",
       "created_date": "2021-04-21T12:27:32.169671Z",
@@ -1484,8 +1484,8 @@
     "model": "api.Answer",
     "pk": 97,
     "fields": {
-      "right_answer": "FALSO",
-      "wrong_answers": ["VERDADERO", "", "", "", "", ""],
+      "right_answer": "Falso",
+      "wrong_answers": ["Verdadero", "", "", "", "", ""],
       "created_by": "nurse1",
       "updated_by": "nurse1",
       "created_date": "2021-04-21T12:27:32.169671Z",
@@ -1496,8 +1496,8 @@
     "model": "api.Answer",
     "pk": 98,
     "fields": {
-      "right_answer": "FALSO",
-      "wrong_answers": ["VERDADERO", "", "", "", "", ""],
+      "right_answer": "Falso",
+      "wrong_answers": ["Verdadero", "", "", "", "", ""],
       "created_by": "nurse1",
       "updated_by": "nurse1",
       "created_date": "2021-04-21T12:27:32.169671Z",
@@ -1508,8 +1508,8 @@
     "model": "api.Answer",
     "pk": 99,
     "fields": {
-      "right_answer": "FALSO",
-      "wrong_answers": ["VERDADERO", "", "", "", "", ""],
+      "right_answer": "Falso",
+      "wrong_answers": ["Verdadero", "", "", "", "", ""],
       "created_by": "nurse1",
       "updated_by": "nurse1",
       "created_date": "2021-04-21T12:27:32.169671Z",
@@ -1520,8 +1520,8 @@
     "model": "api.Answer",
     "pk": 100,
     "fields": {
-      "right_answer": "FALSO",
-      "wrong_answers": ["verdadero", "", "", "", "", ""],
+      "right_answer": "Falso",
+      "wrong_answers": ["Verdadero", "", "", "", "", ""],
       "created_by": "nurse1",
       "updated_by": "nurse1",
       "created_date": "2021-04-21T12:27:32.169671Z",
@@ -1532,8 +1532,8 @@
     "model": "api.Answer",
     "pk": 101,
     "fields": {
-      "right_answer": "nariz",
-      "wrong_answers": ["ojos", "párpados", "orejas y oídos", "", "", ""],
+      "right_answer": "Nariz",
+      "wrong_answers": ["Ojos", "Párpados", "Orejas y Oídos", "", "", ""],
       "created_by": "nurse1",
       "updated_by": "nurse1",
       "created_date": "2021-04-21T12:27:32.169671Z",
@@ -1544,8 +1544,8 @@
     "model": "api.Answer",
     "pk": 102,
     "fields": {
-      "right_answer": "falso",
-      "wrong_answers": ["VERDADERO", "", "", "", "", ""],
+      "right_answer": "Falso",
+      "wrong_answers": ["Verdadero", "", "", "", "", ""],
       "created_by": "nurse1",
       "updated_by": "nurse1",
       "created_date": "2021-04-21T12:27:32.169671Z",
@@ -1556,8 +1556,8 @@
     "model": "api.Answer",
     "pk": 103,
     "fields": {
-      "right_answer": "VERDADERO",
-      "wrong_answers": ["falso", "", "", "", "", ""],
+      "right_answer": "Verdadero",
+      "wrong_answers": ["Falso", "", "", "", "", ""],
       "created_by": "nurse1",
       "updated_by": "nurse1",
       "created_date": "2021-04-21T12:27:32.169671Z",
@@ -1568,8 +1568,8 @@
     "model": "api.Answer",
     "pk": 104,
     "fields": {
-      "right_answer": "falso",
-      "wrong_answers": ["VERDADERO", "", "", "", "", ""],
+      "right_answer": "Falso",
+      "wrong_answers": ["Verdadero", "", "", "", "", ""],
       "created_by": "nurse1",
       "updated_by": "nurse1",
       "created_date": "2021-04-21T12:27:32.169671Z",
@@ -1580,8 +1580,8 @@
     "model": "api.Answer",
     "pk": 105,
     "fields": {
-      "right_answer": "permeabilidad de fosas nasales",
-      "wrong_answers": ["cabello", "color y textura", "", "", "", ""],
+      "right_answer": "Permeabilidad de fosas nasales",
+      "wrong_answers": ["Cabello", "Color y Textura", "", "", "", ""],
       "created_by": "nurse1",
       "updated_by": "nurse1",
       "created_date": "2021-04-21T12:27:32.169671Z",
@@ -1592,8 +1592,8 @@
     "model": "api.Answer",
     "pk": 106,
     "fields": {
-      "right_answer": "FALSO",
-      "wrong_answers": ["verdadero", "", "", "", "", ""],
+      "right_answer": "Falso",
+      "wrong_answers": ["Verdadero", "", "", "", "", ""],
       "created_by": "nurse1",
       "updated_by": "nurse1",
       "created_date": "2021-04-21T12:27:32.169671Z",
@@ -1616,8 +1616,8 @@
     "model": "api.Answer",
     "pk": 108,
     "fields": {
-      "right_answer": "verdadero",
-      "wrong_answers": ["FALSO", "", "", "", "", ""],
+      "right_answer": "Verdadero",
+      "wrong_answers": ["Falso", "", "", "", "", ""],
       "created_by": "nurse1",
       "updated_by": "nurse1",
       "created_date": "2021-04-21T12:27:32.169671Z",
@@ -1628,8 +1628,8 @@
     "model": "api.Answer",
     "pk": 109,
     "fields": {
-      "right_answer": "VERDADERO",
-      "wrong_answers": ["FALSO", "", "", "", "", ""],
+      "right_answer": "Verdadero",
+      "wrong_answers": ["Falso", "", "", "", "", ""],
       "created_by": "nurse1",
       "updated_by": "nurse1",
       "created_date": "2021-04-21T12:27:32.169671Z",
@@ -1640,8 +1640,8 @@
     "model": "api.Answer",
     "pk": 110,
     "fields": {
-      "right_answer": "FALSO",
-      "wrong_answers": ["VERDADERO", "", "", "", "", ""],
+      "right_answer": "Falso",
+      "wrong_answers": ["Verdadero", "", "", "", "", ""],
       "created_by": "nurse1",
       "updated_by": "nurse1",
       "created_date": "2021-04-21T12:27:32.169671Z",
@@ -1671,8 +1671,8 @@
     "model": "api.Answer",
     "pk": 112,
     "fields": {
-      "right_answer": "verdadero ",
-      "wrong_answers": ["FALSE", "", "", "", "", ""],
+      "right_answer": "Verdadero",
+      "wrong_answers": ["Falso", "", "", "", "", ""],
       "created_by": "nurse1",
       "updated_by": "nurse1",
       "created_date": "2021-04-21T12:27:32.169671Z",
@@ -1740,8 +1740,8 @@
     "model": "api.Answer",
     "pk": 116,
     "fields": {
-      "right_answer": "VERDADERO",
-      "wrong_answers": ["FALSO", "", "", "", "", ""],
+      "right_answer": "Verdadero",
+      "wrong_answers": ["Falso", "", "", "", "", ""],
       "created_by": "nurse1",
       "updated_by": "nurse1",
       "created_date": "2021-04-21T12:27:32.169671Z",
@@ -1752,8 +1752,8 @@
     "model": "api.Answer",
     "pk": 117,
     "fields": {
-      "right_answer": "presencia de heridas en tórax",
-      "wrong_answers": ["ocupación", "estado civil", "", "", "", ""],
+      "right_answer": "Presencia de heridas en tórax",
+      "wrong_answers": ["Ocupación", "Estado Civil", "", "", "", ""],
       "created_by": "nurse1",
       "updated_by": "nurse1",
       "created_date": "2021-04-21T12:27:32.169671Z",
@@ -1764,8 +1764,8 @@
     "model": "api.Answer",
     "pk": 118,
     "fields": {
-      "right_answer": "verdadero",
-      "wrong_answers": ["FALSO", "", "", "", "", ""],
+      "right_answer": "Verdadero",
+      "wrong_answers": ["Falso", "", "", "", "", ""],
       "created_by": "nurse1",
       "updated_by": "nurse1",
       "created_date": "2021-04-21T12:27:32.169671Z",
@@ -1776,10 +1776,10 @@
     "model": "api.Answer",
     "pk": 119,
     "fields": {
-      "right_answer": "perfil del paciente",
+      "right_answer": "Perfil del paciente",
       "wrong_answers": [
-        "enfermedad actual",
-        "antecedentes familiares",
+        "Enfermedad actual",
+        "Antecedentes familiares",
         "",
         "",
         "",
@@ -1798,10 +1798,10 @@
       "right_answer": "Mala relación con compañeros de trabajo",
       "wrong_answers": [
         "Tristeza",
-        "",
         "Persona de mayor edad en el trabajo",
         "Insatisfacción en el trabajo",
         "Aislamiento laboral",
+        "",
         ""
       ],
       "created_by": "nurse1",
@@ -1814,8 +1814,8 @@
     "model": "api.Answer",
     "pk": 121,
     "fields": {
-      "right_answer": "FALSE",
-      "wrong_answers": ["verdadero ", "", "", "", "", ""],
+      "right_answer": "Falso",
+      "wrong_answers": ["Verdadero", "", "", "", "", ""],
       "created_by": "nurse1",
       "updated_by": "nurse1",
       "created_date": "2021-04-21T12:27:32.169671Z",
@@ -1829,11 +1829,11 @@
       "right_answer": "Cuestionamiento sobre el rol que desempeña en la familia",
       "wrong_answers": [
         "Toma de temperatura",
-        "",
         "Habitos alimentarios",
         "Cambios en el estado de animo",
         "Cuestionamiento sobre el numero de integrantes en su familia",
-        "Cuestionamiento de presencia de problemas para relacionarse con familiares o amigos"
+        "Cuestionamiento de presencia de problemas para relacionarse con familiares o amigos",
+        ""
       ],
       "created_by": "nurse1",
       "updated_by": "nurse1",
@@ -1851,8 +1851,8 @@
         "Signos vitales",
         "Pregutas sobre la pertenecia a algun grupo social ",
         "Cuestionamiento sobre relación laboral",
-        "",
-        "Cusestionamiento sobre algun problema de comunicación que permita la interacción"
+        "Cusestionamiento sobre algun problema de comunicación que permita la interacción",
+        ""
       ],
       "created_by": "nurse1",
       "updated_by": "nurse1",
@@ -1870,8 +1870,8 @@
         "Edad 17 años",
         "Mala relación con su padre",
         "Moretones en distinas partes del cuerpo",
-        "",
-        "Antecedentes de ITS"
+        "Antecedentes de ITS",
+        ""
       ],
       "created_by": "nurse1",
       "updated_by": "nurse1",
@@ -1883,11 +1883,11 @@
     "model": "api.Answer",
     "pk": 125,
     "fields": {
-      "right_answer": "ninguno",
+      "right_answer": "Ninguno",
       "wrong_answers": [
-        "cognitivo perseptual ",
-        "rol relaciones",
-        "persepcion manejo de la salud",
+        "Cognitivo perseptual ",
+        "Rol relaciones",
+        "Persepcion manejo de la Salud",
         "",
         "",
         ""
@@ -1902,10 +1902,10 @@
     "model": "api.Answer",
     "pk": 126,
     "fields": {
-      "right_answer": "enfermedad actual",
+      "right_answer": "Enfermedad actual",
       "wrong_answers": [
-        "antecedentes patológicos",
-        "antecedentes familiares",
+        "Antecedentes patológicos",
+        "Antecedentes familiares",
         "",
         "",
         "",
@@ -1921,10 +1921,10 @@
     "model": "api.Answer",
     "pk": 127,
     "fields": {
-      "right_answer": "enfermedad actual",
+      "right_answer": "Enfermedad actual",
       "wrong_answers": [
-        "perfil del paciente",
-        "antecedentes patológicos",
+        "Perfil del paciente",
+        "Antecedentes patológicos",
         "",
         "",
         "",
@@ -1940,10 +1940,10 @@
     "model": "api.Answer",
     "pk": 128,
     "fields": {
-      "right_answer": "motivo de la consulta",
+      "right_answer": "Motivo de la consulta",
       "wrong_answers": [
-        "enfermedad actual",
-        "antecedentes familiares",
+        "Enfermedad actual",
+        "Antecedentes familiares",
         "",
         "",
         "",
@@ -1959,10 +1959,10 @@
     "model": "api.Answer",
     "pk": 129,
     "fields": {
-      "right_answer": "se interroga a familia o acompañante",
+      "right_answer": "Se interroga a familia o acompañante",
       "wrong_answers": [
-        "se interroga al paciente",
-        "se observa el expediente clínico",
+        "Se interroga al paciente",
+        "Se observa el expediente clínico",
         "",
         "",
         "",
@@ -1978,8 +1978,8 @@
     "model": "api.Answer",
     "pk": 130,
     "fields": {
-      "right_answer": "hábitos externos",
-      "wrong_answers": ["hábitos internos", "aspecto general", "", "", "", ""],
+      "right_answer": "Hábitos Externos",
+      "wrong_answers": ["Hábitos Internos", "Aspecto General", "", "", "", ""],
       "created_by": "nurse1",
       "updated_by": "nurse1",
       "created_date": "2021-04-21T12:27:32.169671Z",
@@ -1990,8 +1990,8 @@
     "model": "api.Answer",
     "pk": 131,
     "fields": {
-      "right_answer": "anormalidades del hábito exterior",
-      "wrong_answers": ["expresión del paciente", "postura", "", "", "", ""],
+      "right_answer": "Anormalidades del hábito exterior",
+      "wrong_answers": ["Expresión del paciente", "Postura", "", "", "", ""],
       "created_by": "nurse1",
       "updated_by": "nurse1",
       "created_date": "2021-04-21T12:27:32.169671Z",
@@ -2002,8 +2002,8 @@
     "model": "api.Answer",
     "pk": 132,
     "fields": {
-      "right_answer": "VERDADERO",
-      "wrong_answers": ["FALSO", "", "", "", "", ""],
+      "right_answer": "Verdadero",
+      "wrong_answers": ["Falso", "", "", "", "", ""],
       "created_by": "nurse1",
       "updated_by": "nurse1",
       "created_date": "2021-04-21T12:27:32.169671Z",
@@ -2014,8 +2014,8 @@
     "model": "api.Answer",
     "pk": 133,
     "fields": {
-      "right_answer": "VERDADERO",
-      "wrong_answers": ["FALSO", "", "", "", "", ""],
+      "right_answer": "Verdadero",
+      "wrong_answers": ["Falso", "", "", "", "", ""],
       "created_by": "nurse1",
       "updated_by": "nurse1",
       "created_date": "2021-04-21T12:27:32.169671Z",
@@ -2026,10 +2026,10 @@
     "model": "api.Answer",
     "pk": 134,
     "fields": {
-      "right_answer": "dolor",
+      "right_answer": "Dolor",
       "wrong_answers": [
-        "estado de conciencia",
-        "sexo del paciente",
+        "Estado de Conciencia",
+        "Sexo del Paciente",
         "",
         "",
         "",
@@ -2045,10 +2045,10 @@
     "model": "api.Answer",
     "pk": 135,
     "fields": {
-      "right_answer": "hábitos externos",
+      "right_answer": "Hábitos externos",
       "wrong_answers": [
-        "patrones funcionales",
-        "entrevista indirecta",
+        "Patrones Funcionales",
+        "Entrevista Indirecta",
         "",
         "",
         "",
@@ -2064,10 +2064,10 @@
     "model": "api.Answer",
     "pk": 136,
     "fields": {
-      "right_answer": "edad que representa a simple vista",
+      "right_answer": "Edad que representa a simple vista",
       "wrong_answers": [
-        "grasa corporal",
-        "estado de conciencia",
+        "Grasa corporal",
+        "Estado de conciencia",
         "",
         "",
         "",
@@ -2083,8 +2083,8 @@
     "model": "api.Answer",
     "pk": 137,
     "fields": {
-      "right_answer": "edad aparente",
-      "wrong_answers": ["compleccion fisica", "constitucion", "", "", "", ""],
+      "right_answer": "Edad aparente",
+      "wrong_answers": ["Compleccion fisica", "Constitucion", "", "", "", ""],
       "created_by": "nurse1",
       "updated_by": "nurse1",
       "created_date": "2021-04-21T12:27:32.169671Z",
@@ -2095,10 +2095,10 @@
     "model": "api.Answer",
     "pk": 138,
     "fields": {
-      "right_answer": "grado de robustez del individuo",
+      "right_answer": "Grado de robustez del individuo",
       "wrong_answers": [
-        "aspecto particular",
-        "constitución del paciente",
+        "Aspecto particular",
+        "Constitución del paciente",
         "",
         "",
         "",
@@ -2114,10 +2114,10 @@
     "model": "api.Answer",
     "pk": 139,
     "fields": {
-      "right_answer": "movimientos coordinados",
+      "right_answer": "Movimientos coordinados",
       "wrong_answers": [
-        "movimientos involuntarios",
-        "movimientos arrítmicos",
+        "Movimientos involuntarios",
+        "Movimientos arrítmicos",
         "",
         "",
         "",
@@ -2133,10 +2133,10 @@
     "model": "api.Answer",
     "pk": 140,
     "fields": {
-      "right_answer": "fasciculaciones",
+      "right_answer": "Fasciculaciones",
       "wrong_answers": [
-        "hemibalismo",
-        "movimientos parkinsonianos",
+        "Hemibalismo",
+        "Movimientos Parkinsonianos",
         "",
         "",
         "",
@@ -2152,8 +2152,8 @@
     "model": "api.Answer",
     "pk": 141,
     "fields": {
-      "right_answer": "hemiplejias",
-      "wrong_answers": ["marcha helicópoda", "marcha atáxica", "", "", "", ""],
+      "right_answer": "Hemiplejias",
+      "wrong_answers": ["Marcha Helicópoda", "Marcha Atáxica", "", "", "", ""],
       "created_by": "nurse1",
       "updated_by": "nurse1",
       "created_date": "2021-04-21T12:27:32.169671Z",
@@ -2164,8 +2164,8 @@
     "model": "api.Answer",
     "pk": 142,
     "fields": {
-      "right_answer": "confusión",
-      "wrong_answers": ["obnubilación", "alerta", "estupor", "", "", ""],
+      "right_answer": "Confusión",
+      "wrong_answers": ["Obnubilación", "Alerta", "Estupor", "", "", ""],
       "created_by": "nurse1",
       "updated_by": "nurse1",
       "created_date": "2021-04-21T12:27:32.169671Z",
@@ -2176,8 +2176,8 @@
     "model": "api.Answer",
     "pk": 143,
     "fields": {
-      "right_answer": "estupor",
-      "wrong_answers": ["confusión", "alerta", "obnubilación", "", "", ""],
+      "right_answer": "Estupor",
+      "wrong_answers": ["Confusión", "Alerta", "Obnubilación", "", "", ""],
       "created_by": "nurse1",
       "updated_by": "nurse1",
       "created_date": "2021-04-21T12:27:32.169671Z",

@@ -18,7 +18,7 @@
     "model": "api.Question",
     "pk": 2,
     "fields": {
-      "question": "En que patrón funcional se busca la percepción que tiene el paciente sobre su estado de salud  ",
+      "question": "¿En que patrón funcional se busca la percepción que tiene el paciente sobre su estado de salud ?",
       "difficulty": "1",
       "question_type": "2",
       "created_by": "nurse1",
@@ -33,7 +33,7 @@
     "model": "api.Question",
     "pk": 3,
     "fields": {
-      "question": "el patrón percepción manejo de la salud busca saber si los hábitos dietéticos son adecuados",
+      "question": "El patrón percepción manejo de la salud busca saber si los hábitos dietéticos son adecuados",
       "difficulty": "2",
       "question_type": "1",
       "created_by": "nurse1",
@@ -48,7 +48,7 @@
     "model": "api.Question",
     "pk": 4,
     "fields": {
-      "question": "antecedentes quirúrgicos, antecedentes familiares, antecedentes de enfermedades previas; son puntos que evalúa , que patrón funcional ",
+      "question": "Antecedentes quirúrgicos, antecedentes familiares, antecedentes de enfermedades previas; Son puntos que evalúa , ¿que patrón funcional? ",
       "difficulty": "2",
       "question_type": "2",
       "created_by": "nurse1",
@@ -78,7 +78,7 @@
     "model": "api.Question",
     "pk": 6,
     "fields": {
-      "question": "elige el punto que evalúa el patrón percepción manejo de la salud",
+      "question": "Elige el punto que evalúa el patrón percepción manejo de la salud",
       "difficulty": "3",
       "question_type": "2",
       "created_by": "nurse1",
@@ -185,7 +185,7 @@
     "fields": {
       "question": "¿Valorarias en el patrón nutricional metabólico las alergias?",
       "difficulty": "2",
-      "question_type": "2",
+      "question_type": "1",
       "created_by": "nurse1",
       "updated_by": "nurse1",
       "created_date": "2021-04-21T12:59:32.169671Z",
@@ -200,7 +200,7 @@
     "fields": {
       "question": "¿Valorarias en el patrón nutricional metabólico el No. comidas, el lugar, horario y dietas específicas?",
       "difficulty": "2",
-      "question_type": "2",
+      "question_type": "1",
       "created_by": "nurse1",
       "updated_by": "nurse1",
       "created_date": "2021-04-21T12:59:32.169671Z",
@@ -215,7 +215,7 @@
     "fields": {
       "question": "¿Valorarias en el patrón nutricional metabólico el consumo de suplementos alimenticios?",
       "difficulty": "2",
-      "question_type": "2",
+      "question_type": "1",
       "created_by": "nurse1",
       "updated_by": "nurse1",
       "created_date": "2021-04-21T12:59:32.169671Z",
@@ -230,7 +230,7 @@
     "fields": {
       "question": "¿Valorarias en el patrón nutricional metabólico la fragilidad de uñas y pelo?",
       "difficulty": "2",
-      "question_type": "2",
+      "question_type": "1",
       "created_by": "nurse1",
       "updated_by": "nurse1",
       "created_date": "2021-04-21T12:59:32.169671Z",
@@ -245,7 +245,7 @@
     "fields": {
       "question": "¿Valorarias en el patrón nutricional metabólico la presencia de edema?",
       "difficulty": "3",
-      "question_type": "2",
+      "question_type": "1",
       "created_by": "nurse1",
       "updated_by": "nurse1",
       "created_date": "2021-04-21T12:59:32.169671Z",
@@ -318,7 +318,7 @@
     "model": "api.Question",
     "pk": 22,
     "fields": {
-      "question": "El profesional de enfermería desea obtener información para valorar el patrón nutricional metabólico ¿Que deberia pregunta?",
+      "question": "El profesional de enfermería desea obtener información para valorar el patrón nutricional metabólico ¿Que debería preguntar?",
       "difficulty": "1",
       "question_type": "2",
       "created_by": "nurse1",
@@ -333,7 +333,7 @@
     "model": "api.Question",
     "pk": 23,
     "fields": {
-      "question": "De acuerdo al caso de anemia las manos y pies frías son una alteracion del patrón nutricional metabólico",
+      "question": "De acuerdo al caso de anemia, ¿Las manos y pies frías son una alteracion del patrón nutricional metabólico?",
       "difficulty": "1",
       "question_type": "1",
       "created_by": "nurse1",
@@ -348,7 +348,7 @@
     "model": "api.Question",
     "pk": 24,
     "fields": {
-      "question": "De acuerdo al caso de anemia el consumo de medicamentos, IMC 16.1 y los latidos irregulares son una alteracion del patron nutricional metabólico",
+      "question": "De acuerdo al caso de anemia, ¿El consumo de medicamentos, IMC 16.1 y los latidos irregulares son una alteracion del patron nutricional metabólico?",
       "difficulty": "1",
       "question_type": "1",
       "created_by": "nurse1",
@@ -363,7 +363,7 @@
     "model": "api.Question",
     "pk": 25,
     "fields": {
-      "question": "De acuerdo al caso de obesidad la HTA y la DM2 son una alteracion del patrón nutricional metabólico",
+      "question": "De acuerdo al caso de obesidad, ¿La HTA y la DM2 son una alteracion del patrón nutricional metabólico?",
       "difficulty": "1",
       "question_type": "1",
       "created_by": "nurse1",
@@ -378,7 +378,7 @@
     "model": "api.Question",
     "pk": 26,
     "fields": {
-      "question": "De acuerdo al caso de obesidad el IMC 35.2 son una alteracion del patron nutricional metabólico",
+      "question": "De acuerdo al caso de obesidad, ¿El IMC 35.2 son una alteracion del patron nutricional metabólico?",
       "difficulty": "1",
       "question_type": "1",
       "created_by": "nurse1",
@@ -933,7 +933,7 @@
     "model": "api.Question",
     "pk": 63,
     "fields": {
-      "question": "De acuerdo al caso clínico de Cáncer  que deberia de preguntar el personal de enfermería para valorar mejor el patrón adaptación tolerancia al estrés",
+      "question": "De acuerdo al caso clínico de Cáncer  ¿Que deberia de preguntar el personal de enfermería para valorar mejor el patrón adaptación tolerancia al estrés?",
       "difficulty": "2",
       "question_type": "2",
       "created_by": "nurse1",
@@ -963,7 +963,7 @@
     "model": "api.Question",
     "pk": 65,
     "fields": {
-      "question": "De acuerdo al caso de pérdida que dato no corresponde al patrón adaptación tolerancia al estrés",
+      "question": "De acuerdo al caso de pérdida, ¿Que dato no corresponde al patrón adaptación tolerancia al estrés?",
       "difficulty": "2",
       "question_type": "2",
       "created_by": "nurse1",
@@ -978,7 +978,7 @@
     "model": "api.Question",
     "pk": 66,
     "fields": {
-      "question": "De acuerdo al caso de pérdida que deberia de preguntar el personal de enfermería para valorar mejor el patrón adaptación tolerancia al estrés ",
+      "question": "De acuerdo al caso de pérdida, ¿Que deberia de preguntar el personal de enfermería para valorar mejor el patrón adaptación tolerancia al estrés? ",
       "difficulty": "2",
       "question_type": "2",
       "created_by": "nurse1",
@@ -1218,7 +1218,7 @@
     "model": "api.Question",
     "pk": 82,
     "fields": {
-      "question": "durante la valoración cefalocaudal en la cabeza se evalúa fragilidad del cabello, alopecia, estado de conciencia",
+      "question": "Durante la valoración cefalocaudal en la cabeza se evalúa fragilidad del cabello, alopecia, estado de conciencia",
       "difficulty": "2",
       "question_type": "1",
       "created_by": "nurse1",
@@ -1233,7 +1233,7 @@
     "model": "api.Question",
     "pk": 83,
     "fields": {
-      "question": "el estado de conciencia pertenece a la valoración de la cabeza",
+      "question": "El estado de conciencia pertenece a la valoración de la cabeza",
       "difficulty": "2",
       "question_type": "1",
       "created_by": "nurse1",
@@ -1248,7 +1248,7 @@
     "model": "api.Question",
     "pk": 84,
     "fields": {
-      "question": "la presencia de drenajes y vendajes de cabeza se evalúa durante la inspección en cabeza",
+      "question": "La presencia de drenajes y vendajes de cabeza se evalúa durante la inspección en cabeza",
       "difficulty": "3",
       "question_type": "1",
       "created_by": "nurse1",
@@ -1263,7 +1263,7 @@
     "model": "api.Question",
     "pk": 85,
     "fields": {
-      "question": "durante la valoración de la nariz se observa, presencia de manchas,lunares y heridas.",
+      "question": "Durante la valoración de la nariz se observa, presencia de manchas,lunares y heridas.",
       "difficulty": "3",
       "question_type": "1",
       "created_by": "nurse1",
@@ -1383,7 +1383,7 @@
     "model": "api.Question",
     "pk": 93,
     "fields": {
-      "question": "Al inspeccionar la nariz observamos estos aspectos,excepto",
+      "question": "Al inspeccionar la nariz observamos estos aspectos, excepto",
       "difficulty": "3",
       "question_type": "2",
       "created_by": "nurse1",
@@ -1428,7 +1428,7 @@
     "model": "api.Question",
     "pk": 96,
     "fields": {
-      "question": "Entropion se refiere cuando el párpado se pliega sobre sí mismo contra el globo ocular",
+      "question": "Entropión se refiere cuando el párpado se pliega sobre sí mismo contra el globo ocular",
       "difficulty": "2",
       "question_type": "1",
       "created_by": "nurse1",
@@ -1443,7 +1443,7 @@
     "model": "api.Question",
     "pk": 97,
     "fields": {
-      "question": "Entropion se refiere cuando el párpado se pliega hacia afuera y no entra en contacto con el globo ocular",
+      "question": "Entropión se refiere cuando el párpado se pliega hacia afuera y no entra en contacto con el globo ocular",
       "difficulty": "2",
       "question_type": "1",
       "created_by": "nurse1",
@@ -1458,7 +1458,7 @@
     "model": "api.Question",
     "pk": 98,
     "fields": {
-      "question": "Entropion se refiere a la propulsión notable del globo ocular de la cavidad orbitaria",
+      "question": "Entropión se refiere a la propulsión notable del globo ocular de la cavidad orbitaria",
       "difficulty": "2",
       "question_type": "1",
       "created_by": "nurse1",
@@ -1488,7 +1488,7 @@
     "model": "api.Question",
     "pk": 100,
     "fields": {
-      "question": "Cuando valoramos la nariz en valoracion cefalocaudal se observa midriasis ,anisocoria?",
+      "question": "Cuando valoramos la nariz en valoracion cefalocaudal, ¿Se observa midriasis ,anisocoria?",
       "difficulty": "1",
       "question_type": "1",
       "created_by": "nurse1",
@@ -1503,7 +1503,7 @@
     "model": "api.Question",
     "pk": 101,
     "fields": {
-      "question": "A que parte de la valoración cefalocaudal pertenece estos dispositivos?",
+      "question": "¿A que parte de la valoración cefalocaudal pertenece estos dispositivos?",
       "difficulty": "1",
       "question_type": "2",
       "created_by": "nurse1",

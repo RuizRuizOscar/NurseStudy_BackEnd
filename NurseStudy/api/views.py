@@ -1,3 +1,9 @@
+from django.contrib.auth.mixins import LoginRequiredMixin
+from rest_framework.permissions import IsAuthenticated
+from django.http import HttpResponse
+from django.core import serializers
+from django.http import JsonResponse
+from django.utils import timezone
 from django.shortcuts import render, get_object_or_404
 from django.db.models import Max
 from rest_framework import generics
@@ -7,7 +13,7 @@ from rest_framework.authtoken.views import ObtainAuthToken
 from rest_framework.authtoken.models import Token
 from rest_framework.response import Response
 
-from .models import Answer, DataAcquisitionMethod, Grades, Methodology, Progress, Question #, User 
+from .models import Answer, DataAcquisitionMethod, Grades, Methodology, Progress, Question
 from django.contrib.auth.models import User
 
 from .serializers import AnswersListSerializer, AnswersSerializer
@@ -18,7 +24,7 @@ from .serializers import ProgressListSerializer, ProgressSerializer
 from .serializers import QuestionsListSerializer, QuestionsSerializer
 from .serializers import UsersListSerializer, UsersSerializer
 from .serializers import QuestionAnswerMethodologySerializer, QuestionAnswerMethodologyListSerializer
-from .serializers import MethodologyDifficultySerializer
+from .serializers import MethodologyDifficultySerializer, QuestionsAnswersMethodologyDifficultySerializer
 
 # Create your views here.
 # GET User.id & Token & username
@@ -214,3 +220,96 @@ class RetrieveMethodologyDifficultyAPIView(generics.RetrieveAPIView):
         methodology = get_object_or_404(Methodology, pk=methodology_id) # modelo, field por el que va a buscar
         result = Question.objects.filter(methodology_id=methodology_id).aggregate(Max('difficulty')) # methodology_id=methodology_id el primero es el campo a buscar, el segundo es el valor obtenido
         return Response(result)
+
+# -----------------------------------------------------------
+
+class ListQuestionsByMethAPIView(generics.ListAPIView):
+    def get(self, *args, **kwargs):
+        methodology_id = kwargs["methodologyURL"]
+        difficulty_level = kwargs["difficultyURL"]
+        user_id=self.request._user.id
+    
+        queryset = Question.objects.filter(methodology_id=methodology_id, difficulty=difficulty_level)
+        # # print(queryset.count())
+        question_ids = queryset.values_list("id", flat=True)
+        # # print(question_ids)
+        answered_questions = Grades.objects.filter(question_id__in=question_ids, user_id=user_id, result=True).values_list("question_id",flat=True)
+        # # print(answered_questions)
+        valid_questions = queryset.exclude(id__in=answered_questions)
+        # # print(valid_questions.values_list("id",flat=True)) ¡¡Made by David!!
+
+        # Intento de QuerySet para sacar respuestas contestadas correctamente (answers con result=True)
+        # ok_answered_questions = Grades.objects.filter(question_id__in=question_ids, user_id=user_id, result=True).values_list("question_id",flat=True)
+        # print(ok_answered_questions)
+
+        next_question=valid_questions.first()
+        print("next_question: ",next_question)
+        if next_question is not None:
+            response = {
+                "id":next_question.id,
+                "question":next_question.question,
+                "question_type":next_question.question_type,
+                "right_answer":next_question.answer.right_answer,
+                "wrong_answers":next_question.answer.wrong_answers,
+            }
+            return Response(response) #regresa los valores de la pregunta actual
+        return Response({
+            "is_ending":True
+        })
+
+        #     return Response(response) #regresa los valores de la pregunta actual
+        # elif ok_answered_questions.count() >=6:
+        #     if difficulty_level<3:
+        #         return Question.objects.filter(methodology_id=methodology_id, difficulty=difficulty_level+1) # Avanza de nivel y regresa siguientes preguntas
+        #     else:
+        #         return {} # Ya completó los 3 niveles
+        # else: # no ha alcanzado 6 ok answers
+        #     return Response(valid_questions) # se envian más valid_questions para mostrarse en Front
+
+# -----------------------------------------------------------
+
+class CreateUpdateGradesProgressArgsAPIView(generics.CreateAPIView):
+    def post(self, request, *args, **kwargs):
+        print(self.__dict__)
+        print(request.data)
+        methodology_id = request.data["methodology_id"]
+        result= request.data["result"]
+        q_id= request.data["question_id"]
+        user_id=self.request._user.id
+        user_instance=self.request._user
+
+        created_grade= Grades.objects.create(
+            input_answer="0",   # No es requerido en este endpoint
+            result=result,
+            created_by=user_instance,
+            created_date=timezone.now(),
+            user=user_instance,
+            question=Question.objects.get(id=q_id)
+        )
+                    
+        if result == 1:
+            p = Progress.objects.get(methodology_id=methodology_id, user_id=user_id)
+            p.methodology_progress= p.methodology_progress+1
+            p.save()
+
+        return Response({
+            "result":"ok"
+        })        
+    
+# -----------------------------------------------------------
+
+class RetrieveProgressByUserAPIView(generics.RetrieveAPIView):
+    def get(self, *args, **kwargs):
+        methodology_id = kwargs["methodologyURL"]
+        user_id=self.request._user.id
+
+        progress = Progress.objects.filter(methodology_id=methodology_id, user_id=user_id).first()
+        if progress is not None:
+            response = {
+                "methodology_progress": progress.methodology_progress,
+            }
+            return Response(response)
+        
+        return Response({
+            "result":"Not found",
+        })
