@@ -254,7 +254,7 @@ class ListQuestionsByMethAPIView(generics.ListAPIView):
             }
             return Response(response) #regresa los valores de la pregunta actual
         return Response({
-            is_ending:True
+            "is_ending":True
         })
 
         #     return Response(response) #regresa los valores de la pregunta actual
