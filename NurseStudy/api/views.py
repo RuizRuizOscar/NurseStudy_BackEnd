@@ -311,6 +311,7 @@ class RetrieveProgressByUserAPIView(generics.RetrieveAPIView):
         if progress is not None:
             response = {
                 "methodology_progress": progress.methodology_progress,
+                "level": 1+progress.methodology_progress//6
             }
             return Response(response)
         
