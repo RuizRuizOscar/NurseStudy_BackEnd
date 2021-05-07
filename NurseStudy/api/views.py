@@ -239,9 +239,9 @@ class ListQuestionsByMethAPIView(generics.ListAPIView):
         next_question=remaining_questions.first()
         total_questions= queryset.count()
         questions_to_be_answered= int(total_questions*0.6)+1
+        wrong_answered_questions= queryset.exclude(id__in=right_answered_questions.values_list("question_id",flat=True))
         if next_question is None and right_answered_questions.count()<questions_to_be_answered:
-            wrong_answered_questions= queryset.exclude(id__in=right_answered_questions.values_list("question_id",flat=True))
-            next_wrong_question= wrong_answered_questions.first()
+            next_wrong_question= wrong_answered_questions.order_by('?').first()
             response = {
                 "id":next_wrong_question.id,
                 "question":next_wrong_question.question,
@@ -269,13 +269,15 @@ class ListQuestionsByMethAPIView(generics.ListAPIView):
 
 class CreateUpdateGradesProgressArgsAPIView(generics.CreateAPIView):
     def post(self, request, *args, **kwargs):
-        print(self.__dict__)
-        print(request.data)
+        # print(self.__dict__)
+        # print(request.data)
         methodology_id = request.data["methodology_id"]
         result= request.data["result"]
         q_id= request.data["question_id"]
         user_id=self.request._user.id
         user_instance=self.request._user
+
+        question=Question.objects.get(id=q_id)
 
         created_grade= Grades.objects.create(
             input_answer="0",   # No es requerido en este endpoint
@@ -283,13 +285,23 @@ class CreateUpdateGradesProgressArgsAPIView(generics.CreateAPIView):
             created_by=user_instance,
             created_date=timezone.now(),
             user=user_instance,
-            question=Question.objects.get(id=q_id)
+            question=question
         )
-                    
-        if result == 1:
-            p = Progress.objects.get(methodology_id=methodology_id, user_id=user_id)
-            p.methodology_progress= p.methodology_progress+1
-            p.save()
+        # print("Esto es lo bueno:",question)
+        difficulty_level=question.difficulty
+        queryset= Question.objects.filter(methodology_id=methodology_id, difficulty=difficulty_level)
+        questions_to_be_answered= int(queryset.count()*0.6)+1
+
+        question_ids= queryset.values_list("id", flat=True)
+        right_answered_questions= Grades.objects.filter(question_id__in=question_ids, user_id=user_id, result=True).count()
+        print("right_answered_questions: ",right_answered_questions)
+        p = Progress.objects.get(methodology_id=methodology_id, user_id=user_id)
+        p.methodology_progress= right_answered_questions
+        p.save()
+        # if result == 1:
+        #     if p.methodology_progress<questions_to_be_answered:
+        #         p.methodology_progress= p.methodology_progress+1                
+        #         p.save()
 
         return Response({
             "result":"ok"
