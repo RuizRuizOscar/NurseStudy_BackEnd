@@ -323,8 +323,8 @@ class RetrieveProgressByUserAPIView(generics.RetrieveAPIView):
 
 class CountQuestionsByMethAPIView(generics.ListAPIView):
     def get(self, request, *args, **kwargs):
-        methodology_id= request.data["methodology_id"]
-        difficulty_level= request.data["difficulty"]
+        methodology_id= kwargs["methodologyURL"] #request.data["methodology_id"]
+        difficulty_level= kwargs["difficultyURL"] #request.data["difficulty"]
     
         total_questions_meth_diff = Question.objects.filter(methodology_id=methodology_id, difficulty=difficulty_level).count()
 
