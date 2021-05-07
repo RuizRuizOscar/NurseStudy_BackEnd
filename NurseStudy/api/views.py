@@ -225,41 +225,68 @@ class RetrieveMethodologyDifficultyAPIView(generics.RetrieveAPIView):
 
 class ListQuestionsByMethAPIView(generics.ListAPIView):
     def get(self, *args, **kwargs):
-        methodology_id = kwargs["methodologyURL"]
-        difficulty_level = kwargs["difficultyURL"]
+        methodology_id= kwargs["methodologyURL"]
+        difficulty_level= kwargs["difficultyURL"]
         user_id=self.request._user.id
     
-        queryset = Question.objects.filter(methodology_id=methodology_id, difficulty=difficulty_level)
-        # # print(queryset.count())
-        question_ids = queryset.values_list("id", flat=True)
-        # # print(question_ids)
-        answered_questions = Grades.objects.filter(question_id__in=question_ids, user_id=user_id, result=True).values_list("question_id",flat=True)
-        # # print(answered_questions)
-        valid_questions = queryset.exclude(id__in=answered_questions)
-        # # print(valid_questions.values_list("id",flat=True)) ¡¡Made by David!!
+        queryset= Question.objects.filter(methodology_id=methodology_id, difficulty=difficulty_level)
+        question_ids= queryset.values_list("id", flat=True)
+        answered_questions= Grades.objects.filter(question_id__in=question_ids, user_id=user_id)
+        right_answered_questions= answered_questions.filter(result=True)
 
-        # Intento de QuerySet para sacar respuestas contestadas correctamente (answers con result=True)
-        ok_answered_questions = Grades.objects.filter(question_id__in=question_ids, user_id=user_id, result=True).values_list("question_id",flat=True).count()
-        print("ok_answered_questions: ",ok_answered_questions)
-        if ok_answered_questions >= 6:
-            return Response({
-                "level_up":True
-            })
+        remaining_questions= queryset.exclude(id__in=answered_questions.values_list("question_id",flat=True))
 
-        next_question=valid_questions.first()
-        print("next_question: ",next_question)
-        if next_question is not None:
+        next_question=remaining_questions.first()
+        if next_question is None and right_answered_questions.count()<6:
+            wrong_answered_questions= queryset.exclude(id__in=right_answered_questions.values_list("question_id",flat=True))
+            next_wrong_question= wrong_answered_questions.first()
             response = {
-                "id":next_question.id,
-                "question":next_question.question,
-                "question_type":next_question.question_type,
-                "right_answer":next_question.answer.right_answer,
-                "wrong_answers":next_question.answer.wrong_answers,
+                "id":next_wrong_question.id,
+                "question":next_wrong_question.question,
+                "question_type":next_wrong_question.question_type,
+                "right_answer":next_wrong_question.answer.right_answer,
+                "wrong_answers":next_wrong_question.answer.wrong_answers,
             }
             return Response(response) #regresa los valores de la pregunta actual
-        return Response({
-            "is_ending":True
-        })
+        
+        if next_question is None and right_answered_questions.count()>=6:
+            return Response({
+                "is_ending":True
+            })
+
+        response = {
+            "id":next_question.id,
+            "question":next_question.question,
+            "question_type":next_question.question_type,
+            "right_answer":next_question.answer.right_answer,
+            "wrong_answers":next_question.answer.wrong_answers,
+        }
+        return Response(response)
+
+
+        # # Intento de QuerySet para sacar respuestas contestadas correctamente (answers con result=True)
+        # ok_answered_questions = Grades.objects.filter(question_id__in=question_ids, user_id=user_id, result=True).values_list("question_id",flat=True).count()
+        # print("ok_answered_questions: ",ok_answered_questions)
+
+        # if ok_answered_questions >= 6:
+        #     return Response({
+        #         "level_up":True
+        #     })
+
+        # next_question=valid_questions.first()
+        # print("next_question: ",next_question)
+        # if next_question is not None:
+        #     response = {
+        #         "id":next_question.id,
+        #         "question":next_question.question,
+        #         "question_type":next_question.question_type,
+        #         "right_answer":next_question.answer.right_answer,
+        #         "wrong_answers":next_question.answer.wrong_answers,
+        #     }
+        #     return Response(response) #regresa los valores de la pregunta actual
+        # return Response({
+        #     "is_ending":True
+        # })
 
         #     return Response(response) #regresa los valores de la pregunta actual
         # elif ok_answered_questions.count() >=6:
