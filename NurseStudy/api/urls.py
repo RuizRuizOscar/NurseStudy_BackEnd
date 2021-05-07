@@ -74,7 +74,7 @@ urlpatterns = [
     path('methodology/<int:pk>/difficulty/', RetrieveMethodologyDifficultyAPIView.as_view(), name='retrieve-idmethodology-difficulty'),
     path("questions/<int:methodologyURL>/<int:difficultyURL>/", ListQuestionsByMethAPIView.as_view(), name="retrieve-questions-answers"),
     path("updateProgress/", CreateUpdateGradesProgressArgsAPIView.as_view(), name="create-grades-result"),
-    path('question/counter/', CountQuestionsByMethAPIView.as_view(), name='list-questions-counter'),
+    path('question/counter/<int:methodologyURL>/<int:difficultyURL>/', CountQuestionsByMethAPIView.as_view(), name='list-questions-counter'),
     
     path("progressbyuser/<int:methodologyURL>/", RetrieveProgressByUserAPIView.as_view(), name="retrieve-progress-by-user"),
 
