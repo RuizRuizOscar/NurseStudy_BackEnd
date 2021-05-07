@@ -184,7 +184,7 @@ class RetrieveQuestionAnswerMethodologyAPIView(generics.RetrieveAPIView):
     serializer_class = QuestionAnswerMethodologySerializer
 
 class ListQuestionAnswerMethodologyAPIView(generics.ListAPIView):
-    queryset = Question.objects.all().order_by("difficulty")
+    queryset = Question.objects.all().order_by("methodology")
     serializer_class = QuestionAnswerMethodologyListSerializer
 
 
@@ -225,46 +225,45 @@ class RetrieveMethodologyDifficultyAPIView(generics.RetrieveAPIView):
 
 class ListQuestionsByMethAPIView(generics.ListAPIView):
     def get(self, *args, **kwargs):
-        methodology_id = kwargs["methodologyURL"]
-        difficulty_level = kwargs["difficultyURL"]
+        methodology_id= kwargs["methodologyURL"]
+        difficulty_level= kwargs["difficultyURL"]
         user_id=self.request._user.id
     
-        queryset = Question.objects.filter(methodology_id=methodology_id, difficulty=difficulty_level)
-        # # print(queryset.count())
-        question_ids = queryset.values_list("id", flat=True)
-        # # print(question_ids)
-        answered_questions = Grades.objects.filter(question_id__in=question_ids, user_id=user_id, result=True).values_list("question_id",flat=True)
-        # # print(answered_questions)
-        valid_questions = queryset.exclude(id__in=answered_questions)
-        # # print(valid_questions.values_list("id",flat=True)) ¡¡Made by David!!
+        queryset= Question.objects.filter(methodology_id=methodology_id, difficulty=difficulty_level)
+        question_ids= queryset.values_list("id", flat=True)
+        answered_questions= Grades.objects.filter(question_id__in=question_ids, user_id=user_id)
+        right_answered_questions= answered_questions.filter(result=True)
 
-        # Intento de QuerySet para sacar respuestas contestadas correctamente (answers con result=True)
-        # ok_answered_questions = Grades.objects.filter(question_id__in=question_ids, user_id=user_id, result=True).values_list("question_id",flat=True)
-        # print(ok_answered_questions)
+        remaining_questions= queryset.exclude(id__in=answered_questions.values_list("question_id",flat=True))
 
-        next_question=valid_questions.first()
-        print("next_question: ",next_question)
-        if next_question is not None:
+        next_question=remaining_questions.first()
+        total_questions= queryset.count()
+        questions_to_be_answered= int(total_questions*0.6)+1
+        if next_question is None and right_answered_questions.count()<questions_to_be_answered:
+            wrong_answered_questions= queryset.exclude(id__in=right_answered_questions.values_list("question_id",flat=True))
+            next_wrong_question= wrong_answered_questions.first()
             response = {
-                "id":next_question.id,
-                "question":next_question.question,
-                "question_type":next_question.question_type,
-                "right_answer":next_question.answer.right_answer,
-                "wrong_answers":next_question.answer.wrong_answers,
+                "id":next_wrong_question.id,
+                "question":next_wrong_question.question,
+                "question_type":next_wrong_question.question_type,
+                "right_answer":next_wrong_question.answer.right_answer,
+                "wrong_answers":next_wrong_question.answer.wrong_answers,
             }
             return Response(response) #regresa los valores de la pregunta actual
-        return Response({
-            "is_ending":True
-        })
+        
+        if next_question is None and right_answered_questions.count()>=questions_to_be_answered:
+            return Response({
+                "is_ending":True
+            })
 
-        #     return Response(response) #regresa los valores de la pregunta actual
-        # elif ok_answered_questions.count() >=6:
-        #     if difficulty_level<3:
-        #         return Question.objects.filter(methodology_id=methodology_id, difficulty=difficulty_level+1) # Avanza de nivel y regresa siguientes preguntas
-        #     else:
-        #         return {} # Ya completó los 3 niveles
-        # else: # no ha alcanzado 6 ok answers
-        #     return Response(valid_questions) # se envian más valid_questions para mostrarse en Front
+        response = {
+            "id":next_question.id,
+            "question":next_question.question,
+            "question_type":next_question.question_type,
+            "right_answer":next_question.answer.right_answer,
+            "wrong_answers":next_question.answer.wrong_answers,
+        }
+        return Response(response)
 
 # -----------------------------------------------------------
 
@@ -307,9 +306,23 @@ class RetrieveProgressByUserAPIView(generics.RetrieveAPIView):
         if progress is not None:
             response = {
                 "methodology_progress": progress.methodology_progress,
+                "level": 1+progress.methodology_progress//6
             }
             return Response(response)
         
         return Response({
             "result":"Not found",
+        })
+
+# -----------------------------------------------------------
+
+class CountQuestionsByMethAPIView(generics.ListAPIView):
+    def get(self, request, *args, **kwargs):
+        methodology_id= kwargs["methodologyURL"] #request.data["methodology_id"]
+        difficulty_level= kwargs["difficultyURL"] #request.data["difficulty"]
+    
+        total_questions_meth_diff = Question.objects.filter(methodology_id=methodology_id, difficulty=difficulty_level).count()
+
+        return Response({
+            "total_questions_by_meth_by_diff":total_questions_meth_diff
         })
