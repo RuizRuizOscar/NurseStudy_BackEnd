@@ -237,7 +237,9 @@ class ListQuestionsByMethAPIView(generics.ListAPIView):
         remaining_questions= queryset.exclude(id__in=answered_questions.values_list("question_id",flat=True))
 
         next_question=remaining_questions.first()
-        if next_question is None and right_answered_questions.count()<6:
+        total_questions= queryset.count()
+        questions_to_be_answered= int(total_questions*0.6)+1
+        if next_question is None and right_answered_questions.count()<questions_to_be_answered:
             wrong_answered_questions= queryset.exclude(id__in=right_answered_questions.values_list("question_id",flat=True))
             next_wrong_question= wrong_answered_questions.first()
             response = {
@@ -249,7 +251,7 @@ class ListQuestionsByMethAPIView(generics.ListAPIView):
             }
             return Response(response) #regresa los valores de la pregunta actual
         
-        if next_question is None and right_answered_questions.count()>=6:
+        if next_question is None and right_answered_questions.count()>=questions_to_be_answered:
             return Response({
                 "is_ending":True
             })
@@ -262,40 +264,6 @@ class ListQuestionsByMethAPIView(generics.ListAPIView):
             "wrong_answers":next_question.answer.wrong_answers,
         }
         return Response(response)
-
-
-        # # Intento de QuerySet para sacar respuestas contestadas correctamente (answers con result=True)
-        # ok_answered_questions = Grades.objects.filter(question_id__in=question_ids, user_id=user_id, result=True).values_list("question_id",flat=True).count()
-        # print("ok_answered_questions: ",ok_answered_questions)
-
-        # if ok_answered_questions >= 6:
-        #     return Response({
-        #         "level_up":True
-        #     })
-
-        # next_question=valid_questions.first()
-        # print("next_question: ",next_question)
-        # if next_question is not None:
-        #     response = {
-        #         "id":next_question.id,
-        #         "question":next_question.question,
-        #         "question_type":next_question.question_type,
-        #         "right_answer":next_question.answer.right_answer,
-        #         "wrong_answers":next_question.answer.wrong_answers,
-        #     }
-        #     return Response(response) #regresa los valores de la pregunta actual
-        # return Response({
-        #     "is_ending":True
-        # })
-
-        #     return Response(response) #regresa los valores de la pregunta actual
-        # elif ok_answered_questions.count() >=6:
-        #     if difficulty_level<3:
-        #         return Question.objects.filter(methodology_id=methodology_id, difficulty=difficulty_level+1) # Avanza de nivel y regresa siguientes preguntas
-        #     else:
-        #         return {} # Ya completó los 3 niveles
-        # else: # no ha alcanzado 6 ok answers
-        #     return Response(valid_questions) # se envian más valid_questions para mostrarse en Front
 
 # -----------------------------------------------------------
 
